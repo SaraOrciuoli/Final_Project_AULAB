@@ -12,33 +12,35 @@
                 </li>
                 @auth
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{Auth::user()->name}}
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a href="/logout" class="dropdown-item" onclick="event.preventDefault();getElementById('form-logout').submit();"></a>Logout</li>
-                            <form method="POST" action="{{route('logout')}}" id="form-logout" class="d-none">@csrf</form>
                         </ul>
                     </li>
                 @else
-
                     <li class="nav-item">
-                        <a href="{{route('register')}}" class="nav-link">Registrati!</a>
+                        <a href="{{ route('register') }}" class="nav-link">Registrati!</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('login')}}" class="nav-link">Accedi</a>
+                        <a href="{{ route('login') }}" class="nav-link">Accedi</a>
                     </li>
 
                 @endauth
 
             </ul>
 
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            {{-- Logout --}}
+            @auth
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <button class="btn btn-primary">Logout</button>
+                </form>
+            @endauth
         </div>
     </div>
 </nav>

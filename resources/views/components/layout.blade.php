@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recap</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 </head>
 <body>
 
@@ -15,5 +15,7 @@
     {{$slot}}
 
     <x-footer />
+
+    @vite(['resources/js/app.js'])
 </body>
 </html>
