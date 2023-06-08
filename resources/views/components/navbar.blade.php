@@ -18,6 +18,17 @@
                         <a class="nav-link" aria-current="page" href="{{ route('create_announcement') }}">Aggiungi
                             annuncio</a>
                     </li>
+                    @if (Auth::user()->is_revisor)
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning btn-sm position-relative" aria-current="page"
+                                href="{{ route('revisor_index') }}">
+                                Zona revisore <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount()}}
+                                    <span class="visually-hidden">messaggio non letto</span>
+                                </span>
+                            </a>
+                        </li>
+                    @endif
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,9 +55,12 @@
                     <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
                         @foreach ($categories as $category)
                             <li>
-                                <a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+                                <a class="dropdown-item"
+                                    href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
                             </li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                         @endforeach
                     </ul>
                 </li>

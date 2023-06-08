@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,6 @@ Route::get('/create/announcement', [AnnouncementController::class, 'create'])->m
 // rotta dettaglio
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_show');
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements');
+
+// home revisor
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
