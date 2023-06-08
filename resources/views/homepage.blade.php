@@ -5,6 +5,15 @@
             <div class="col-12 text-center">
                 <h1>Presto.it</h1>
             </div>
+
+            <div class="col-12 text-center">
+                <div class="mx-5">
+                    @if (session('access'))
+                        <div class="alert alert-danger">{{ session('access') }}</div>
+                    @endif
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -22,7 +31,8 @@
                                 {{ $announcement->category->name }}</a>
                             <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}</p>
                             <div class="d-flex justify-content-around m-2">
-                                <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-primary">Dettagli</a>
+                                <a href="{{ route('announcement_show', compact('announcement')) }}"
+                                    class="btn btn-primary">Dettagli</a>
                             </div>
                         </div>
                     </div>

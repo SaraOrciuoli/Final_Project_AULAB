@@ -44,7 +44,7 @@
                     {{ $announcement->category->name }}</a>
                 
                 <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} -
-                    Autore:{{ $announcement->user->name ?? '' }}</p>
+                    Autore: {{ $announcement->user->name ?? '' }}</p>
             </div>
         </div>
     </div>

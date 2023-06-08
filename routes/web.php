@@ -17,13 +17,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'home'])->name('homepage');
+// Rotta lista annunci singole catagorie
 Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
-
+// Rotta aggiungi annunci
 Route::get('/create/announcement', [AnnouncementController::class, 'create'])->middleware('auth')->name('create_announcement');
 
 // rotta dettaglio
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_show');
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements');
 
+
 // home revisor
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor_index');
+
+// Accetta annuncio
+Route::patch('/accept/announcement/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor_accept_announcement');
+
+// Rifiuta annuncio
+Route::patch('/reject/announcement/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
