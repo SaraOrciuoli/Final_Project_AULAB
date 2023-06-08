@@ -23,32 +23,42 @@ class CreateAnnouncement extends Component
     ];
 
     protected $messages = [
-        'required' => 'Il campo :attribute è richiesto',
-        'min' => 'Il campo :attribute è troppo corto',
-        'numeric' => 'Il campo :attribute dev\'essere un numero'
+        // required
+        'title.required' => 'Il campo \'Titolo annuncio\' è richiesto',
+        'description.required' => 'Il campo \'Descrizione\' è richiesto',
+        'price.required' => 'Il campo \'Prezzo\' è richiesto',
+        'category.required' => 'Il campo \'Categoria\' è richiesto',
+        // min
+        'title.min' => 'Il campo \'Titolo annuncio\' è troppo corto',
+        'description.min' => 'Il campo \'Descrizione\' è troppo corto',
+        // numeric
+        'price.numeric' => 'Il campo \'Prezzo\' dev\'essere un numero',
     ];
 
     public function store()
     {
-        $category = Category::find($this->category);
+        $this->validate();
 
+        $category = Category::find($this->category);
+        
         $announcement = $category->announcements()->create([
             'title' => $this->title,
             'description' => $this->description,
             'price' => $this->price,
         ]);
         Auth::user()->announcements()->save($announcement);
-
+        
         session()->flash('message','il tuo articolo è stato caricato con successo');
         $this->reset();
     }
-
+    
     public function updated($propertyName){
         $this->validateOnly($propertyName);
+
     }
-
-
-
+    
+    
+    
 
 
     public function render()
