@@ -23,7 +23,7 @@
                     </div>
 
                     <div>
-                        <button type="submit" class="btn btn-primary">Registrati!</button>
+                        <button type="submit" class="btn btn-primary">Accedi!</button>
                         <a href="{{route('register')}}" class="form-footer">Non hai ancora un account? Registrati!</a>
                     </div>
                 </form>

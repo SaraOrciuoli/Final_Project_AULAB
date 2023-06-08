@@ -40,7 +40,7 @@
                 <h5 class="card-title">{{ $announcement->title }}</h5>
                 <p class="card-title">{{ $announcement->description }}</p>
                 <p class="card-subtitle">{{ $announcement->price }}€</p>
-                <a href="" class="btn btn-outline-dark my-2">Categoria:
+                <a href="{{route('category_show', ['category' => $announcement->category])}}" class="btn btn-outline-dark my-2">Categoria:
                     {{ $announcement->category->name }}</a>
                 
                 <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} -
