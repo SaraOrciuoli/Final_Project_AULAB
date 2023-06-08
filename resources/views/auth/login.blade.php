@@ -22,8 +22,10 @@
                         <label for="userRemember" class="form-check-label">Resta connesso</label>
                     </div>
 
-
-                    <button type="submit" class="btn btn-primary">Registrati!</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Registrati!</button>
+                        <a href="{{route('register')}}" class="form-footer">Non hai ancora un account? Registrati!</a>
+                    </div>
                 </form>
 
             </div>

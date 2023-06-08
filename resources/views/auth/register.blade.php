@@ -27,7 +27,10 @@
                         <input type="password" class="form-control" id="passwordConfirmation" name="password_confirmation">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Registrati!</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Registrati!</button>
+                        <a href="{{route('login')}}" class="form-footer">Hai già un account? Accedi!</a>
+                    </div>
                 </form>
 
             </div>
