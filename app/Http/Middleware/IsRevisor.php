@@ -20,6 +20,6 @@ class IsRevisor
             return $next($request);
         }
 
-        return redirect('/')->with('access', 'Solo i revisori hanno accesso a questa pagina');
+        return redirect('/')->with('access', 'Attenzione! Solo i revisori hanno accesso a questa pagina');
     }
 }

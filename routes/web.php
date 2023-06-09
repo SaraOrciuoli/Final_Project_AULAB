@@ -22,7 +22,7 @@ Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->n
 // Rotta aggiungi annunci
 Route::get('/create/announcement', [AnnouncementController::class, 'create'])->middleware('auth')->name('create_announcement');
 
-// rotta dettaglio
+// rotta dettaglio annunci
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_show');
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements');
 
@@ -35,3 +35,10 @@ Route::patch('/accept/announcement/{announcement}', [RevisorController::class, '
 
 // Rifiuta annuncio
 Route::patch('/reject/announcement/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
+
+
+// Rotta per diventare revisore
+Route::get('/request/revisor', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
+
+// rotta rendi un utente revisore
+Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make_revisor');
