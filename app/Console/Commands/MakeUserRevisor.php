@@ -19,7 +19,7 @@ class MakeUserRevisor extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Rendi un utente revisore';
 
     /**
      * Execute the console command.
