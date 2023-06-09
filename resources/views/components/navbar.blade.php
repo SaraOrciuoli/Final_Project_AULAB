@@ -66,14 +66,22 @@
                 </li>
             </ul>
 
-            {{-- Logout --}}
-            @auth
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-
-                    <button class="btn btn-primary">Logout</button>
+            <div class="d-flex">
+                {{-- Search button --}}
+                <form method="GET" action="{{route('search_announcements')}}" class="d-flex me-2">
+                    <input type="search" name="searched" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Ricerca</button>
                 </form>
-            @endauth
+                {{-- Logout --}}
+                @auth
+                    <form method="POST" action="{{ route('logout') }}" class="me-2">
+                        @csrf
+    
+                        <button class="btn btn-primary">Esci</button>
+                    </form>
+                @endauth
+            </div>
+            
         </div>
     </div>
 </nav>

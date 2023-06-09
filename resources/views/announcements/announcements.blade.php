@@ -9,7 +9,7 @@
 
     <div class="container">
         <div class="row justify-content-evenly">
-            @foreach ($announcements as $announcement)
+            @forelse ($announcements as $announcement)
                 <div class="col-12 col-md-3 m-2 bg-light my-5">
                     <div class="card">
                         <img src="https://picsum.photos/100" class="card-img-top" alt="Image Announcement">
@@ -26,7 +26,13 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @empty
+                <div class="col-12">
+                    <div class="alert alert-warning py-3 shadow">
+                        <p class="lead">Non ci sono annunci per questa ricerca.</p>
+                    </div>
+                </div>
+            @endforelse
             {{$announcements->links()}}
         </div>
     </div>
