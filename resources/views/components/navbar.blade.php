@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light mb-5">
+<nav class="navbar navbar-expand-lg bg-light mb-5 py-3">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('homepage') }}">Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -23,7 +23,7 @@
                             <a class="nav-link btn btn-outline-warning btn-sm position-relative" aria-current="page"
                                 href="{{ route('revisor_index') }}">
                                 Zona revisore <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount()}}
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
                                     <span class="visually-hidden">messaggio non letto</span>
                                 </span>
                             </a>
@@ -68,20 +68,21 @@
 
             <div class="d-flex">
                 {{-- Search button --}}
-                <form method="GET" action="{{route('search_announcements')}}" class="d-flex me-2">
-                    <input type="search" name="searched" class="form-control me-2" placeholder="Search" aria-label="Search">
+                <form method="GET" action="{{ route('search_announcements') }}" class="d-flex me-2">
+                    <input type="search" name="searched" class="form-control me-2" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Ricerca</button>
                 </form>
                 {{-- Logout --}}
                 @auth
                     <form method="POST" action="{{ route('logout') }}" class="me-2">
                         @csrf
-    
+
                         <button class="btn btn-primary">Esci</button>
                     </form>
                 @endauth
             </div>
-            
+
         </div>
     </div>
 </nav>
