@@ -37,7 +37,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 {{ Auth::user()->name }}
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item text-acc" href="#">Action</a></li>
                                 <li><a class="dropdown-item text-acc" href="#">Another action</a></li>
                             </ul>
