@@ -1,115 +1,106 @@
-:root{
-    --main:rgb(255,255,255);
-    --sec:rgb(239,239,239);
-    --acc:rgb(209,194,134);
+:root {
+    --main: rgb(255, 255, 255);
+    --sec: rgb(239, 239, 239);
+    --acc: rgb(209, 194, 134);
+}
+/* tester */
+.bg {
+    border: 1px solid red;
 }
 
-.bg-main{
+
+/* background color */
+.bg-main {
     background-color: var(--main);
 }
-.bg-sec{
+.bg-sec {
     background-color: var(--sec);
 }
-.bg-acc{
+.bg-acc {
     background-color: var(--acc);
 }
 
-.text-main{
+/* color text */
+.text-main {
     color: var(--main);
 }
-.text-sec{
+.text-sec {
     color: var(--sec);
 }
-.text-acc{
+.text-acc {
     color: var(--acc);
 }
 
-.navbar{
+/* navbar */
+.navbar {
     height: 80px;
 }
-.logo{
+.logo {
     height: 70px;
     margin-top: -10px;
-   
-    
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
     color: var(--acc);
     border-bottom: solid 2px var(--acc);
 }
 
-.navbar{
+.navbar {
     position: relative;
     margin-top: 70px;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 2;
-
 }
-.navContainer{
+.navContainer {
     position: sticky;
     padding: 0;
     z-index: 2;
 }
 
 
-
-
-
-.card{
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-}
-
-.card:hover{
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
-    transform: scale(1.05);
-}
-
-.bg{
-    border: 1px solid red;
-}
-footer{
+/* footer */
+footer {
     background-color: var(--sec);
     background-size: cover;
-      font-size: 14px;
-      padding: 80px 80px 0px;
-      height: 65vh;
+    font-size: 14px;
+    padding: 80px 80px 0px;
+    height: 65vh;
 }
-a{
-    color: black;
-}
-.free{
+
+.free {
     color: var(--acc);
 }
-.icons{
-    color:var(--acc);
+
+.icons {
+    color: var(--acc);
     padding: 15px;
     font-size: 20px;
 }
+
 .list-unstyled {
     padding-left: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.links{
+
+.links {
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     border-bottom: solid 2px black;
 }
-.title-footer{
+
+.title-footer {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 700;
     font-size: 15px;
 }
-.text-footer{
+
+.text-footer {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 16px;
 }
-
