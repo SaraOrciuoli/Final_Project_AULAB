@@ -1,6 +1,6 @@
 <footer class="container-fluid bg-sec">
         <div class="row height-footer">
-            <div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center bg">
+            <div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center">
                 <a href="{{route('homepage')}}">
                     <img class="logo mb-3" src="/media/logo-b.png" alt="Logo">
                 </a>
