@@ -18,10 +18,12 @@
     <x-navbar />
 
     @if (session('access'))
-        <div class="alert alert-danger"><i class="fa-solid fa-triangle-exclamation fa-lg"></i> {{ session('access') }}</div>
+        <div class="alert alert-danger"><i class="fa-solid fa-triangle-exclamation fa-lg"></i> {{ session('access') }}
+        <button type="button" class="float-end btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button></div>
     @endif
     @if (session('message'))
-        <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{ session('message') }}</div>
+        <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{ session('message') }}
+        <button type="button" class="float-end btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button></div>
     @endif
 
     {{ $slot }}
