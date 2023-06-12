@@ -51,11 +51,57 @@
 
 /* navbar */
 
-/* hover navbar */
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover{
     color: var(--acc);
-    border-bottom: solid 2px var(--acc);
+    border-bottom: 2px solid var(--main);
+}
+
+/* Button search */
+.btn-search:hover{
+    color: var(--acc);
+    border: 1px solid var(--acc);
+}
+
+.btn-search-white{
+    color: var(--main);
+    border: 1px solid var(--main);
+    background: transparent;
+}
+
+.btn-search-white:hover{
+    color: var(--acc);
+    border: 1px solid var(--main);
+    background: var(--main);
+}
+
+/* Button logout */
+.btn-logout:hover{
+    color: var(--acc);
+    border: 1px solid var(--acc);
+}
+.btn-logout-white:hover{
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.btn-logout-white:hover{
+    color: var(--acc);
+    border: 1px solid var(--main);
+    background: var(--main);
+}
+
+
+/* hover navbar */
+.nav-scroll:hover,
+.nav-scroll:focus {
+    color: var(--main) !important;
+    border-bottom: 2px solid var(--main) !important;
+}
+
+.nav-fixed:hover,
+.nav-fixed:focus{
+    color: var(--acc) !important;
+    border-bottom: 2px solid var(--acc) !important;
 }
 
 .containerNav {

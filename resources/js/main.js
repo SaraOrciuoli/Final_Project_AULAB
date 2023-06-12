@@ -22,7 +22,8 @@ const swiper = new Swiper(".mySwiper", {
 
 let navLink = document.querySelectorAll('.nav-link');
 let containerNav = document.querySelector('.containerNav');
-
+let logo = document.querySelector('.logo');
+let myBtn = document.querySelectorAll('.my-btn');
 
 window.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
@@ -30,14 +31,38 @@ window.addEventListener('scroll', () => {
     if (scrolled > 20) {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
-        navLink.classList.add('text-main');
-        navLink.classList.remove('text-acc');
+        logo.src = '/media/logo-w.png';
+        navLink.forEach(element => {
+            element.classList.add('text-main');
+            element.classList.remove('text-acc');
+            element.classList.add('nav-scroll');
+            element.classList.remove('nav-fixed');
+        })
+        myBtn.forEach(element => {
+            element.classList.add('btn-search-white');
+            element.classList.remove('btn-search');
+            element.classList.add('btn-logout-white');
+            element.classList.remove('btn-logout');
+        })
+        
     }
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
-        navLink.classList.add('text-acc');
-        navLink.classList.remove('text-main');
+        logo.src = '/media/logo-b.png';
+        navLink.forEach(element => {
+            element.classList.add('text-acc');
+            element.classList.remove('text-main');
+            element.classList.add('nav-fixed');
+            element.classList.remove('nav-scroll');
+        })
+        myBtn.forEach(element => {
+            element.classList.add('btn-search');
+            element.classList.remove('btn-search-white');
+            element.classList.add('btn-logout');
+            element.classList.remove('btn-logout-white');
+        })
+        
     }
 });
 

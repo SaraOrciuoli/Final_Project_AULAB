@@ -2,7 +2,7 @@
         <div class="row height-footer">
             <div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center">
                 <a href="{{route('homepage')}}">
-                    <img class="logo mb-3" src="/media/logo1.png" alt="Logo">
+                    <img class="logo mb-3" src="/media/logo-b.png" alt="Logo">
                 </a>
                 <p class="lead">Vuoi lavorare con noi?</p>
                 <p>Registrati e clicca qui!</p>
