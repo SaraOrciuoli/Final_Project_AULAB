@@ -1,4 +1,7 @@
+/* bootstrap */
 @import 'bootstrap/dist/css/bootstrap';
+
+/* fogli di stile personalizzati */
 @import './style.css';
 @import './features/announcements.css';
 @import './features/auth.css';
@@ -7,3 +10,6 @@
 @import './features/revisor.css';
 @import './homepage.css';
 @import './features/components_style/cards_announcements.css';
+
+/* swiper */
+@import 'swiper/css/bundle';
