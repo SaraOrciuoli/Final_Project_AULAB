@@ -3,7 +3,7 @@
     --sec:rgb(239,239,239);
     --acc:rgb(209,194,134);
 }
-
+/* Colore background */
 .bg-main{
     background-color: var(--main);
 }
@@ -13,6 +13,7 @@
 .bg-acc{
     background-color: var(--acc);
 }
+/* colore testo */
 
 .text-main{
     color: var(--main);
@@ -23,35 +24,44 @@
 .text-acc{
     color: var(--acc);
 }
-
-.navbar{
-    height: 80px;
-}
+/* logo */
 .logo{
     height: 70px;
     margin-top: -10px;
-   
+}
+/* navbar */
+.navbar{
+    height: 80px;
     
 }
 
+/* hover navbar */
 .nav-link:hover,
 .nav-link:focus{
     color: var(--acc);
     border-bottom: solid 2px var(--acc);
 }
 
-.navbar{
-    position: relative;
-    margin-top: 70px;
-    transition: .5s;
-    z-index: 2;
-
-}
-.navContainer{
+/* classi per modifica classe navbar-sticky */
+.containerNav{
     position: sticky;
     padding: 0;
     z-index: 2;
+
+    transition: 0.5s;
 }
+
+.btn{
+    border: 2px solid var(--acc);
+    border-radius: 10px;
+    
+}
+.btn:hover{
+    background-color: var(--acc);
+}
+
+
+
 
 
 
