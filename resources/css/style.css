@@ -157,7 +157,7 @@
 }
 
 /* classi per modifica classe navbar-sticky */
-.containerNav{
+
 .navbar {
     position: relative;
     margin-top: 70px;
@@ -173,7 +173,7 @@
 }
 
 /* footer */
-footer {
+footer{
     background-color: var(--sec);
     background-size: cover;
     font-size: 14px;
