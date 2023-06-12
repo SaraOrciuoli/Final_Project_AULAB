@@ -77,12 +77,12 @@ a{
     color: black;
 }
 .free{
-    color: var(--info);
+    color: var(--acc);
 }
 .icons{
-    color:var(--info);
-   padding: 15px;
-   font-size: 20px;
+    color:var(--acc);
+    padding: 15px;
+    font-size: 20px;
 }
 .list-unstyled {
     padding-left: 7px;
@@ -91,6 +91,21 @@ a{
     align-items: center;
 
 }
-.links:hover{
-    border-radius: solid --info;
+.links{
+    text-decoration: none;
 }
+
+.links:hover{
+    border-bottom: solid 2px black;
+}
+.title-footer{
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.text-footer{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
