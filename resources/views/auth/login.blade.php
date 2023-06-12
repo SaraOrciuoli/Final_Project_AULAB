@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <h1>Accedi</h1>
@@ -23,7 +23,7 @@
                     </div>
 
                     <div>
-                        <button type="submit" class="btn btn-primary">Accedi!</button>
+                        <button type="submit" class="btn btn-card-announcement">Accedi!</button>
                         <a href="{{route('register')}}" class="form-footer">Non hai ancora un account? Registrati!</a>
                     </div>
                 </form>

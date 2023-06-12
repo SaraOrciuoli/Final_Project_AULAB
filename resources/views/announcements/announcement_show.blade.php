@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>Annuncio {{ $announcement->title }}</h1>
@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -40,7 +40,7 @@
                 <h5 class="card-title">{{ $announcement->title }}</h5>
                 <p class="card-title">{{ $announcement->description }}</p>
                 <p class="card-subtitle">{{ $announcement->price }}€</p>
-                <a href="{{route('category_show', ['category' => $announcement->category])}}" class="btn btn-outline-dark my-2">Categoria:
+                <a href="{{route('category_show', ['category' => $announcement->category])}}" class="btn btn-card-announcement my-3">Categoria:
                     {{ $announcement->category->name }}</a>
                 
                 <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} -

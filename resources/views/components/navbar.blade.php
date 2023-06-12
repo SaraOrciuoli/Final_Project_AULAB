@@ -1,5 +1,5 @@
 
-    <div class="container-fluid containerNav sticky-top">
+    <div class="container-fluid containerNav sticky-top shadow">
         <nav class="navbar navbar-expand-lg p-0">
         <div class="container-fluid my-1">
 

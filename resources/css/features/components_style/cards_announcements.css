@@ -26,12 +26,12 @@
 
 .btn-card-announcement{
     background-color: var(--acc);
-    color: var(--sec);
+    color: var(--main);
 }
 .btn-card-announcement:hover{
-    background-color: var(--sec);
+    background-color: var(--main);
     color: var(--acc);
-
+    border: 1px solid var(--acc);
 }
 
 @keyframes fade-in-bottom {
