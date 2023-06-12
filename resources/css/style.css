@@ -28,7 +28,7 @@
     height: 80px;
 }
 .logo{
-    height: 60px;
+    height: 70px;
     margin-top: -10px;
    
     
@@ -43,10 +43,14 @@
 .navbar{
     position: relative;
     margin-top: 70px;
-  
     transition: .5s;
     z-index: 2;
 
+}
+.navContainer{
+    position: sticky;
+    padding: 0;
+    z-index: 2;
 }
 
 

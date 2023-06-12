@@ -1,5 +1,5 @@
 
-    <nav class="navbar navbar-expand-lg bg-main pt-3 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-main pt-3 navContainer">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}"><img class="logo" src="/media/logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
