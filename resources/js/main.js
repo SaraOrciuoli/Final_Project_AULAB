@@ -19,23 +19,37 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
-// navbar
-let navbar = document.querySelector(".navbar");
-let navLink = document.querySelector(".nav-link");
-let navContainer = document.querySelector(".navContainer");
-window.addEventListener("scroll", () => {
+
+let navbar = document.querySelector('.navbar');
+let navLink = document.querySelector('.nav-link');
+let containerNav = document.querySelector('.containerNav');
+
+
+window.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
 
     if (scrolled > 20) {
-        navbar.classList.add("bg-acc");
-        navbar.classList.remove("bg-main");
-        navbar.classList.add("navContainer");
-        navbar.classList.remove("navbar");
-    } else {
-        navbar.classList.add("bg-main");
-        navbar.classList.remove("bg-acc");
-        navbar.classList.remove("navContainer");
-        navbar.classList.add("navbar");
+        containerNav.classList.add('bg-acc');
+        containerNav.classList.remove('bg-main');
+        navLink.forEach(element => {
+            element.classList.add('text-main');
+            element.classList.remove('text-acc');
+        })
+
+        containerNav.innerHTML = ''
+    }
+
+
+
+    else {
+        containerNav.classList.add('bg-main');
+        containerNav.classList.remove('bg-acc');
+        navLink.forEach(element => {
+            element.classList.add('text-acc');
+            element.classList.remove('text-main');
+
+        })
+
     }
 });
 

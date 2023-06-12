@@ -28,6 +28,7 @@
 .bg-acc {
     background-color: var(--acc);
 }
+/* colore testo */
 
 /* color text */
 .text-main {
@@ -38,6 +39,15 @@
 }
 .text-acc {
     color: var(--acc);
+}
+/* logo */
+.logo{
+    height: 70px;
+    margin-top: -10px;
+}
+/* navbar */
+.navbar{
+    height: 80px;
 }
 
 /* button dettaglio */
@@ -141,11 +151,14 @@
     margin-top: -10px;
 }
 
+/* hover navbar */
 .nav-link:hover,
 .nav-link:focus {
     color: var(--acc);
     border-bottom: solid 2px var(--acc);
 }
+
+/* classi per modifica classe navbar-sticky */
 
 .navbar {
     position: relative;
@@ -158,6 +171,8 @@
     position: sticky;
     padding: 0;
     z-index: 2;
+
+    transition: 0.5s;
 }
 
 
