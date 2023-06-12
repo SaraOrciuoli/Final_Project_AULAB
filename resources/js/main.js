@@ -20,8 +20,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-let navbar = document.querySelector('.navbar');
-let navLink = document.querySelector('.nav-link');
+let navLink = document.querySelectorAll('.nav-link');
 let containerNav = document.querySelector('.containerNav');
 
 
@@ -31,25 +30,14 @@ window.addEventListener('scroll', () => {
     if (scrolled > 20) {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
-        navLink.forEach(element => {
-            element.classList.add('text-main');
-            element.classList.remove('text-acc');
-        })
-
-        containerNav.innerHTML = ''
+        navLink.classList.add('text-main');
+        navLink.classList.remove('text-acc');
     }
-
-
-
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
-        navLink.forEach(element => {
-            element.classList.add('text-acc');
-            element.classList.remove('text-main');
-
-        })
-
+        navLink.classList.add('text-acc');
+        navLink.classList.remove('text-main');
     }
 });
 

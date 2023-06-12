@@ -3,21 +3,21 @@
     {{-- Header --}}
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center p-0">
+            <div class="col-12 text-center p-0 swiper-height">
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/media/salotto.jpg" />
+                            <img src="/media/salotto.jpg" class="object-fit" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/media/salotto2.jpg" />
+                            <img src="/media/salotto2.jpg" class="object-fit" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/media/salotto3.jpg" />
+                            <img src="/media/salotto3.jpg" class="object-fit" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/media/salotto5.jpg" />
+                            <img src="/media/salotto5.jpg" class="object-fit" />
                         </div>
 
                     </div>
