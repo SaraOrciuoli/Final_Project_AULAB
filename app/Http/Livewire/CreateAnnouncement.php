@@ -48,7 +48,7 @@ class CreateAnnouncement extends Component
         ]);
         Auth::user()->announcements()->save($announcement);
         
-        session()->flash('message','il tuo articolo è stato caricato con successo');
+        session()->flash('message','Il tuo articolo è stato caricato con successo');
         $this->reset();
     }
     
