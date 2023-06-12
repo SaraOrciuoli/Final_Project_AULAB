@@ -2,6 +2,7 @@
     <div class="container-fluid containerNav sticky-top">
         <nav class="navbar navbar-expand-lg  pt-3 ">
         <div class="container-fluid">
+            
             <a class="navbar-brand" href="{{ route('homepage') }}"><img class="logo" src="/media/logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
