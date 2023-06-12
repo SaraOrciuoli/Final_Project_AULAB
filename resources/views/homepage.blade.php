@@ -75,7 +75,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
                     deleniti numquam tempora reiciendis assumenda voluptas consequuntur quod aspernatur veniam sapiente,
                     labore nostrum voluptates debitis suscipit ut!</p>
-                <a href="#" class="learn-more  button">
+                <a href="#" class="learn-more button">
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                     </span>

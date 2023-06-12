@@ -131,9 +131,11 @@
 }
 
 /* navbar */
+
 .navbar {
     height: 80px;
 }
+
 .logo {
     height: 70px;
     margin-top: -10px;
@@ -151,55 +153,26 @@
     transition: 0.5s;
     z-index: 2;
 }
+
 .navContainer {
     position: sticky;
     padding: 0;
     z-index: 2;
 }
 
+
 /* footer */
-footer {
-    background-color: var(--sec);
-    background-size: cover;
-    font-size: 14px;
-    /* padding: 80px 80px 0px; */
-    height: 50vh;
+
+footer{
+    height: 40vh;
 }
 
-.free {
+.height-footer{
+    height: 40vh;
+}
+
+.icon-footer{
     color: var(--acc);
-}
-
-.icons {
-    color: var(--acc);
-    padding: 15px;
-    font-size: 20px;
-}
-
-/* .list-unstyled {
-    padding-left: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-
-.icons:hover {
-    color: var(--main);
-}
-
-
-
-.text-footer {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-.btn-footer{
-    border-radius: 10px;
-    color: var(--main);
-    background-color: var(--acc);
-    border: solid 2px var(--main);
-
+    font-size: 1.3rem;
+    margin: 8px 0px;
 }
