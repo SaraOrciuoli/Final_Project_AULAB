@@ -86,7 +86,13 @@
         </div>
     </div>
 
-
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h2>Articoli recenti</h2>
+        </div>
+    </div>
+</div>
 
 
 
