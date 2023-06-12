@@ -5,7 +5,9 @@
     <form wire:submit.prevent='store'>
         @csrf
         @if (session('message'))
-            <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{session('message')}}</div>
+            <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{session('message')}}
+                <button type="button" class="float-end btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button>
+            </div>
         @endif
 
         <div class="mb-3">
