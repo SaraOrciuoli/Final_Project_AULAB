@@ -78,15 +78,17 @@ footer {
     font-size: 20px;
 }
 
-.list-unstyled {
+/* .list-unstyled {
     padding-left: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.links {
-    text-decoration: none;
+
+
+.icons:hover {
+    color: var(--main);
 }
 
 .links:hover {
@@ -103,4 +105,11 @@ footer {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 16px;
+}
+.btn-footer{
+    border-radius: 10px;
+    color: var(--main);
+    background-color: var(--acc);
+    border: solid 2px var(--main);
+
 }
