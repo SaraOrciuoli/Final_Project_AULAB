@@ -17,3 +17,31 @@
 .bg{
     border: 1px solid red;
 }
+footer{
+    background-color: var(--sec);
+    background-size: cover;
+      font-size: 14px;
+      padding: 80px 80px 0px;
+      height: 65vh;
+}
+a{
+    color: black;
+}
+.free{
+    color: var(--info);
+}
+.icons{
+    color:var(--info);
+   padding: 15px;
+   font-size: 20px;
+}
+.list-unstyled {
+    padding-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.links:hover{
+    border-radius: solid --info;
+}
