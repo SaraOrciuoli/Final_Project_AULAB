@@ -38,3 +38,21 @@ window.addEventListener("scroll", () => {
         navbar.classList.add("navbar");
     }
 });
+
+// cards
+let cards = document.querySelectorAll('.card-id');
+let targetCard = document.querySelector('.targetCard');
+
+let observerCard = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            cards.forEach((card,i) =>{
+                card.classList.remove('opacity-0');
+                card.classList.add('animationUp');
+                card.style.animationDelay = `${i*0.5}s`
+            })
+        }
+    })
+})
+observerCard.observe(targetCard);

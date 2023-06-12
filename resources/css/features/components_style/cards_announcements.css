@@ -1,10 +1,69 @@
-/* card */
-.card {
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+.image-card-back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
     transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.card {
+    transition: 0.5s;
+    box-sizing: border-box;
+    color: black;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.animationUp {
+    animation: fade-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-fill-mode: backwards;
+}
+
+.btn-card-announcement{
+    background-color: var(--acc);
+    color: var(--sec);
+}
+.btn-card-announcement:hover{
+    background-color: var(--sec);
+    color: var(--acc);
+
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.delay {
+    animation-delay: 1s;
+}
+
+.card:hover .image-card-back {
+    transform: scale(1);
+}
+
+.card:hover .btn-card-announcement {
+    background-color: var(--acc);
+    color: var(--sec);
 }
 
 .card:hover {
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
-    transform: scale(1.05);
+    background-color: rgba(209, 194, 134, 0.626);
+    color: var(--main);
+    display: block;
+}
+.card:hover .button-text{
+    color: var(--main);
 }
