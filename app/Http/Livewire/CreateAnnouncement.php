@@ -77,7 +77,7 @@ class CreateAnnouncement extends Component
         }
         $this->announcement->user()->associate(Auth::user());
         
-        session()->flash('message','Il tuo articolo è stato caricato con successo');
+        session()->flash('create_confirmation','Il tuo articolo è stato caricato con successo');
         $this->reset();
     }
     

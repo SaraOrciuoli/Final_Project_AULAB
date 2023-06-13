@@ -36,51 +36,33 @@
         <div class="row p-5 justify-content-evenly">
 
             <div class="col-12 col-md-3 text-center">
-                <span class="icon-service">
-                    <i class="fa-regular fa-credit-card fa-2xl text-white"></i>
+                <span class="icon-service d-flex align-items-center justify-content-center">
+                    <img src="/media/credit-card.gif" alt="" class="credit">
                 </span>
                 <h3 class="text-lightDark">Carta di credito</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
                     deleniti numquam tempora reiciendis assumenda voluptas consequuntur quod aspernatur veniam sapiente,
                     labore nostrum voluptates debitis suscipit ut!</p>
-                <a href="#" class="learn-more button">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Dettagli</span>
-                </a>
             </div>
 
             <div class="col-12 col-md-3 text-center">
-                <span class="icon-service">
-                    <i class="fa-solid fa-wallet fa-2xl text-white"></i>
+                <span class="icon-service d-flex align-items-center justify-content-center">
+                    <img src="/media/save.gif" alt="">
                 </span>
                 <h3 class="text-lightDark">Risparmiare</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
                     deleniti numquam tempora reiciendis assumenda voluptas consequuntur quod aspernatur veniam sapiente,
                     labore nostrum voluptates debitis suscipit ut!</p>
-                <a href="#" class="learn-more button">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Dettagli</span>
-                </a>
             </div>
 
             <div class="col-12 col-md-3 text-center">
-                <span class="icon-service">
-                    <i class="fa-solid fa-truck fa-2xl text-white"></i>
+                <span class="icon-service d-flex align-items-center justify-content-center">
+                    <img src="/media/truck-white.gif" alt="">
                 </span>
-                <h3 class="text-lightDark">Consegna gratuita</h3>
+                <h3 class="text-lightDark">Consegna veloce</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
                     deleniti numquam tempora reiciendis assumenda voluptas consequuntur quod aspernatur veniam sapiente,
                     labore nostrum voluptates debitis suscipit ut!</p>
-                <a href="#" class="learn-more button">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Dettagli</span>
-                </a>
             </div>
 
         </div>
@@ -180,15 +162,15 @@
     {{-- Lavora con noi --}}
 
     <section class="container-fluid bg-acc">
-        <div class="row justify-content-center align-items-center p-4">
+        <div class="row justify-content-center align-items-center p-5">
             <div class="col-12 col-md-5 text-start">
                 <h3 class="text-lightDark">La nostra storia:</h3>
                 <p class="text-testimonial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit praesentium obcaecati tenetur voluptas placeat? Provident, sapiente! Et eius autem soluta, minima quis qui, similique earum, accusantium ullam aspernatur voluptas excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nulla repellendus voluptatibus ipsa numquam distinctio illum at quaerat autem nam consequatur in eveniet doloribus architecto nobis, reiciendis voluptate pariatur! Cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quisquam inventore blanditiis. Inventore nam rem vero dolores voluptas numquam laudantium odit sapiente, dolor et est neque quasi reiciendis saepe laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque doloribus, facilis deserunt tempore rem amet provident natus asperiores facere eveniet saepe nobis deleniti tenetur ullam quisquam qui obcaecati culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste omnis, eum odio autem error blanditiis hic ea eaque ut saepe ducimus soluta incidunt quasi illum non molestiae quisquam, quibusdam porro?</p>
             </div>
             <div class="col-12 col-md-5 text-center">
                 <h3 class="fs-2 text-lightDark">Lavora con Noi!</h3>
-                <p class="text-testimonial">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <a href="" class="btn-candidate">Invia la richiesta</a>
+                <p class="text-testimonial">Vuoi diventare nostro revisore? Manda la tua richiesta!</p>
+                <a href="{{route('become_revisor')}}" class="btn-candidate">Invia la richiesta</a>
             </div>
         </div>
     </section>

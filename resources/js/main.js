@@ -31,8 +31,6 @@ window.addEventListener("scroll", () => {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
         containerNav.style.width = '100%';
-        // containerNav.classList.add('container-fluid');
-        // containerNav.classList.remove('container');
         logo.src = '/media/logo-w.png';
         navLink.forEach(element => {
             element.classList.add('text-main');
@@ -51,8 +49,6 @@ window.addEventListener("scroll", () => {
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
-        // containerNav.classList.add('container');
-        // containerNav.classList.remove('container-fluid');
         containerNav.style.width = '80%';
         logo.src = '/media/logo-b.png';
         navLink.forEach(element => {
@@ -81,7 +77,7 @@ let observerCard = new IntersectionObserver((entries) => {
             cards.forEach((card, i) => {
                 card.classList.remove('opacity-0');
                 card.classList.add('animationUp');
-                card.style.animationDelay = `${i * 0.5}s`
+                card.style.animationDelay = `${i * 0.3}s`
             })
         }
     });

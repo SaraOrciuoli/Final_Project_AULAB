@@ -4,8 +4,8 @@
 
     <form wire:submit.prevent='store'>
         @csrf
-        @if (session('message'))
-            <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{session('message')}}
+        @if (session('create_confirmation'))
+            <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{session('create_confirmation')}}
                 <button type="button" class="float-end btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button>
             </div>
         @endif
