@@ -14,6 +14,15 @@
                         <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li class="nav-item">
+                        <x-_locale lang='it' />
+                    </li>
+                    <li class="nav-item">
+                        <x-_locale lang='en' />
+                    </li>
+                    <li class="nav-item">
+                        <x-_locale lang='es' />
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">Tutti gli annunci</a>
                     </li>
                     @auth

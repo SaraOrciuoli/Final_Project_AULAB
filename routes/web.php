@@ -45,3 +45,5 @@ Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->n
 
 // Rotta ricerca annuncio
 Route::get('/search/announcement', [PublicController::class, 'searchAnnouncements'])->name('search_announcements');
+// Rotta per cambio lingua
+Route::post('/lingua/{lang}',[PublicController::class,'setLanguage'])->name('set_language_locale');
