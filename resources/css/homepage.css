@@ -62,40 +62,88 @@
     padding-bottom: 50px;
 }
 
-.testimonial-img{
+.testimonial-img {
     width: 100px !important;
     height: 100px !important;
     border-radius: 50%;
 }
 
 .swiper-3d .swiper-slide-shadow-left {
-    background-image: linear-gradient(to left,rgba(0, 0, 0, 0),rgba(0,0,0,0)) !important;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    ) !important;
 }
 .swiper-3d .swiper-slide-shadow-right {
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0),rgba(0,0,0,0)) !important;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    ) !important;
 }
 
-.img-testimonial{
+.img-testimonial {
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
 
-.card-test:hover{
+.card-test:hover {
     color: black !important;
 }
 
 /* Sezione counter */
 
-.bg-counter{
+.bg-counter {
     background-image: url(../../public/media/salotto.jpg);
     background-attachment: fixed;
     background-position: center;
 }
 
-.box{
+.box {
     height: 250px;
-    width: 280px;
+    width: 250px;
     padding: 30px 0px;
     background: rgba(255, 255, 255, 0.8);
+}
+
+/* Lavora con noi */
+
+.btn-candidate {
+    display: inline-block;
+    border: 3px solid #dfb112;
+    padding: 10px;
+    background-color: #212121;
+    color: var(--sec);
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.btn-candidate:hover{
+    color: var(--acc);
+}
+
+.btn-candidate::before {
+    content: "";
+    z-index: -1;
+    transform: translateY(-100%) translateX(-100%);
+    transition: all 0.3s;
+    background-color: var(--sec);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.btn-candidate:hover::before {
+    transform: translateY(0) translateX(0);
+}
+
+.btn-candidate:hover::after {
+    transform: translateY(100%) translateX(100%);
 }

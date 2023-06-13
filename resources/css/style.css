@@ -2,6 +2,11 @@
     --main: rgb(255, 255, 255);
     --sec: rgb(239, 239, 239);
     --acc: rgb(209, 194, 134);
+    --darkLight: rgb(62, 60, 60);
+}
+
+a{
+    text-decoration: none;
 }
 
 /* helper system */
@@ -48,6 +53,11 @@
 .text-acc {
     color: var(--acc);
 }
+
+.text-lightDark{
+    color: var(--darkLight);
+}
+
 /* logo */
 .logo{
     height: 4rem;
