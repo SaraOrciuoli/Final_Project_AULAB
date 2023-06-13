@@ -28,46 +28,43 @@ window.addEventListener("scroll", () => {
     let scrolled = window.scrollY;
 
     if (scrolled > 20) {
-        containerNav.classList.add('bg-acc');
-        containerNav.classList.remove('bg-main');
-        containerNav.style.width = '100%';
+        containerNav.classList.add("bg-acc");
+        containerNav.classList.remove("bg-main");
+        containerNav.style.width = "100%";
         // containerNav.classList.add('container-fluid');
         // containerNav.classList.remove('container');
-        logo.src = '/media/logo-w.png';
-        navLink.forEach(element => {
-            element.classList.add('text-main');
-            element.classList.remove('text-acc');
-            element.classList.add('nav-scroll');
-            element.classList.remove('nav-fixed');
-        })
-        myBtn.forEach(element => {
-            element.classList.add('btn-search-white');
-            element.classList.remove('btn-search');
-            element.classList.add('btn-logout-white');
-            element.classList.remove('btn-logout');
-        })
-
-    }
-    else {
-        containerNav.classList.add('bg-main');
-        containerNav.classList.remove('bg-acc');
+        logo.src = "/media/logo-w.png";
+        navLink.forEach((element) => {
+            element.classList.add("text-main");
+            element.classList.remove("text-acc");
+            element.classList.add("nav-scroll");
+            element.classList.remove("nav-fixed");
+        });
+        myBtn.forEach((element) => {
+            element.classList.add("btn-search-white");
+            element.classList.remove("btn-search");
+            element.classList.add("btn-logout-white");
+            element.classList.remove("btn-logout");
+        });
+    } else {
+        containerNav.classList.add("bg-main");
+        containerNav.classList.remove("bg-acc");
         // containerNav.classList.add('container');
         // containerNav.classList.remove('container-fluid');
-        containerNav.style.width = '80%';
-        logo.src = '/media/logo-b.png';
-        navLink.forEach(element => {
-            element.classList.add('text-acc');
-            element.classList.remove('text-main');
-            element.classList.add('nav-fixed');
-            element.classList.remove('nav-scroll');
-        })
-        myBtn.forEach(element => {
-            element.classList.add('btn-search');
-            element.classList.remove('btn-search-white');
-            element.classList.add('btn-logout');
-            element.classList.remove('btn-logout-white');
-        })
-
+        containerNav.style.width = "80%";
+        logo.src = "/media/logo-b.png";
+        navLink.forEach((element) => {
+            element.classList.add("text-acc");
+            element.classList.remove("text-main");
+            element.classList.add("nav-fixed");
+            element.classList.remove("nav-scroll");
+        });
+        myBtn.forEach((element) => {
+            element.classList.add("btn-search");
+            element.classList.remove("btn-search-white");
+            element.classList.add("btn-logout");
+            element.classList.remove("btn-logout-white");
+        });
     }
 });
 
@@ -79,10 +76,10 @@ let observerCard = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             cards.forEach((card, i) => {
-                card.classList.remove('opacity-0');
-                card.classList.add('animationUp');
-                card.style.animationDelay = `${i * 0.5}s`
-            })
+                card.classList.remove("opacity-0");
+                card.classList.add("animationUp");
+                card.style.animationDelay = `${i * 0.5}s`;
+            });
         }
     });
 });
@@ -106,3 +103,31 @@ const swiperTest = new Swiper(".swiper-test2", {
         el: ".swiper-pagination",
     },
 });
+
+// counter parallax
+let numbers = document.querySelectorAll(".numbers");
+let counter = 0;
+let target_counter = document.querySelector(".target_counter");
+
+function FirstCounter() {
+    let interval = setInterval(() => {
+        numbers.forEach((element) => {
+            if (counter < 1234) {
+                counter++;
+                element.innerHTML = counter;
+            } else {
+                clearInterval(interval);
+            }
+        });
+    }, 10);
+}
+
+let observer_counter = new IntersectionObserver((element) => {
+    element.forEach(entries => {
+        if (entries.isIntersecting) {
+            FirstCounter();
+        }
+    });
+});
+
+observer_counter.observe(target_counter);

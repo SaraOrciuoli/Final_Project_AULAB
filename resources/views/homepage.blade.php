@@ -133,14 +133,14 @@
 
     {{-- Sezione counter --}}
 
-    <section class="container-fluid bg-counter">
+    <section class="container-fluid bg-counter target_counter">
         <div class="row align-items-center justify-content-center vh-45">
             <div class="col-12 col-md-2">
                 <div class="box text-center">
                     <span class="icon-service">
                         <i class="fa-regular fa-eye fa-2xl text-white"></i>
                     </span>
-                    <span class="fs-2 text-lightDark">100</span>
+                    <span class="fs-2 text-lightDark numbers">0</span>
                     <p class="text-testimonial">VISUALIZZAZIONI</p>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                     <span class="icon-service">
                         <i class="fa-solid fa-cart-shopping fa-2xl text-white"></i>
                     </span>
-                    <span class="fs-2 text-lightDark">100</span>
+                    <span class="fs-2 text-lightDark numbers">0</span>
                     <p class="text-testimonial">CLIENTI FELICI</p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                     <span class="icon-service">
                         <i class="fa-solid fa-shop fa-2xl text-white"></i>
                     </span>
-                    <span class="fs-2 text-lightDark">100</span>
+                    <span class="fs-2 text-lightDark numbers">0</span>
                     <p class="text-testimonial">TUTTI I PRODOTTI</p>
                 </div>
             </div>
@@ -170,7 +170,7 @@
                     <span class="icon-service">
                         <i class="fa-regular fa-clock fa-2xl text-white"></i>
                     </span>
-                    <span class="fs-2 text-lightDark">100</span>
+                    <span class="fs-2 text-lightDark numbers">0</span>
                     <p class="text-testimonial">ORE SPESE</p>
                 </div>
             </div>
