@@ -135,7 +135,7 @@
 
     <section class="container-fluid bg-counter target_counter">
         <div class="row align-items-center justify-content-center vh-45">
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-2 container_counter">
                 <div class="box text-center">
                     <span class="icon-service">
                         <i class="fa-regular fa-eye fa-2xl text-white"></i>
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-2 container_counter">
                 <div class="box text-center">
                     <span class="icon-service">
                         <i class="fa-solid fa-cart-shopping fa-2xl text-white"></i>
@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-2 container_counter">
                 <div class="box text-center">
                     <span class="icon-service">
                         <i class="fa-solid fa-shop fa-2xl text-white"></i>
@@ -165,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-2 container_counter">
                 <div class="box text-center">
                     <span class="icon-service">
                         <i class="fa-regular fa-clock fa-2xl text-white"></i>

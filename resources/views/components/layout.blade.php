@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/893551a8c5.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="animationFadeWhite">
 
     <x-navbar />
 

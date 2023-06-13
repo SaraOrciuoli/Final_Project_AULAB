@@ -106,6 +106,7 @@ const swiperTest = new Swiper(".swiper-test2", {
 
 // counter parallax
 let numbers = document.querySelectorAll(".numbers");
+let container_counter = document.querySelectorAll(".container_counter");
 let counter = 0;
 let target_counter = document.querySelector(".target_counter");
 
@@ -119,11 +120,14 @@ function FirstCounter() {
                 clearInterval(interval);
             }
         });
+        container_counter.forEach((element) => {
+            element.classList.add("animation-fade");
+        })
     }, 10);
 }
 
 let observer_counter = new IntersectionObserver((element) => {
-    element.forEach(entries => {
+    element.forEach((entries) => {
         if (entries.isIntersecting) {
             FirstCounter();
         }
