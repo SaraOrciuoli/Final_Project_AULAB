@@ -37,7 +37,7 @@
 
             <div class="col-12 col-md-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
-                    <img src="/media/credit-card.gif" alt="" class="credit">
+                    <img src="/media/credit-card.gif">
                 </span>
                 <h3 class="text-lightDark">Carta di credito</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
@@ -47,7 +47,7 @@
 
             <div class="col-12 col-md-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
-                    <img src="/media/save.gif" alt="">
+                    <img src="/media/save.gif">
                 </span>
                 <h3 class="text-lightDark">Risparmiare</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
@@ -57,7 +57,7 @@
 
             <div class="col-12 col-md-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
-                    <img src="/media/truck-white.gif" alt="">
+                    <img src="/media/truck-white.gif">
                 </span>
                 <h3 class="text-lightDark">Consegna veloce</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem id veritatis necessitatibus
