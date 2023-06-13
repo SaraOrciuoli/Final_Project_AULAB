@@ -31,6 +31,10 @@ window.addEventListener('scroll', () => {
     if (scrolled > 20) {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
+        containerNav.classList.add('container-fluid');
+        containerNav.classList.remove('container');
+        containerNav.classList.add('containerNav');
+        containerNav.classList.remove('containerNav-padding');
         logo.src = '/media/logo-w.png';
         navLink.forEach(element => {
             element.classList.add('text-main');
@@ -44,11 +48,15 @@ window.addEventListener('scroll', () => {
             element.classList.add('btn-logout-white');
             element.classList.remove('btn-logout');
         })
-        
+
     }
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
+        containerNav.classList.add('container');
+        containerNav.classList.remove('container-fluid');
+        containerNav.classList.add('conatinerNav-padding');
+        containerNav.classList.remove('containerNav');
         logo.src = '/media/logo-b.png';
         navLink.forEach(element => {
             element.classList.add('text-acc');
@@ -62,7 +70,7 @@ window.addEventListener('scroll', () => {
             element.classList.add('btn-logout');
             element.classList.remove('btn-logout-white');
         })
-        
+
     }
 });
 
@@ -74,10 +82,10 @@ let observerCard = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            cards.forEach((card,i) =>{
+            cards.forEach((card, i) => {
                 card.classList.remove('opacity-0');
                 card.classList.add('animationUp');
-                card.style.animationDelay = `${i*0.5}s`
+                card.style.animationDelay = `${i * 0.5}s`
             })
         }
     })
