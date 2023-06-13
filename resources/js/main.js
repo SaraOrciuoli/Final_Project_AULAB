@@ -28,37 +28,48 @@ window.addEventListener("scroll", () => {
     let scrolled = window.scrollY;
 
     if (scrolled > 20) {
-        containerNav.classList.add("bg-acc");
-        containerNav.classList.remove("bg-main");
-        logo.src = "/media/logo-w.png";
-        navLink.forEach((element) => {
-            element.classList.add("text-main");
-            element.classList.remove("text-acc");
-            element.classList.add("nav-scroll");
-            element.classList.remove("nav-fixed");
-        });
-        myBtn.forEach((element) => {
-            element.classList.add("btn-search-white");
-            element.classList.remove("btn-search");
-            element.classList.add("btn-logout-white");
-            element.classList.remove("btn-logout");
-        });
-    } else {
-        containerNav.classList.add("bg-main");
-        containerNav.classList.remove("bg-acc");
-        logo.src = "/media/logo-b.png";
-        navLink.forEach((element) => {
-            element.classList.add("text-acc");
-            element.classList.remove("text-main");
-            element.classList.add("nav-fixed");
-            element.classList.remove("nav-scroll");
-        });
-        myBtn.forEach((element) => {
-            element.classList.add("btn-search");
-            element.classList.remove("btn-search-white");
-            element.classList.add("btn-logout");
-            element.classList.remove("btn-logout-white");
-        });
+        containerNav.classList.add('bg-acc');
+        containerNav.classList.remove('bg-main');
+        containerNav.classList.add('container-fluid');
+        containerNav.classList.remove('container');
+        containerNav.classList.add('containerNav');
+        containerNav.classList.remove('containerNav-padding');
+        logo.src = '/media/logo-w.png';
+        navLink.forEach(element => {
+            element.classList.add('text-main');
+            element.classList.remove('text-acc');
+            element.classList.add('nav-scroll');
+            element.classList.remove('nav-fixed');
+        })
+        myBtn.forEach(element => {
+            element.classList.add('btn-search-white');
+            element.classList.remove('btn-search');
+            element.classList.add('btn-logout-white');
+            element.classList.remove('btn-logout');
+        })
+
+    }
+    else {
+        containerNav.classList.add('bg-main');
+        containerNav.classList.remove('bg-acc');
+        containerNav.classList.add('container');
+        containerNav.classList.remove('container-fluid');
+        containerNav.classList.add('conatinerNav-padding');
+        containerNav.classList.remove('containerNav');
+        logo.src = '/media/logo-b.png';
+        navLink.forEach(element => {
+            element.classList.add('text-acc');
+            element.classList.remove('text-main');
+            element.classList.add('nav-fixed');
+            element.classList.remove('nav-scroll');
+        })
+        myBtn.forEach(element => {
+            element.classList.add('btn-search');
+            element.classList.remove('btn-search-white');
+            element.classList.add('btn-logout');
+            element.classList.remove('btn-logout-white');
+        })
+
     }
 });
 
@@ -70,10 +81,10 @@ let observerCard = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             cards.forEach((card, i) => {
-                card.classList.remove("opacity-0");
-                card.classList.add("animationUp");
-                card.style.animationDelay = `${i * 0.5}s`;
-            });
+                card.classList.remove('opacity-0');
+                card.classList.add('animationUp');
+                card.style.animationDelay = `${i * 0.5}s`
+            })
         }
     });
 });
