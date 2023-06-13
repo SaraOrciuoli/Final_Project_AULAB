@@ -19,18 +19,20 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
+let navLink = document.querySelectorAll(".nav-link");
+let containerNav = document.querySelector(".containerNav");
+let logo = document.querySelector(".logo");
+let myBtn = document.querySelectorAll(".my-btn");
 
-let navLink = document.querySelectorAll('.nav-link');
-let containerNav = document.querySelector('.containerNav');
-let logo = document.querySelector('.logo');
-let myBtn = document.querySelectorAll('.my-btn');
-
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
     let scrolled = window.scrollY;
 
     if (scrolled > 20) {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
+        containerNav.style.width = '100%';
+        // containerNav.classList.add('container-fluid');
+        // containerNav.classList.remove('container');
         logo.src = '/media/logo-w.png';
         navLink.forEach(element => {
             element.classList.add('text-main');
@@ -44,11 +46,14 @@ window.addEventListener('scroll', () => {
             element.classList.add('btn-logout-white');
             element.classList.remove('btn-logout');
         })
-        
+
     }
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
+        // containerNav.classList.add('container');
+        // containerNav.classList.remove('container-fluid');
+        containerNav.style.width = '80%';
         logo.src = '/media/logo-b.png';
         navLink.forEach(element => {
             element.classList.add('text-acc');
@@ -62,24 +67,42 @@ window.addEventListener('scroll', () => {
             element.classList.add('btn-logout');
             element.classList.remove('btn-logout-white');
         })
-        
+
     }
 });
 
 // cards
-let cards = document.querySelectorAll('.card-id');
-let targetCard = document.querySelector('.targetCard');
+let cards = document.querySelectorAll(".card-id");
+let targetCard = document.querySelector(".targetCard");
 
 let observerCard = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            cards.forEach((card,i) =>{
+            cards.forEach((card, i) => {
                 card.classList.remove('opacity-0');
                 card.classList.add('animationUp');
-                card.style.animationDelay = `${i*0.5}s`
+                card.style.animationDelay = `${i * 0.5}s`
             })
         }
-    })
-})
+    });
+});
 observerCard.observe(targetCard);
+
+// testimonial carousel
+
+const swiperTest = new Swiper(".swiper-test2", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

@@ -2,7 +2,7 @@
     <div class="card d-flex justify-content-evenly align-items-center position-relative  shadow border-0 p-5">
         <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200'}}" class="image-card-back" alt="Image Announcement">
         <div class="card-body text-center">
-            <h5 class="card-title  targetCard">{{ $announcement->title }}</h5>
+            <h5 class="card-title targetCard">{{ $announcement->title }}</h5>
             <p class="card-title">{{ $announcement->description }}</p>
             <p class="card-subtitle">{{ $announcement->price }}€</p>
             <p class="card-subtitle">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}</p>
