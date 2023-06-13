@@ -10,6 +10,10 @@
     object-fit: cover;
 }
 
+.vh-45{
+    height: 45vh;
+}
+
 .p-6 {
     padding: 6rem;
 }
