@@ -1,6 +1,6 @@
-<div class="container containerNav sticky-top shadow">
-    <nav class="navbar navbar-expand-lg p-0">
-        <div class="container-fluid my-1">
+<div class=" containerNav mx-auto sticky-top shadow transition">
+    <nav class="navbar navbar-expand-lg p-0 ">
+        <div class="container-fluid my-1 ">
 
             <a class="navbar-brand p-0" href="{{ route('homepage') }}"><img class="logo" src="/media/logo-b.png"
                     alt="Logo"></a>
@@ -10,21 +10,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center ">
+                    <li class="nav-item ">
                         <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">Home</a>
                     </li>
+
                     <li class="nav-item">
-                        <x-_locale lang='it' />
-                    </li>
-                    <li class="nav-item">
-                        <x-_locale lang='en' />
-                    </li>
-                    <li class="nav-item">
-                        <x-_locale lang='es' />
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">Tutti gli annunci</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">Tutti gli
+                            annunci</a>
                     </li>
                     @auth
                         <li class="nav-item">
@@ -82,7 +75,7 @@
 
                 <div class="d-block d-md-flex">
                     {{-- Search button --}}
-                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex me-2">
+    
                         <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca"
                             aria-label="Search">
                         <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">Ricerca</button>
@@ -96,6 +89,24 @@
                         </form>
                     @endauth
                 </div>
+                {{-- <div class="d-flex justify-item-evenly"> --}}
+                <span class="nav-item">
+                    <x-_locale lang='it' />
+                </span>
+                <span class="nav-item">
+                    <x-_locale lang='en' />
+                </span>
+                <span class="nav-item">
+                    <x-_locale lang='es' />
+                </span>
+
+                {{-- </div> --}}
+
+
+
+
+
+
 
             </div>
         </div>

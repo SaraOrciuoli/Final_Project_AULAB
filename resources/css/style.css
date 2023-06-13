@@ -6,13 +6,14 @@
 
 /* helper system */
 
-.object-fit{
+.object-fit {
     object-fit: cover;
 }
 
 .p-6 {
     padding: 6rem;
 }
+
 .m-6 {
     margin: 6rem;
 }
@@ -26,65 +27,74 @@
 .bg-main {
     background-color: var(--main);
 }
+
 .bg-sec {
     background-color: var(--sec);
 }
+
 .bg-acc {
     background-color: var(--acc);
 }
+
 /* colore testo */
 
 /* color text */
 .text-main {
     color: var(--main);
 }
+
 .text-sec {
     color: var(--sec);
 }
+
 .text-acc {
     color: var(--acc);
 }
+
 /* logo */
-.logo{
+.logo {
     height: 4rem;
 }
 
 /* navbar */
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--acc);
     border-bottom: 2px solid var(--main);
 }
 
 /* Button search */
-.btn-search:hover{
+.btn-search:hover {
     color: var(--acc);
     border: 1px solid var(--acc);
 }
 
-.btn-search-white{
+.btn-search-white {
     color: var(--main);
     border: 1px solid var(--main);
     background: transparent;
 }
 
-.btn-search-white:hover{
+.btn-search-white:hover {
     color: var(--acc);
     border: 1px solid var(--main);
     background: var(--main);
 }
 
+
+
 /* Button logout */
-.btn-logout:hover{
+.btn-logout:hover {
     color: var(--acc);
     border: 1px solid var(--acc);
 }
-.btn-logout-white:hover{
+
+.btn-logout-white:hover {
     color: var(--main);
     border: 1px solid var(--main);
 }
 
-.btn-logout-white:hover{
+.btn-logout-white:hover {
     color: var(--acc);
     border: 1px solid var(--main);
     background: var(--main);
@@ -99,7 +109,7 @@
 }
 
 .nav-fixed:hover,
-.nav-fixed:focus{
+.nav-fixed:focus {
     color: var(--acc) !important;
     border-bottom: 2px solid var(--acc) !important;
 }
@@ -107,12 +117,9 @@
 .containerNav {
     padding: 0;
     z-index: 2;
-    transition: 0.5s;
-}
-.containerNav-padding { 
-    padding: 10px 5rem;
-    z-index: 2;
-    transition: 0.5s;
+    transition: 0.8s;
+    width: 80%;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
@@ -210,15 +217,15 @@
 
 /* footer */
 
-footer{
+footer {
     height: 40vh;
 }
 
-.height-footer{
+.height-footer {
     height: 40vh;
 }
 
-.icon-footer{
+.icon-footer {
     color: var(--acc);
     font-size: 1.3rem;
     margin: 8px 0px;
