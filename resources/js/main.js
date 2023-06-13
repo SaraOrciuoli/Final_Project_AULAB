@@ -102,3 +102,35 @@ const swiperTest = new Swiper(".swiper-test2", {
         el: ".swiper-pagination",
     },
 });
+
+// counter parallax
+let numbers = document.querySelectorAll(".numbers");
+let container_counter = document.querySelectorAll(".container_counter");
+let counter = 0;
+let target_counter = document.querySelector(".target_counter");
+
+function FirstCounter() {
+    let interval = setInterval(() => {
+        numbers.forEach((element) => {
+            if (counter < 1234) {
+                counter++;
+                element.innerHTML = counter;
+            } else {
+                clearInterval(interval);
+            }
+        });
+        container_counter.forEach((element) => {
+            element.classList.add("animation-fade");
+        })
+    }, 10);
+}
+
+let observer_counter = new IntersectionObserver((element) => {
+    element.forEach((entries) => {
+        if (entries.isIntersecting) {
+            FirstCounter();
+        }
+    });
+});
+
+observer_counter.observe(target_counter);

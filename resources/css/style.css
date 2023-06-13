@@ -5,7 +5,7 @@
     --darkLight: rgb(62, 60, 60);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -15,7 +15,7 @@ a{
     object-fit: cover;
 }
 
-.vh-45{
+.vh-45 {
     height: 45vh;
 }
 
@@ -45,7 +45,71 @@ a{
     background-color: var(--acc);
 }
 
-/* colore testo */
+/* animazioni */
+.animationUp {
+    animation: fade-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-fill-mode: backwards;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animationDown {
+    animation: fade-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fade-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animationFadeWhite {
+    animation: fadeWhite 1s linear;
+}
+
+@keyframes fadeWhite {
+    100% {
+        transition: opacity 0.5s ease-out, visibility 0s linear 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    0% {
+        transition: opacity 1s ease-out, visibility 0s linear 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.animation-fade {
+    animation: fade 0.4s linear;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* color text */
 .text-main {
@@ -60,7 +124,7 @@ a{
     color: var(--acc);
 }
 
-.text-lightDark{
+.text-lightDark {
     color: var(--darkLight);
 }
 
@@ -94,8 +158,6 @@ a{
     background: var(--main);
 }
 
-
-
 /* Button logout */
 .btn-logout:hover {
     color: var(--acc);
@@ -112,7 +174,6 @@ a{
     border: 1px solid var(--main);
     background: var(--main);
 }
-
 
 /* hover navbar */
 .nav-scroll:hover,
@@ -134,7 +195,6 @@ a{
     width: 80%;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 
 /* button dettaglio */
 
@@ -226,8 +286,6 @@ a{
     color: #fff;
 }
 
-
-
 /* footer */
 
 footer {
@@ -271,7 +329,7 @@ footer {
 }
 
 /* dimensioni immagine preview */
-.img-preview{
+.img-preview {
     width: 250px;
     height: 250px;
     background-size: contain;
