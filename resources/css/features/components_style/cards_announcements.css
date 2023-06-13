@@ -14,7 +14,7 @@
 .card {
     transition: 0.5s;
     box-sizing: border-box;
-    color: black;
+    color: var(--darkLight);
     max-height: 400px;
     overflow: hidden;
 }
