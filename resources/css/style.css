@@ -105,11 +105,16 @@
 }
 
 .containerNav {
-    position: sticky;
     padding: 0;
     z-index: 2;
     transition: 0.5s;
 }
+.containerNav-padding { 
+    padding: 10px 5rem;
+    z-index: 2;
+    transition: 0.5s;
+}
+
 
 /* button dettaglio */
 
