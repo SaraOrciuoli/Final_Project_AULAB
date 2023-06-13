@@ -30,10 +30,9 @@ window.addEventListener("scroll", () => {
     if (scrolled > 20) {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
-        containerNav.classList.add('container-fluid');
-        containerNav.classList.remove('container');
-        containerNav.classList.add('containerNav');
-        containerNav.classList.remove('containerNav-padding');
+        containerNav.style.width = '100%';
+        // containerNav.classList.add('container-fluid');
+        // containerNav.classList.remove('container');
         logo.src = '/media/logo-w.png';
         navLink.forEach(element => {
             element.classList.add('text-main');
@@ -52,10 +51,9 @@ window.addEventListener("scroll", () => {
     else {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
-        containerNav.classList.add('container');
-        containerNav.classList.remove('container-fluid');
-        containerNav.classList.add('conatinerNav-padding');
-        containerNav.classList.remove('containerNav');
+        // containerNav.classList.add('container');
+        // containerNav.classList.remove('container-fluid');
+        containerNav.style.width = '80%';
         logo.src = '/media/logo-b.png';
         navLink.forEach(element => {
             element.classList.add('text-acc');
