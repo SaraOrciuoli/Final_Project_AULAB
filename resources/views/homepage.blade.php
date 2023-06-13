@@ -86,22 +86,81 @@
         </div>
     </div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-            <h2>Articoli recenti</h2>
+    {{-- Sezione articoli --}}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Articoli recenti</h2>
+            </div>
         </div>
     </div>
-</div>
 
-
-
+    {{-- Cards --}}
 
     <div class="container">
         <div class="row justify-content-evenly">
             @foreach ($announcements as $announcement)
                 <x-card_announcement :announcement="$announcement" />
             @endforeach
+        </div>
+    </div>
+
+
+    {{-- Testimonial --}}
+
+    <div class="container-fluid bg-sec my-4 p-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h6 class="text-testimonial">TESTIMONI</h6>
+                <h4 class="text-acc">CLIENTI SODDISFATTI</h4>
+            </div>
+        </div>
+        {{-- carousel testimonial --}}
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="swiper swiper-test2 height"
+                    style="--swiper-navigation-color: rgb(209, 194, 134); --swiper-pagination-color: rgb(209, 194, 134);">
+                    <div class="swiper-wrapper mt-3">
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-transparent d-flex align-items-center">
+                                <img src="/media/salotto.jpg" class="card-img-top img-testimonial">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-acc">Nome utente</h5>
+                                    <p class="card-text mb-4 p-testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa corporis nesciunt delectus voluptates ducimus totam assumenda eius."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-transparent d-flex align-items-center">
+                                <img src="/media/salotto.jpg" class="card-img-top img-testimonial">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-acc">Nome utente</h5>
+                                    <p class="card-text mb-4 p-testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa corporis nesciunt delectus voluptates ducimus totam assumenda eius."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-transparent d-flex align-items-center">
+                                <img src="/media/salotto.jpg" class="card-img-top img-testimonial">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-acc">Nome utente</h5>
+                                    <p class="card-text mb-4 p-testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa corporis nesciunt delectus voluptates ducimus totam assumenda eius."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-transparent d-flex align-items-center">
+                                <img src="/media/salotto.jpg" class="card-img-top img-testimonial">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-acc">Nome utente</h5>
+                                    <p class="card-text mb-4 p-testimonial">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa corporis nesciunt delectus voluptates ducimus totam assumenda eius."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </div>
 

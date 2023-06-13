@@ -1,6 +1,6 @@
 /* swiper */
-.swiper-height{
-    height: 92vh;
+.swiper-height {
+    height: 93vh;
 }
 
 .swiper {
@@ -15,15 +15,14 @@
     width: 100%;
 }
 
-.swiper-slide>img{
+.swiper-slide > img {
     height: 100%;
     width: 100%;
 }
 
-
 /* icon-service */
 
-.icon-service{
+.icon-service {
     width: 90px;
     height: 90px;
     background: #d1c286;
@@ -33,12 +32,12 @@
     border-radius: 50%;
 }
 
-.icon-service>i{
+.icon-service > i {
     display: table-cell;
     vertical-align: middle;
 }
 
-.btn-card-service{
+.btn-card-service {
     background-color: transparent;
     color: var(--acc);
     border: 2px solid var(--acc);
@@ -46,7 +45,42 @@
     padding: 10px 25px;
 }
 
-.btn-card-service:hover{
+.btn-card-service:hover {
     background-color: var(--acc);
     color: var(--main);
+}
+
+/* testimonial */
+
+.text-testimonial {
+    color: #828282;
+}
+
+.swiper-test2 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.testimonial-img{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0),rgba(0,0,0,0)) !important;
+}
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0),rgba(0,0,0,0)) !important;
+}
+
+.img-testimonial{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card:hover{
+    color: black !important;
 }
