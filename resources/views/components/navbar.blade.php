@@ -25,7 +25,7 @@
                                 href="{{ route('create_announcement') }}">Aggiungi
                                 annuncio</a>
                         </li>
-                       
+
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link  dropdown-toggle text-acc" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,16 +34,16 @@
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item text-acc" href="#">Profilo</a></li>
                                 @if (Auth::user()->is_revisor)
-                                <li class="nav-item">
-                                    <a class="nav-link position-relative text-acc" aria-current="page"
-                                        href="{{ route('revisor_index') }}">
-                                        Zona revisore <span
-                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
-                                            <span class="visually-hidden">messaggio non letto</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            @endif
+                                    <li class="nav-item">
+                                        <a class="nav-link position-relative text-acc" aria-current="page"
+                                            href="{{ route('revisor_index') }}">
+                                            Zona revisore <span
+                                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
+                                                <span class="visually-hidden">messaggio non letto</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                @endif
                             </ul>
                         </li>
                     @else
@@ -75,10 +75,10 @@
 
                 <div class="d-block d-md-flex">
                     {{-- Search button --}}
-    
-                        <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca"
-                            aria-label="Search">
-                        <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">Ricerca</button>
+
+                    <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca"
+                        aria-label="Search">
+                    <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">Ricerca</button>
                     </form>
                     {{-- Logout --}}
                     @auth
