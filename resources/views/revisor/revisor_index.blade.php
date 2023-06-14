@@ -18,7 +18,7 @@
                         @if ($announcement_to_check->images)
                             <div class="carousel-inner">
                                 @foreach ($announcement_to_check->images as $image)
-                                    <div class="carousel-item @if($loop->first)active @endif">
+                                    <div class="carousel-item @if ($loop->first) active @endif">
                                         <img src="{{ Storage::url($image->path) }}" class="img-fluid p-3 rounded"
                                             alt="img">
                                     </div>
@@ -68,17 +68,20 @@
                         <button type="submit" class="btn btn-success shadow">Accetta Annuncio</button>
                     </form>
 
-                    <form method="POST"
-                        action="{{ route('revisor_reject_announcement', ['announcement' => $announcement_to_check]) }}"
+                    <form method="POST" action="{{ route('revisor_reject_announcement', ['announcement' => $announcement_to_check]) }}"
                         class="mx-4">
                         @csrf
                         @method('patch')
 
                         <button type="submit" class="btn btn-danger shadow">Rifiuta Annuncio</button>
                     </form>
+                    
+
                 </div>
             </div>
         </div>
     @endif
+
+
 
 </x-layout>

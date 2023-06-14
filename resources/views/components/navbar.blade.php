@@ -16,8 +16,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">Tutti gli
-                            annunci</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}"></a>
                     </li>
                     @auth
                         <li class="nav-item">
@@ -85,7 +84,7 @@
                         <form method="POST" action="{{ route('logout') }}" class="me-2">
                             @csrf
 
-                            <button class="btn text-acc btn-logout my-btn">Logout</button>
+                            <button class="btn text-acc btn-logout my-btn">{{__('ui.logout')}}</button>
                         </form>
                     @endauth
                 </div>

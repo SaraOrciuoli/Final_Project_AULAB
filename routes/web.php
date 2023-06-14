@@ -36,6 +36,9 @@ Route::patch('/accept/announcement/{announcement}', [RevisorController::class, '
 // Rifiuta annuncio
 Route::patch('/reject/announcement/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
 
+// Annulla operazione
+Route::patch('/undo/announcement/{announcement}', [RevisorController::class, 'undoAnnouncement'])->middleware('isRevisor')->name('revisor_undo_announcement');
+
 
 // Rotta per diventare revisore
 Route::get('/request/revisor', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
