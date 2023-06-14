@@ -21,6 +21,11 @@
                                 <input type="password" class="form-control form-control-custom input-custom" id="userPassword" name="password">
                                 <label for="userPassword" class="form-label">{{__('ui.password')}}</label>
                             </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="userRemember" name="remember">
+                                <label for="userRemember" class="form-check-label">Resta connesso</label>
+                            </div>
         
                             <div>
                                 <button type="submit" class="btn btn-card-announcement my-1">{{__('ui.accedi')}}</button>
