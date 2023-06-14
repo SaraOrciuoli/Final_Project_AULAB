@@ -1,7 +1,7 @@
 <?php
-return[
+return [
     // Navbar
-    'home'=>'Home',
+    'home' => 'Home',
     'tutti gli annunci' => 'All announcements',
     'aggiungi annuncio' => 'Add announcements',
     'categorie' => 'Categories',
@@ -11,7 +11,7 @@ return[
     'accedi' => 'Login',
     'registrati' => 'Sign in',
     'logout' => 'Logout',
-    
+
     // Homepage
     'carta di credito' => 'Credit card',
     'risparmiare' => 'Save',
@@ -30,18 +30,18 @@ return[
     'candidatura' => 'Do you want to become our revisor? Apply now',
     'invia la richiesta' => 'Apply now',
 
-     //Form crea annuncio
-     'crea annuncio' => 'Make an announcement',
-     'titolo'=> 'Title',
-     'descrizione' => 'Description',
-     'prezzo' =>'Price',
-     'categoria' => 'Category',
-     'scegli categoria' => 'Choose the category',
-     'immagine' => 'Image',
-     'scegli file' => 'Select file',
-     'nessun file selezionato' => 'No file',
-     'crea' => 'Create', 
-     'cancella' => 'Delete',
+    //Form crea annuncio
+    'crea annuncio' => 'Make an announcement',
+    'titolo' => 'Title',
+    'descrizione' => 'Description',
+    'prezzo' => 'Price',
+    'categoria' => 'Category',
+    'scegli categoria' => 'Choose the category',
+    'immagine' => 'Image',
+    'scegli file' => 'Select file',
+    'nessun file selezionato' => 'No file',
+    'crea' => 'Create',
+    'cancella' => 'Delete',
 
     //  Zona revisore
     'annuncio da revisionare' => 'Announcement to review',
@@ -57,7 +57,7 @@ return[
     'assistenza' => 'Customer service',
     'progettato da' => 'Designed by',
 
-   
+
 
 
 ];
