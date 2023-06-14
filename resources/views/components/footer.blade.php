@@ -9,21 +9,21 @@
 
             <div class="col-12 col-md-4 d-flex align-items-center justify-content-evenly mt-4">
                 <ul class="text-lightDark">
-                    <h6 class="text-lightDark">Servizi:</h6>
+                    <h6 class="text-lightDark">{{__('ui.servizi')}}:</h6>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                 </ul>
                 <ul class="text-lightDark">
-                    <h6 class="text-lightDark">Rimborsi:</h6>
+                    <h6 class="text-lightDark">{{__('ui.rimborsi')}}:</h6>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                 </ul>
                 <ul class="text-lightDark">
-                    <h6 class="text-lightDark">Assistenza:</h6>
+                    <h6 class="text-lightDark">{{__('ui.assistenza')}}:</h6>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
@@ -35,7 +35,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
                 <small class="text-testimonial fst-italic fw-light">© 2023 lorem ipsum. Dolor Sit Amet Const.</small>
-                <p class="text-testimonial">Progettato da <a href="https://aulab.it/" target="_blank" class="text-acc fw-bold">aulab.it</a> Lorem ipsum dolor</p>
+                <p class="text-testimonial">{{__('ui.progettato da')}} <a href="https://aulab.it/" target="_blank" class="text-acc fw-bold">aulab.it</a> Lorem ipsum dolor</p>
                 <ul class="d-flex justify-content-center mt-4 p-0">
                     <li>
                         <a href="#"><i class="fa-brands fa-twitter fa-xl icon-footer mx-5"></i></a>
