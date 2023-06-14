@@ -34,4 +34,12 @@ return[
     'rimborsi' => 'Rimborsi',
     'assistenza' => 'Assistenza',
 
+    //form registrazione/login
+    'registrati'=>'Registrati',
+    'email'=>'email',
+    'password'=>'password ',
+    'conferma password'=>'Conferma password',
+    'Hai già un account? Accedi!'=>'Hai già un account? Accedi!'
+
+
 ];

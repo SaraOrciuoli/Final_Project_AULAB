@@ -16,7 +16,7 @@ return[
     'risparmiare' => 'save',
     'consegna veloce' => 'fast delivery',
     'articoli recenti' => 'new articles',
-    'dettaglii' => 'DETAILS',
+    'dettagli' => 'DETAILS',
     'pubblicato il' => 'posted on',
     'testimoni' => 'Feedback',
     'clienti soddisfatti' => 'HAPPY CUSTOMERS',
@@ -33,6 +33,14 @@ return[
     'rimborsi' => 'Refund',
     'assistenza' => 'Customer service',
     'progettato da' => 'Designed by',
+
+    //form registrazione/login
+    
+    'email'=>'Email',
+    'password'=>'password',
+    'conferma password'=>'Confirm password',
+    'Hai già un account? Accedi!'=>'Do you already have an account?Login!'
+
     
 
 
