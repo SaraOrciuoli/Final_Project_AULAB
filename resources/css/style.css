@@ -5,9 +5,11 @@
     --darkLight: rgb(62, 60, 60);
 }
 
-a {
+a{
     text-decoration: none;
 }
+
+ol, ul{list-style-type: none;}
 
 /* helper system */
 
@@ -300,32 +302,6 @@ footer {
     color: var(--acc);
     font-size: 1.3rem;
     margin: 8px 0px;
-}
-
-/* button footer */
-.button-footer {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: var(--acc);
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-    width: 14rem;
-}
-
-.button:hover .button-footer {
-    color: #fff;
-}
-
-.button:hover .circle-foot {
-    width: 16rem;
 }
 
 /* dimensioni immagine preview */
