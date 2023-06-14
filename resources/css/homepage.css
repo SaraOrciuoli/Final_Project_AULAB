@@ -112,7 +112,7 @@
 
 .btn-candidate {
     display: inline-block;
-    border: 3px solid #dfb112;
+    border: 3px solid #212121;
     padding: 10px;
     background-color: #212121;
     color: var(--sec);
@@ -125,13 +125,14 @@
 }
 .btn-candidate:hover{
     color: var(--acc);
+    border: 3px solid var(--acc);
 }
 
 .btn-candidate::before {
     content: "";
     z-index: -1;
     transform: translateY(-100%) translateX(-100%);
-    transition: all 0.3s;
+    transition: all 0.5s;
     background-color: var(--sec);
     width: 100%;
     height: 100%;
@@ -146,4 +147,15 @@
 
 .btn-candidate:hover::after {
     transform: translateY(100%) translateX(100%);
+}
+
+/* footer */
+
+.icon-footer{
+    color: var(--acc);
+}
+
+.a-footer:hover{
+    color: var(--acc);
+    border-bottom: 1px solid var(--acc);
 }
