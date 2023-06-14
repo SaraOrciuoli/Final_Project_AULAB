@@ -1,4 +1,4 @@
-<div class=" containerNav mx-auto sticky-top shadow transition">
+<div class=" containerNav mx-auto bg-main fixed-top shadow transition">
     <nav class="navbar navbar-expand-lg p-0 ">
         <div class="container-fluid my-3 my-xxl-1 ">
 
