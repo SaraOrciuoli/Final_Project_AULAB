@@ -33,7 +33,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center">
+            <div class="col-12 col-md-8 text-center ">
                 <small class="text-testimonial fst-italic fw-light">© 2023 lorem ipsum. Dolor Sit Amet Const.</small>
                 <p class="text-testimonial">Progettato da <a href="https://aulab.it/" target="_blank" class="text-acc fw-bold">aulab.it</a> Lorem ipsum dolor</p>
                 <ul class="d-flex justify-content-center mt-4 p-0">
