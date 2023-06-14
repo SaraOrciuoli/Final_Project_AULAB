@@ -1,34 +1,52 @@
 <footer class="container-fluid bg-sec">
-        <div class="row height-footer">
-            <div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center">
+        <div class="row justify-content-center p-5">
+            <div class="col-12 col-md-4">
                 <a href="{{route('homepage')}}">
-                    <img class="logo mb-3" src="/media/logo-b.png" alt="Logo">
+                    <img class="logo" src="/media/logo-b.png" alt="Logo">
                 </a>
-                <p class="lead">Vuoi lavorare con noi?</p>
-                <p>Registrati e clicca qui!</p>
-                <a href="{{route('become_revisor')}}" class="learn-more button">
-                    <span class="circle circle-foot" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-footer">Diventa revisore</span>
-                </a>
+                <p class="text-testimonial text-start mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quos debitis reiciendis aperiam quis molestiae, reprehenderit tenetur? Deserunt accusamus dicta blanditiis.</p>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
-                <ul class="list-unstyled">
+
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-evenly mt-4">
+                <ul class="text-lightDark">
+                    <h6 class="text-lightDark">Servizi:</h6>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                </ul>
+                <ul class="text-lightDark">
+                    <h6 class="text-lightDark">Rimborsi:</h6>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                </ul>
+                <ul class="text-lightDark">
+                    <h6 class="text-lightDark">Assistenza:</h6>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center">
+                <small class="text-testimonial fst-italic fw-light">© 2023 lorem ipsum. Dolor Sit Amet Const.</small>
+                <p class="text-testimonial">Progettato da <a href="https://aulab.it/" target="_blank" class="text-acc fw-bold">aulab.it</a> Lorem ipsum dolor</p>
+                <ul class="d-flex justify-content-center mt-4 p-0">
                     <li>
-                        <a href="https://twitter.com/i/flow/login">
-                            <i class="icons fa-brands fa-twitter icon-footer"></i>
-                        </a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-xl icon-footer mx-5"></i></a>
                     </li>
                     <li>
-                        <a href="https://it-it.facebook.com/">
-                            <i class="icons fa-brands fa-facebook icon-footer"></i>
-                        </a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl icon-footer mx-5"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/login">
-                            <i class="icons fa-brands fa-linkedin-in icon-footer"></i>
-                        </a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-xl icon-footer mx-5"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp fa-xl icon-footer mx-5"></i></a>
                     </li>
                 </ul>
             </div>
