@@ -9,7 +9,7 @@ return [
     'zona revisore' => 'Zona revisore',
     'accedi' => 'Login',
     'registrati' => 'Registrati',
-    'logout' => 'Logout',
+    'logout' => 'Disconnetti',
 
     // Homepage
     'carta di credito' => 'Carta di credito',

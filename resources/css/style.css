@@ -29,6 +29,10 @@ ol, ul{list-style-type: none;}
     padding: 6rem;
 }
 
+.p-10{
+    padding: 10rem;
+}
+
 .p-revisor{
     padding: 4px 16px !important;
 }
@@ -204,6 +208,10 @@ ol, ul{list-style-type: none;}
     transition: 0.8s;
     width: 80%;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdown-divider{
+    border-bottom: 1px  solid var(--acc);
 }
 
 /* button dettaglio */

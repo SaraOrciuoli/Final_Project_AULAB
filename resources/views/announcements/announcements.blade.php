@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container mt-5">
+    <div class="container mt-5 p-6">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>{{__('ui.tutti gli annunci')}}</h1>

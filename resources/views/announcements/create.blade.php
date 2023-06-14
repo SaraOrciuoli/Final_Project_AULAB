@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container">
+    <div class="container p-6">
         <div class="row">
             <div class="col-12">
                 <livewire:create-announcement />

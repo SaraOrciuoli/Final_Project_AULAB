@@ -139,8 +139,8 @@ observer_counter.observe(target_counter);
 // logout
 
 let logout = document.querySelector('#logout');
+let logoutForm = document.querySelector('#logoutForm');
 logout.addEventListener('click', (event)=>{
     event.preventDefault();
-    let logoutForm = document.querySelector('#logoutForm');
     logoutForm.submit();
 });

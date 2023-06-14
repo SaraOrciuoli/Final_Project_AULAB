@@ -33,6 +33,9 @@
                             </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item text-acc" href="#">{{ __('ui.profilo') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 @if (Auth::user()->is_revisor)
                                     <li class="nav-item">
                                         <a class="dropdown-item position-relative text-acc p-revisor" aria-current="page"
@@ -44,6 +47,9 @@
                                         </a>
                                     </li>
                                 @endif
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 {{-- Logout --}}
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}" class="me-2" id="logoutForm">
@@ -70,8 +76,7 @@
                         <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
                             @foreach ($categories as $category)
                                 <li>
-                                    <a class="dropdown-item text-acc drop-focus"
-                                        href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
+                                    <a class="dropdown-item text-acc drop-focus" href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -102,13 +107,6 @@
                 </span>
 
                 {{-- </div> --}}
-
-
-
-
-
-
-
             </div>
         </div>
     </nav>
