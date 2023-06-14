@@ -5,13 +5,13 @@
             <h5 class="card-title targetCard">{{ $announcement->title }}</h5>
             <p class="card-title">{{ $announcement->description }}</p>
             <p class="card-subtitle">{{ $announcement->price }}€</p>
-            <p class="card-subtitle">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}</p>
+            <p class="card-subtitle">{{__('ui.publicato il')}}: {{ $announcement->created_at->format('d/m/Y') }}</p>
             <div class="d-flex justify-content-around m-2">
                 <a href="{{ route('announcement_show', compact('announcement'))}}" class="button learn-more mt-3">
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                     </span>
-                    <span class="button-text">Dettagli</span>
+                    <span class="button-text">{{__('ui.dettagli')}}</span>
                 </a>
             </div>
         </div>

@@ -26,7 +26,8 @@ return[
     'la nostra storia'=>'Nuestra historia ',
     'lavora con noi'=>'trabaja con nosotros',
     'candidatura'=>'¿Quieres convertirte en nuestro revisor? envia tu solicitud',
-    'invia la richiesta'=>'envia tu solicitud'
+    'invia la richiesta'=>'envia tu solicitud',
+    'non ci sono annunci per questa ricerca'=>'No hay anuncios para esta busqueda'
 
 
     
