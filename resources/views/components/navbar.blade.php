@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center ">
                     <li class="nav-item ">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">{{__('ui.casa')}}</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">{{__('ui.home')}}</a>
                     </li>
 
                     <li class="nav-item">
@@ -30,12 +30,12 @@
                                 {{ Auth::user()->name }}
                             </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-acc" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item text-acc" href="#">{{__('ui.profilo')}}</a></li>
                                 @if (Auth::user()->is_revisor)
                                     <li class="nav-item">
                                         <a class="nav-link position-relative text-acc" aria-current="page"
                                             href="{{ route('revisor_index') }}">
-                                            Zona revisore <span
+                                            {{__('ui.zona revisore')}}<span
                                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
                                                 <span class="visually-hidden">messaggio non letto</span>
                                             </span>
@@ -55,7 +55,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-acc" id="categoriesDropdown" href="#"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorie
+                            {{__('ui.categorie')}}
                         </a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
                             @foreach ($categories as $category)
@@ -74,7 +74,7 @@
                 <div class="d-block d-md-flex">
                     {{-- Search button --}}
 
-                    <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca"
+                    <input type="search" name="searched" class="form-control me-2" placeholder="{{__('ui.ricerca')}}"
                         aria-label="Search">
                     <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">{{__('ui.ricerca')}}</button>
                     </form>
