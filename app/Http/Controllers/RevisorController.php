@@ -26,6 +26,10 @@ class RevisorController extends Controller
         $announcement->setAccepted(false);
         return redirect()->back()->with('message', 'Annuncio rifiutato');
     }
+    public function undoAnnouncement(Announcement $announcement){
+        $announcement->setAccepted(null);
+        return redirect()->back()->with('message', 'Operazione annullata');
+    }
 
     public function becomeRevisor(){
         Mail::to('admin@admin.com')->send(new BecomeRevisor(Auth::user()));
