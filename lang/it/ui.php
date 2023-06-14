@@ -8,7 +8,7 @@ return[
     'profilo' => 'Profilo',
     'zona revisore' => 'Zona revisore',
     'accedi' => 'Login',
-    'registrati' => 'Sign in',
+    'registrati' => 'Registrati',
     'logout' => 'Logout',
 
     // Homepage
@@ -47,5 +47,16 @@ return[
     'servizi' => 'Servizi',
     'rimborsi' => 'Rimborsi',
     'assistenza' => 'Assistenza',
+
+    //form registrazione/login
+    'registrati'=>'Registrati',
+    'email'=>'email',
+    'password'=>'password ',
+    'conferma password'=>'Conferma password',
+    'Hai già un account? Accedi!'=>'Hai già un account? Accedi!',
+    'accedi'=>'Accedi' ,
+    'resta connesso'=>'Resta connesso',
+    'Non hai ancora un account? Registrati!'=>'Non hai ancora un account? Registrati',
+
 
 ];

@@ -50,6 +50,18 @@ return [
     'progettato da' => 'Diseñada por',
 
 
+    //form registrazione/login
+    'registrati'=>'Registrate ahora',
+    'email'=>'CORREO ELECTRONICO',
+    'password'=>'contraseña ',
+    'conferma password'=>'Confirmar Contraseña',
+    'Hai già un account? Accedi!'=>'¿Ya tienes un prefil? Iniciar secion!',
+    'accedi'=>'Iniciar secion' ,
+    'resta connesso'=>'Mantente conectado',
+    'Non hai ancora un account? Registrati!'=>'¿Aùn no tienes un prefil? Registrate!'
+    
+
+
 
 
 
