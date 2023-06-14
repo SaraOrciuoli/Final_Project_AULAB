@@ -28,7 +28,11 @@ return[
     'lavora con noi' => 'Career opportunity',
     'candidatura' => 'Do you want to become our revisor? Apply now',
     'invia la richiesta' => 'Apply now',
-
+    //Footer
+    'servizi' => 'Services',
+    'rimborsi' => 'Refund',
+    'assistenza' => 'Customer service',
+    'progettato da' => 'Designed by',
     
 
 

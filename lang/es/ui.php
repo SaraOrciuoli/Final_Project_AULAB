@@ -1,5 +1,6 @@
 <?php
 return[
+    //Navbar
     'home'=>'Hogar',
     'tutti gli annunci'=>'Todos los anuncios',
     'aggiungi annuncio'=>'Crear anuncios',
@@ -10,6 +11,7 @@ return[
     'categorie'=>'Categorìas',
     'ricerca'=>'Buscar',
     'logout'=>'Cerrar sesiòn',
+    //Hompage
     'carta di credito'=>'Tarjeta de crèdito',
     'risparmiare'=>'Ahorrar',
     'consegna veloce'=>'Entrega ràpida',
@@ -26,7 +28,14 @@ return[
     'la nostra storia'=>'Nuestra historia ',
     'lavora con noi'=>'trabaja con nosotros',
     'candidatura'=>'¿Quieres convertirte en nuestro revisor? envia tu solicitud',
-    'invia la richiesta'=>'envia tu solicitud'
+    'invia la richiesta'=>'envia tu solicitud',
+    //Footer
+    'servizi' => 'Servicios',
+    'rimborsi' => 'Reembolsos',
+    'assistenza' => 'Asistencia',
+    'progettato da' => 'Diseñada por',
+
+
 
 
     

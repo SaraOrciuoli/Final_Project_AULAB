@@ -29,4 +29,9 @@ return[
     'candidatura' => 'Vuoi diventare nostro revisore? Manda la tua richiesta!',
     'invia la richiesta' => 'Invia la richiesta',
 
+    // Footer
+    'servizi' => 'Servizi',
+    'rimborsi' => 'Rimborsi',
+    'assistenza' => 'Assistenza',
+
 ];
