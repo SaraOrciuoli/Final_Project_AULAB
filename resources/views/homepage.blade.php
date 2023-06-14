@@ -168,9 +168,9 @@
                 <p class="text-testimonial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit praesentium obcaecati tenetur voluptas placeat? Provident, sapiente! Et eius autem soluta, minima quis qui, similique earum, accusantium ullam aspernatur voluptas excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nulla repellendus voluptatibus ipsa numquam distinctio illum at quaerat autem nam consequatur in eveniet doloribus architecto nobis, reiciendis voluptate pariatur! Cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quisquam inventore blanditiis. Inventore nam rem vero dolores voluptas numquam laudantium odit sapiente, dolor et est neque quasi reiciendis saepe laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque doloribus, facilis deserunt tempore rem amet provident natus asperiores facere eveniet saepe nobis deleniti tenetur ullam quisquam qui obcaecati culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste omnis, eum odio autem error blanditiis hic ea eaque ut saepe ducimus soluta incidunt quasi illum non molestiae quisquam, quibusdam porro?</p>
             </div>
             <div class="col-12 col-md-5 text-center">
-                <h3 class="fs-2 text-lightDark">Lavora con Noi!</h3>
-                <p class="text-testimonial">Vuoi diventare nostro revisore? Manda la tua richiesta!</p>
-                <a href="{{route('become_revisor')}}" class="btn-candidate">Invia la richiesta</a>
+                <h3 class="fs-2 text-lightDark">{{__('ui.lavora con noi')}}!</h3>
+                <p class="text-testimonial">{{__('ui.candidatura')}}!</p>
+                <a href="{{route('become_revisor')}}" class="btn-candidate">{{__('ui.invia la richiesta')}}</a>
             </div>
         </div>
     </section>

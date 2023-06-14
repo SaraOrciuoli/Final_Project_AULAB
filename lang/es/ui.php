@@ -1,6 +1,6 @@
 <?php
 return[
-    'home'=>'hogar',
+    'home'=>'Hogar',
     'tutti gli annunci'=>'Todos los anuncios',
     'aggiungi annuncio'=>'Crear anuncios',
     'registrati'=>'Registrate',
