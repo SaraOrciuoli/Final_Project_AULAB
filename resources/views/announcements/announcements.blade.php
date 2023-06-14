@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1>Tutti gli annunci</h1>
+                <h1>{{__('ui.tutti gli annunci')}}</h1>
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
             @empty
                 <div class="col-12">
                     <div class="alert alert-warning py-3 shadow">
-                        <p class="lead">Non ci sono annunci per questa ricerca.</p>
+                        <p class="lead">{{__('ui.non ci sono annunci per questa ricerca')}}.</p>
                     </div>
                 </div>
             @endforelse
