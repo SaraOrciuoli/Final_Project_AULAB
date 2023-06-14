@@ -11,16 +11,17 @@ return[
     'accedi' => 'Login',
     'registrati' => 'Sign in',
     'logout' => 'Logout',
+    
     // Homepage
-    'carta di credito' => 'credit card',
-    'risparmiare' => 'save',
-    'consegna veloce' => 'fast delivery',
-    'articoli recenti' => 'new articles',
+    'carta di credito' => 'Credit card',
+    'risparmiare' => 'Save',
+    'consegna veloce' => 'Fast delivery',
+    'articoli recenti' => 'New articles',
     'dettagli' => 'DETAILS',
-    'pubblicato il' => 'posted on',
+    'pubblicato il' => 'Posted on',
     'testimoni' => 'Feedback',
     'clienti soddisfatti' => 'HAPPY CUSTOMERS',
-    'nome utente' => 'user name',
+    'nome utente' => 'User name',
     'visualizzazioni' => 'VIEWS',
     'tutti i prodotti' => 'ALL PRODUCTS',
     'ore spese' => 'TIME SPENT',
@@ -28,12 +29,35 @@ return[
     'lavora con noi' => 'Career opportunity',
     'candidatura' => 'Do you want to become our revisor? Apply now',
     'invia la richiesta' => 'Apply now',
+
+     //Form crea annuncio
+     'crea annuncio' => 'Make an announcement',
+     'titolo'=> 'Title',
+     'descrizione' => 'Description',
+     'prezzo' =>'Price',
+     'categoria' => 'Category',
+     'scegli categoria' => 'Choose the category',
+     'immagine' => 'Image',
+     'scegli file' => 'Select file',
+     'nessun file selezionato' => 'No file',
+     'crea' => 'Create', 
+     'cancella' => 'Delete',
+
+    //  Zona revisore
+    'annuncio da revisionare' => 'Announcement to review',
+    'accetta annuncio' => 'Accept announcement',
+    'annulla ultima operazione' => 'Undo last operations',
+    'autore' => 'Author',
+
+
+
     //Footer
     'servizi' => 'Services',
     'rimborsi' => 'Refund',
     'assistenza' => 'Customer service',
     'progettato da' => 'Designed by',
 
+<<<<<<< HEAD
     //form registrazione/login
     
     'email'=>'Email',
@@ -42,6 +66,9 @@ return[
     'Hai già un account? Accedi!'=>'Do you already have an account?Login!'
 
     
+=======
+   
+>>>>>>> 00a4d2fa0b0872833cffce022eca4bdaf10d6567
 
 
 ];
