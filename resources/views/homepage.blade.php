@@ -136,7 +136,7 @@
                         <i class="fa-solid fa-cart-shopping fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
-                    <p class="text-testimonial">{{__('ui.clienti felici')}}</p>
+                    <p class="text-testimonial">{{__('ui.clienti soddisfatti')}}</p>
                 </div>
             </div>
 

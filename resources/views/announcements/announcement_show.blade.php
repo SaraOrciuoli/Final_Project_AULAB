@@ -3,7 +3,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1>Annuncio {{ $announcement->title }}</h1>
+                <h1>{{__('ui.annuncio')}}  {{ $announcement->title }}</h1>
             </div>
         </div>
     </div>
@@ -52,11 +52,11 @@
                 <p class="card-title">{{ $announcement->description }}</p>
                 <p class="card-subtitle">{{ $announcement->price }}€</p>
                 <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
-                    class="btn btn-card-announcement my-3">Categoria:
+                    class="btn btn-card-announcement my-3">{{__('ui.categoria')}}:
                     {{ $announcement->category->name }}</a>
 
-                <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} -
-                    Autore: {{ $announcement->user->name ?? '' }}</p>
+                <p class="card-footer">{{__('ui.pubblicato il')}}: {{ $announcement->created_at->format('d/m/Y') }} -
+                    {{__('ui.autore')}}: {{ $announcement->user->name ?? '' }}</p>
             </div>
         </div>
     </div>

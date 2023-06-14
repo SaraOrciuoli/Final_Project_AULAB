@@ -49,6 +49,17 @@ return [
     'annulla ultima operazione' => 'Undo last operations',
     'autore' => 'Author',
 
+    
+
+    //form registrazione/login
+    
+    'email' => 'Email',
+    'password' => 'password',
+    'conferma password' => 'Confirm password',
+    'Hai già un account? Accedi!' => 'Do you already have an account?Login!',
+    'accedi' => 'Log in' ,
+    'resta connesso' => 'Stay connected',
+    'non hai un account?' => 'Don t have an account yet? Register!',
 
 
     //Footer
@@ -56,6 +67,13 @@ return [
     'rimborsi' => 'Refund',
     'assistenza' => 'Customer service',
     'progettato da' => 'Designed by',
+
+
+     // revisore 
+     'annuncio da revisionare' => 'Announcement to review',
+     'non ci sono annunci da revisionare' => 'There are no announcement to review  ',
+     'annuncio' => 'Announcement',
+     'autore' => 'Author'
 
    
 

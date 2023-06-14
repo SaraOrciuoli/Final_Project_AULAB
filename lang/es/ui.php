@@ -16,15 +16,15 @@ return [
     'risparmiare' => 'Ahorrar',
     'consegna veloce' => 'Entrega ràpida',
     'articoli recenti' => 'Artìculos Recientes',
-    'publicato il' => 'Publicado en',
+    'pubblicato il' => 'Publicado en',
     'dettagli' => 'DETALLES',
     'testimoni' => 'Testimonianza',
     'clienti soddisfatti' => 'CLIENTES SATISFECHOS',
     'nome utente' => 'Nombre usario',
-    'visualizzazioni' => 'VISUALIZACìON',
-    'clienti felici' => 'Clientes felices',
+    'visualizzazioni' => 'VISUALIZACÌON',
+    'clienti felici' => 'ClIENTES FELICES',
     'tutti i prodotti' => 'TODOS LOS PRODUCTOS',
-    'ore spese' => 'Hora dedicadas',
+    'ore spese' => 'HORA DEDICADAS',
     'la nostra storia' => 'Nuestra historia ',
     'lavora con noi' => 'Trabaja con nosotros',
     'candidatura' => '¿Quieres convertirte en nuestro revisor? envia tu solicitud',
@@ -43,27 +43,30 @@ return [
     'crea' => 'Crear',
     'cancella' => 'Cancelar',
 
-    //Footer
-    'servizi' => 'Servicios',
-    'rimborsi' => 'Reembolsos',
-    'assistenza' => 'Asistencia',
-    'progettato da' => 'Diseñada por',
-
+   
 
     //form registrazione/login
-    'registrati'=>'Registrate ahora',
-    'email'=>'CORREO ELECTRONICO',
-    'password'=>'contraseña ',
-    'conferma password'=>'Confirmar Contraseña',
-    'Hai già un account? Accedi!'=>'¿Ya tienes un prefil? Iniciar secion!',
-    'accedi'=>'Iniciar secion' ,
-    'resta connesso'=>'Mantente conectado',
-    'Non hai ancora un account? Registrati!'=>'¿Aùn no tienes un prefil? Registrate!'
+    'registrati' => 'Registrate ahora',
+    'email' => 'CORREO ELECTRONICO',
+    'password' => 'contraseña ',
+    'conferma password' => 'Confirmar Contraseña',
+    'Hai già un account? Accedi!' => '¿Ya tienes un prefil? Iniciar secion!',
+    'accedi' => 'Iniciar secion' ,
+    'resta connesso' => 'Mantente conectado',
+    'non hai un account?' => '¿Aùn no tienes un prefil? Registrate!',
     
 
 
-
-
-
+     //Footer
+     'servizi' => 'Servicios',
+     'rimborsi' => 'Reembolsos',
+     'assistenza' => 'Asistencia',
+     'progettato da' => 'Diseñada por',
+ 
+    // revisore 
+    'annuncio da revisionare' => 'Anuncios para revición',
+    'non ci sono annunci da revisionare'=>'no hay anuncios para revisar ',
+    'annuncio' => 'Anuncios',
+    'autore' => 'Autor'
 
 ];

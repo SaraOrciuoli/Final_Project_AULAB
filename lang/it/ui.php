@@ -23,7 +23,7 @@ return[
     'nome utente' => 'Nome utente',
     'visualizzazioni' => 'VISUALIZZAZIONI',
     'tutti i prodotti' => 'TUTTI I PRODOTTI',
-    'ore spese' => 'Ore spese',
+    'ore spese' => 'ORE SPESE',
     'la nostra storia' => 'LA NOSTRA STORIA',
     'lavora con noi' => 'Lavora con noi',
     'candidatura' => 'Vuoi diventare nostro revisore? Manda la tua richiesta!',
@@ -43,20 +43,28 @@ return[
     'cancella' => 'Cancella',
 
 
+
+    //form registrazione/login
+    'registrati'=>'Registrati',
+    'email' => 'email',
+    'password' => 'password ',
+    'conferma password' => 'Conferma password',
+    'Hai già un account? Accedi!' => 'Hai già un account? Accedi!',
+    'accedi' => 'Accedi' ,
+    'resta connesso' => 'Resta connesso',
+    'non hai un account?' => 'Non hai ancora un account? Registrati',
+
+    
     // Footer
     'servizi' => 'Servizi',
     'rimborsi' => 'Rimborsi',
     'assistenza' => 'Assistenza',
 
-    //form registrazione/login
-    'registrati'=>'Registrati',
-    'email'=>'email',
-    'password'=>'password ',
-    'conferma password'=>'Conferma password',
-    'Hai già un account? Accedi!'=>'Hai già un account? Accedi!',
-    'accedi'=>'Accedi' ,
-    'resta connesso'=>'Resta connesso',
-    'Non hai ancora un account? Registrati!'=>'Non hai ancora un account? Registrati',
+     // revisore 
+     'annuncio da revisionare' => 'Annuncio da revisionare',
+     'non ci sono annunci da revisionare' => 'non ci sono annunci da revisionare ',
+     'annuncio' => 'annuncio',
+     'autore' => 'Autore'
 
 
 ];
