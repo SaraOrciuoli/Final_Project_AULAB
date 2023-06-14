@@ -15,7 +15,15 @@
 
 <body class="animationFadeWhite">
 
+    {{-- @if (Route::currentRouteName() == 'homepage')
+
+    <x-navbar class="custom" />
+    @else
     <x-navbar />
+
+    @endif --}}
+    <x-navbar />
+
 
     @if (session('access'))
         <div class="alert alert-danger"><i class="fa-solid fa-triangle-exclamation fa-lg"></i> {{ session('access') }}
