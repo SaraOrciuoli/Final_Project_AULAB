@@ -51,13 +51,18 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 {{-- Logout --}}
+                                
                                 <li>
-                                    <form method="POST" action="{{ route('logout') }}" class="me-2" id="logoutForm">
+                                    <a class="dropdown-item text-acc" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        {{ __('ui.logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
-            
-                                        <a class="dropdown-item text-acc" id="logout">{{ __('ui.logout') }}</a>
                                     </form>
                                 </li>
+
                             </ul>
                         </li>
                     @else
@@ -76,7 +81,8 @@
                         <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
                             @foreach ($categories as $category)
                                 <li>
-                                    <a class="dropdown-item text-acc drop-focus" href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
+                                    <a class="dropdown-item text-acc drop-focus"
+                                        href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">

@@ -136,11 +136,3 @@ let observer_counter = new IntersectionObserver((element) => {
 observer_counter.observe(target_counter);
 
 
-// logout
-
-let logout = document.querySelector('#logout');
-let logoutForm = document.querySelector('#logoutForm');
-logout.addEventListener('click', (event)=>{
-    event.preventDefault();
-    logoutForm.submit();
-});
