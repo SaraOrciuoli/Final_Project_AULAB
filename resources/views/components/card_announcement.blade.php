@@ -1,6 +1,6 @@
 <div class="col-11 col-md-6 col-lg-4 opacity-0 card-id my-5">
     <div class="card d-flex justify-content-evenly align-items-center position-relative  shadow border-0 p-5">
-        <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/200'}}" class="image-card-back" alt="Image Announcement">
+        <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300) : 'https://picsum.photos/200'}}" class="image-card-back" alt="Image Announcement">
         <div class="card-body text-center">
             <h5 class="card-title targetCard">{{ $announcement->title }}</h5>
             <p class="card-title">{{ $announcement->description }}</p>
