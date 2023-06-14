@@ -8,7 +8,7 @@ return[
     'profilo' => 'Profilo',
     'zona revisore' => 'Zona revisore',
     'accedi' => 'Login',
-    'registrati' => 'Sign in',
+    'registrati' => 'Registrati',
     'logout' => 'Logout',
 
     // Homepage
