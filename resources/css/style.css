@@ -13,6 +13,10 @@ ol, ul{list-style-type: none;}
 
 /* helper system */
 
+#logout{
+    cursor: pointer;
+}
+
 .object-fit {
     object-fit: cover;
 }
@@ -23,6 +27,10 @@ ol, ul{list-style-type: none;}
 
 .p-6 {
     padding: 6rem;
+}
+
+.p-revisor{
+    padding: 4px 16px !important;
 }
 
 .m-6 {

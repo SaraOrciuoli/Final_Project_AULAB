@@ -12,16 +12,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center ">
                     <li class="nav-item ">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">{{__('ui.home')}}</a>
+                        <a class="nav-link text-acc" aria-current="page"
+                            href="{{ route('homepage') }}">{{ __('ui.home') }}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">{{__('ui.tutti gli annunci')}}</a>
+                        <a class="nav-link text-acc" aria-current="page"
+                            href="{{ route('announcements') }}">{{ __('ui.tutti gli annunci') }}</a>
                     </li>
                     @auth
                         <li class="nav-item">
                             <a class="nav-link text-acc" aria-current="page"
-                                href="{{ route('create_announcement') }}">{{__('ui.aggiungi annuncio')}}</a>
+                                href="{{ route('create_announcement') }}">{{ __('ui.aggiungi annuncio') }}</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -30,32 +32,40 @@
                                 {{ Auth::user()->name }}
                             </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-acc" href="#">{{__('ui.profilo')}}</a></li>
+                                <li><a class="dropdown-item text-acc" href="#">{{ __('ui.profilo') }}</a></li>
                                 @if (Auth::user()->is_revisor)
                                     <li class="nav-item">
-                                        <a class="nav-link position-relative text-acc" aria-current="page"
+                                        <a class="dropdown-item position-relative text-acc p-revisor" aria-current="page"
                                             href="{{ route('revisor_index') }}">
-                                           {{__('ui.zona revisore')}} <span
-                                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
+                                            {{ __('ui.zona revisore') }} <span
+                                                class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
                                                 <span class="visually-hidden">messaggio non letto</span>
                                             </span>
                                         </a>
                                     </li>
                                 @endif
+                                {{-- Logout --}}
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}" class="me-2" id="logoutForm">
+                                        @csrf
+            
+                                        <a class="dropdown-item text-acc" id="logout">{{ __('ui.logout') }}</a>
+                                    </form>
+                                </li>
                             </ul>
                         </li>
                     @else
                         <li class="nav-item">
-                            <a href="{{ route('register') }}" class="nav-link text-acc">{{__('ui.registrati')}}</a>
+                            <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link text-acc">{{__('ui.accedi')}}</a>
+                            <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                         </li>
                     @endauth
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-acc" id="categoriesDropdown" href="#"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          {{__('ui.categorie')}}
+                            {{ __('ui.categorie') }}
                         </a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
                             @foreach ($categories as $category)
@@ -74,18 +84,11 @@
                 <div class="d-block d-md-flex">
                     {{-- Search button --}}
 
-                    <input type="search" name="searched" class="form-control me-2" placeholder="{{__('ui.ricerca')}}"
-                        aria-label="Search">
-                    <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">{{__('ui.ricerca')}}</button>
+                    <input type="search" name="searched" class="form-control me-2"
+                        placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
+                    <button class="btn d-none d-md-block text-acc btn-search my-btn"
+                        type="submit">{{ __('ui.ricerca') }}</button>
                     </form>
-                    {{-- Logout --}}
-                    @auth
-                        <form method="POST" action="{{ route('logout') }}" class="me-2">
-                            @csrf
-
-                            <button class="btn text-acc btn-logout my-btn">{{__('ui.logout')}}</button>
-                        </form>
-                    @endauth
                 </div>
                 {{-- <div class="d-flex justify-item-evenly"> --}}
                 <span class="nav-item">
