@@ -57,18 +57,16 @@ return[
     'assistenza' => 'Customer service',
     'progettato da' => 'Designed by',
 
-<<<<<<< HEAD
     //form registrazione/login
     
     'email'=>'Email',
     'password'=>'password',
     'conferma password'=>'Confirm password',
-    'Hai già un account? Accedi!'=>'Do you already have an account?Login!'
-
+    'Hai già un account? Accedi!'=>'Do you already have an account?Login!',
+    'accedi'=>'Log in' ,
+    'resta connesso'=>'Stay connected',
+    'Non hai ancora un account? Registrati!'=>'Don t have an account yet? Register!'
     
-=======
-   
->>>>>>> 00a4d2fa0b0872833cffce022eca4bdaf10d6567
 
 
 ];
