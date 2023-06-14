@@ -1,6 +1,6 @@
 <?php
-return[
-    'home'=>'Home',
+return [
+    'home' => 'Home',
     'tutti gli annunci' => 'Tutti gli annunci',
     'aggiungi annuncio' => 'Aggiungi annuncio',
     'categorie' => 'Categorie',
@@ -31,40 +31,40 @@ return[
 
     //Form crea annuncio
     'crea annuncio' => 'Crea il tuo annuncio!',
-    'titolo'=> 'Titolo annuncio',
+    'titolo' => 'Titolo annuncio',
     'descrizione' => 'Descrizione',
-    'prezzo' =>'Prezzo',
+    'prezzo' => 'Prezzo',
     'categoria' => 'Categoria',
     'scegli categoria' => 'Scegli la categoria',
     'immagine' => 'Immagine',
     'scegli file' => 'Scegli file',
     'nessun file selezionato' => 'Nessun file selezionato',
-    'crea' => 'Crea',   
+    'crea' => 'Crea',
     'cancella' => 'Cancella',
 
 
 
     //form registrazione/login
-    'registrati'=>'Registrati',
-    'email' => 'email',
-    'password' => 'password ',
+    'registrati' => 'Registrati',
+    'email' => 'Email',
+    'password' => 'Password ',
     'conferma password' => 'Conferma password',
     'Hai già un account? Accedi!' => 'Hai già un account? Accedi!',
-    'accedi' => 'Accedi' ,
+    'accedi' => 'Accedi',
     'resta connesso' => 'Resta connesso',
-    'non hai un account?' => 'Non hai ancora un account? Registrati',
+    'non hai un account?' => 'Non hai un account? Registrati',
 
-    
+
     // Footer
     'servizi' => 'Servizi',
     'rimborsi' => 'Rimborsi',
     'assistenza' => 'Assistenza',
 
-     // revisore 
-     'annuncio da revisionare' => 'Annuncio da revisionare',
-     'non ci sono annunci da revisionare' => 'non ci sono annunci da revisionare ',
-     'annuncio' => 'annuncio',
-     'autore' => 'Autore'
+    // revisore 
+    'annuncio da revisionare' => 'Annuncio da revisionare',
+    'non ci sono annunci da revisionare' => 'Non ci sono annunci da revisionare ',
+    'annuncio' => 'Annuncio',
+    'autore' => 'Autore'
 
 
 ];
