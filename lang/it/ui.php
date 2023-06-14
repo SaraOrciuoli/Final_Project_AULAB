@@ -29,6 +29,20 @@ return[
     'candidatura' => 'Vuoi diventare nostro revisore? Manda la tua richiesta!',
     'invia la richiesta' => 'Invia la richiesta',
 
+    //Form crea annuncio
+    'crea annuncio' => 'Crea il tuo annuncio!',
+    'titolo'=> 'Titolo annuncio',
+    'descrizione' => 'Descrizione',
+    'prezzo' =>'Prezzo',
+    'categoria' => 'Categoria',
+    'scegli categoria' => 'Scegli la categoria',
+    'immagine' => 'Immagine',
+    'scegli file' => 'Scegli file',
+    'nessun file selezionato' => 'Nessun file selezionato',
+    'crea' => 'Crea',   
+    'cancella' => 'Cancella',
+
+
     // Footer
     'servizi' => 'Servizi',
     'rimborsi' => 'Rimborsi',
