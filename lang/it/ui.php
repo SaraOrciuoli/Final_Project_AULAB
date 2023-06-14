@@ -1,4 +1,4 @@
 <?php
 return[
-    'casa'=>'casa'
+    'casa'=>'home'
 ];

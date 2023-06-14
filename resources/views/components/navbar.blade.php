@@ -12,18 +12,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center ">
                     <li class="nav-item ">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">Home</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('homepage') }}">{{__('ui.casa')}}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">Tutti gli
-                            annunci</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('announcements') }}">{{__('ui.tutti gli annunci')}}</a>
                     </li>
                     @auth
                         <li class="nav-item">
                             <a class="nav-link text-acc" aria-current="page"
-                                href="{{ route('create_announcement') }}">Aggiungi
-                                annuncio</a>
+                                href="{{ route('create_announcement') }}">{{__('ui.aggiungi annuncio')}}</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -48,10 +46,10 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a href="{{ route('register') }}" class="nav-link text-acc">Registrati!</a>
+                            <a href="{{ route('register') }}" class="nav-link text-acc">{{__('ui.registrati')}}!</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link text-acc">Accedi</a>
+                            <a href="{{ route('login') }}" class="nav-link text-acc">{{__('ui.accedi')}}</a>
                         </li>
                     @endauth
                     <li class="nav-item dropdown">
@@ -78,7 +76,7 @@
 
                     <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca"
                         aria-label="Search">
-                    <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">Ricerca</button>
+                    <button class="btn d-none d-md-block text-acc btn-search my-btn" type="submit">{{__('ui.ricerca')}}</button>
                     </form>
                     {{-- Logout --}}
                     @auth
