@@ -29,6 +29,10 @@ ol, ul{list-style-type: none;}
     padding: 6rem;
 }
 
+.p-9 {
+    padding: 9rem;
+}
+
 .p-10{
     padding: 10rem;
 }
@@ -310,8 +314,8 @@ footer {
     height: 40vh;
 }
 
-.height-footer {
-    height: 40vh;
+.hr-footer{
+    border-top: 2px solid var(--acc);
 }
 
 .icon-footer {
@@ -352,18 +356,7 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 10px 0 0 10px;
-}
-
-.img-form{
-    width: 35px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-.text-form p{
-    font-size: 18px;
-    color: var(--sec);
+    height: 25vh;
 }
 
 .input-box{
