@@ -340,13 +340,8 @@ footer {
     height: 550px;
     border-radius: 10px;
     background: var(--sec);
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
 
-}
-
-.wrapper{
-    background: var(--acc);
-    padding: 0 20px 0 20px;
 }
 
 .img-side{
@@ -356,7 +351,16 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 10px 0 0 10px;
-    height: 25vh;
+}
+
+@media screen and (max-width: 768px){
+    .img-side{
+        height: 25vh;
+    }
+
+    .h-form-login{
+        height: auto;
+    }
 }
 
 .input-box{

@@ -1,14 +1,14 @@
 <x-layout>
 
-    <div class="wrapper">
+    <div class="bg-acc">
         <div class="container d-flex justify-content-center align-items-center min-vh-100 p-9">
             <div class="row row-form animation-fade h-100">
 
                 <div class="col-12 col-md-6 img-side"></div>
 
-                <div class="col-12 col-md-6 float-end d-flex align-items-center justify-content-center position-relative">
+                <div class="col-12 col-md-6 float-end d-flex align-items-center justify-content-center position-relative p-md-5">
                     <div class="input-box">
-                        <h4 class="title-form text-lightDark">{{__('ui.crea account')}}</h4>
+                        <h4 class="title-form text-lightDark mt-5 mt-md-0">{{__('ui.crea account')}}</h4>
                         <form method="POST" action="{{route('register')}}">
                             @csrf
         
@@ -32,7 +32,7 @@
                                 <label for="passwordConfirmation" class="form-label">{{__('ui.conferma password')}}</label>
                             </div>
         
-                            <div>
+                            <div class="mb-3">
                                 <button type="submit" class="btn btn-card-announcement my-1">{{__('ui.registrati')}}!</button>
                                 <a href="{{route('login')}}" class="btn-register">{{__('ui.Hai già un account? Accedi!')}}</a>
                             </div>

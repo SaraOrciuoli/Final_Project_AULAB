@@ -31,8 +31,10 @@
                         <li><a href="#" class="text-lightDark a-footer">Lorem ipsum</a></li>
                     </div>
                 </ul>
+
                 <hr class="d-block d-md-none hr-footer mt-4">
-                <ul class="d-flex justify-content-center mt-4 p-0 d-block d-md-none">
+
+                <ul class="d-flex justify-content-center mt-4 p-0 d-md-none">
                     <li>
                         <a href="#"><i class="fa-brands fa-twitter fa-xl icon-footer mx-4 mx-md-5"></i></a>
                     </li>
@@ -48,12 +50,14 @@
                 </ul>
             </div>
         </div>
+
         <hr class="d-block d-md-none hr-footer">
+
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center mt-md-4 my-4 my-md-0">
                 <small class="text-testimonial fst-italic fw-light">© 2023 lorem ipsum. Dolor Sit Amet Const.</small>
                 <p class="text-testimonial">{{__('ui.progettato da')}} <a href="https://aulab.it/" target="_blank" class="text-acc fw-bold">aulab.it</a> Lorem ipsum dolor</p>
-                <ul class="d-flex justify-content-center mt-4 p-0 d-none d-md-block">
+                <ul class="d-md-flex justify-content-center mt-4 p-0 d-none">
                     <li>
                         <a href="#"><i class="fa-brands fa-twitter fa-xl icon-footer mx-4 mx-md-5"></i></a>
                     </li>

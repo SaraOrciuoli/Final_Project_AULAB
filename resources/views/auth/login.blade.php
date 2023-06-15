@@ -1,14 +1,14 @@
 <x-layout>
 
-    <div class="wrapper">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
-            <div class="row row-form animation-fade">
+    <div class="bg-acc">
+        <div class="container d-flex justify-content-center align-items-center min-vh-100 p-9">
+            <div class="row row-form animation-fade h-form-login">
 
                 <div class="col-12 col-md-6 img-side"></div>
 
                 <div class="col-12 col-md-6 float-end d-flex align-items-center justify-content-center position-relative">
                     <div class="input-box">
-                        <h4 class="title-form text-lightDark">{{__('ui.accedi')}}</h4>
+                        <h4 class="title-form text-lightDark mt-5 mt-md-0">{{__('ui.accedi')}}</h4>
                         <form method="POST" action="{{route('login')}}">
                             @csrf
         
@@ -28,7 +28,7 @@
                             </div>
         
                             <div>
-                                <button type="submit" class="btn btn-card-announcement my-1">{{__('ui.accedi')}}</button>
+                                <button type="submit" class="btn btn-card-announcement my-3 my-md-1">{{__('ui.accedi')}}</button>
                                 <a href="{{route('register')}}" class="btn-register">{{__('ui.non hai un account?')}}</a>
                             </div>
                         </form>
