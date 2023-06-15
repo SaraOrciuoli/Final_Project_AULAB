@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Address;
 
 class ContactMail extends Mailable
 {
@@ -16,9 +17,15 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+
+    public $user;
+    public $email;
+    public $body;
+    public function __construct($_user, $_email, $_body)
     {
-        //
+        $this->user = $_user;
+        $this->email = $_email;
+        $this->body = $_body;
     }
 
     /**
@@ -27,7 +34,8 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Mail',
+            from: new Address('info-reply@info', 'No Replay'),
+            subject: 'Mail da portale di Masa',
         );
     }
 
@@ -37,7 +45,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail.contact-mail',
         );
     }
 

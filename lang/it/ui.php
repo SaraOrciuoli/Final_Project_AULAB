@@ -65,7 +65,11 @@ return [
     'annuncio da revisionare' => 'Annuncio da revisionare',
     'non ci sono annunci da revisionare' => 'Non ci sono annunci da revisionare ',
     'annuncio' => 'Annuncio',
-    'autore' => 'Autore'
+    'autore' => 'Autore',
+    
+    // Mail
+    'scrivi un messaggio' => 'Scrivi un messaggio',
+    'invia' => 'Invia',
 
 
 ];

@@ -67,6 +67,10 @@ return [
     'annuncio da revisionare' => 'Anuncios para revición',
     'non ci sono annunci da revisionare'=>'no hay anuncios para revisar ',
     'annuncio' => 'Anuncios',
-    'autore' => 'Autor'
+    'autore' => 'Autor',
+
+    // Mail
+    'scrivi un messaggio' => 'Escribe un mensaje',
+    'invia' => 'Enviar',
 
 ];

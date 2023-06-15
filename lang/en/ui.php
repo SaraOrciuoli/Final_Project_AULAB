@@ -74,7 +74,11 @@ return [
      'annuncio da revisionare' => 'Announcement to review',
      'non ci sono annunci da revisionare' => 'There are no announcement to review  ',
      'annuncio' => 'Announcement',
-     'autore' => 'Author'
+     'autore' => 'Author',
+
+    //  Mail
+    'scrivi un messaggio' => 'Write a message',
+    'invia' => 'Send',
 
    
 

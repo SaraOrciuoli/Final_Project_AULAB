@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
@@ -43,6 +45,14 @@ class PublicController extends Controller
     public function send(Request $request)
     {
       
-        // dd($request);
+       $user = $request->user; 
+       $email = $request->email;
+       $body = $request->body;
+
+       $finalMail = new ContactMail($user, $email, $body);
+
+            Mail::to($email)->send($finalMail);
+
+           return redirect(route('contact_us'))->with('message', 'Mail inviata correttamente');
     }
 }
