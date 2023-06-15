@@ -1,8 +1,8 @@
 <x-layout>
 
     <div class="wrapper">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
-            <div class="row row-form animation-fade">
+        <div class="container d-flex justify-content-center align-items-center min-vh-100 p-9">
+            <div class="row row-form animation-fade h-100">
 
                 <div class="col-12 col-md-6 img-side"></div>
 
