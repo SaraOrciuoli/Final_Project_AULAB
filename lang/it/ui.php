@@ -45,6 +45,7 @@ return [
 
 
     //form registrazione/login
+    'crea account' => 'Crea Account',
     'registrati' => 'Registrati',
     'email' => 'Email',
     'password' => 'Password ',
