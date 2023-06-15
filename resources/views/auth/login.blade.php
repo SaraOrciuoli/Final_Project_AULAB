@@ -24,7 +24,7 @@
 
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="userRemember" name="remember">
-                                <label for="userRemember" class="form-check-label">Resta connesso</label>
+                                <label for="userRemember" class="form-check-label">{{__('ui.resta connesso')}}</label>
                             </div>
         
                             <div>
