@@ -54,8 +54,8 @@ return [
     //form registrazione/login
     
     'email' => 'Email',
-    'password' => 'password',
-    'conferma password' => 'Confirm password',
+    'password' => 'Password',
+    'conferma password' => 'Confirm Password',
     'Hai già un account? Accedi!' => 'Do you already have an account?Login!',
     'accedi' => 'Log in' ,
     'resta connesso' => 'Stay connected',

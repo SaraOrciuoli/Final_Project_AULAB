@@ -47,8 +47,8 @@ return [
 
     //form registrazione/login
     'registrati' => 'Registrate ahora',
-    'email' => 'CORREO ELECTRONICO',
-    'password' => 'contraseña ',
+    'email' => 'Correo Electronico',
+    'password' => 'Contraseña ',
     'conferma password' => 'Confirmar Contraseña',
     'Hai già un account? Accedi!' => '¿Ya tienes un prefil? Iniciar secion!',
     'accedi' => 'Iniciar secion' ,
