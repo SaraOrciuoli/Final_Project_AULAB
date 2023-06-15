@@ -51,7 +51,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 {{-- Logout --}}
-                                
+
                                 <li>
                                     <a class="dropdown-item text-acc" href="{{ route('logout') }}"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -65,6 +65,7 @@
 
                             </ul>
                         </li>
+                        
                     @else
                         <li class="nav-item">
                             <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
@@ -90,15 +91,21 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-acc" aria-current="page"
+                            href="{{ route('contact_us') }}">Contattaci</a>
+                    </li>
                 </ul>
+                
+
 
                 <div class="d-block d-md-flex">
                     {{-- Search button --}}
-
-                    <input type="search" name="searched" class="form-control me-2"
-                        placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
-                    <button class="btn d-none d-md-block text-acc btn-search my-btn"
-                        type="submit">{{ __('ui.ricerca') }}</button>
+                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex me-2">
+                        <input type="search" name="searched" class="form-control me-2"
+                            placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
+                        <button class="btn d-none d-md-block text-acc btn-search my-btn"
+                            type="submit">{{ __('ui.ricerca') }}</button>
                     </form>
                 </div>
                 {{-- <div class="d-flex justify-item-evenly"> --}}

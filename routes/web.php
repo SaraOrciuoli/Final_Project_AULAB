@@ -51,3 +51,10 @@ Route::get('/search/announcement', [PublicController::class, 'searchAnnouncement
 // Rotta per cambio lingua
 Route::post('/lingua/{lang}',[PublicController::class,'setLanguage'])->name('set_language_locale');
 
+// Rotta di contattaci
+Route::get('/contact-us', [PublicController::class, 'contact_us'])->name('contact_us');
+
+// Rotta per mandare una mail
+Route::post('/send', [PublicController::class, 'send'])->name('send');
+
+
