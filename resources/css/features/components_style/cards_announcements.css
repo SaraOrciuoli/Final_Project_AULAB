@@ -19,12 +19,11 @@
     overflow: hidden;
 }
 
-
-
 .btn-card-announcement{
     background-color: var(--acc);
     color: var(--main);
 }
+
 .btn-card-announcement:hover{
     background-color: var(--main);
     color: var(--acc);
@@ -49,6 +48,7 @@
     color: var(--main);
     display: block;
 }
+
 .card:hover .button-text{
     color: var(--main);
 }

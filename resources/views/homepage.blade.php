@@ -90,9 +90,9 @@
 
     {{-- Testimonial --}}
 
-    <section class="container-fluid bg-sec mt-4 p-5">
+    <section class="container-fluid bg-sec mt-4 p-0 p-md-5">
         <div class="row justify-content-center">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center mt-4 mt-md-0">
                 <h6 class="text-testimonial">{{__('ui.testimoni')}}</h6>
                 <h4 class="text-acc">{{__('ui.clienti soddisfatti')}}</h4>
             </div>
@@ -102,12 +102,14 @@
             <div class="col-12 col-md-8">
                 <div class="swiper swiper-test2 height"
                     style="--swiper-navigation-color: rgb(209, 194, 134); --swiper-pagination-color: rgb(209, 194, 134);">
-                    <div class="swiper-wrapper mt-3">
+                    <div class="swiper-wrapper mt-4 mt-md-3">
                         @for ($i = 0; $i < 4; $i++)
                         <x-swiper_slide_testimonial/>
                         @endfor
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="p-4 p-md-0">
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,12 +119,9 @@
 
     <section class="container-fluid bg-counter target_counter">
         <div class="row align-items-center justify-content-center vh-45">
-            <div class="col-12">
-                
-            </div>
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-regular fa-eye fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -130,9 +129,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-solid fa-cart-shopping fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -140,9 +139,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-solid fa-shop fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -150,9 +149,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-regular fa-clock fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
