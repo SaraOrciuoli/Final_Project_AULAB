@@ -72,5 +72,6 @@ return [
     // Mail
     'scrivi un messaggio' => 'Escribe un mensaje',
     'invia' => 'Enviar',
+    'contattaci' => 'Contáctenos',
 
 ];

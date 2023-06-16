@@ -70,6 +70,7 @@ return [
     // Mail
     'scrivi un messaggio' => 'Scrivi un messaggio',
     'invia' => 'Invia',
+    'contattaci' => 'Contattaci'
 
 
 ];

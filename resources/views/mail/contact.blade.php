@@ -3,7 +3,7 @@
         <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 ">
             <div class="row row-form animation-fade">
                 <div class="col-12 col-md-6">
-                    <h4 class="title-form text-lightDark">Contattaci</h4>
+                    <h4 class="title-form text-lightDark">{{__('ui.contattaci')}}</h4>
                     <form method="POST" action="{{ route('send') }}">
                         @csrf
 
