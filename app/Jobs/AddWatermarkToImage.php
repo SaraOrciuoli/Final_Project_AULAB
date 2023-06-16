@@ -41,10 +41,9 @@ class AddWatermarkToImage implements ShouldQueue
         $image = SpatieImage::load($srcPath);
         $image->watermark(base_path('resources/img/logo-w.png'))
             ->watermarkPosition(Manipulations::POSITION_TOP_LEFT)
-            ->watermarkOpacity(50)
-            ->watermarkPadding(10, 10, Manipulations::UNIT_PERCENT)
-            ->watermarkWidth(10, Manipulations::UNIT_PIXELS)
-            ->watermarkHeight(10, Manipulations::UNIT_PIXELS)
+            ->watermarkPadding(5, 5, Manipulations::UNIT_PERCENT)
+            ->watermarkWidth(650, Manipulations::UNIT_PIXELS)
+            ->watermarkHeight(650, Manipulations::UNIT_PIXELS)
             ->watermarkFit(Manipulations::FIT_CROP);
 
         $image->save($srcPath);
