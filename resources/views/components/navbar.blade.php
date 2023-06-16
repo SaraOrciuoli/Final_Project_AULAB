@@ -1,6 +1,6 @@
 <div class=" containerNav mx-auto bg-main fixed-top shadow transition">
     <nav class="navbar navbar-expand-lg p-0 ">
-        <div class="container-fluid my-3 my-xxl-1 ">
+        <div class="container-fluid my-3 my-xxl-1">
 
             <a class="navbar-brand p-0" href="{{ route('homepage') }}"><img class="logo" src="/media/logo-b.png"
                     alt="Logo"></a>

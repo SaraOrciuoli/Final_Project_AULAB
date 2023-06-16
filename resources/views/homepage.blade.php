@@ -35,7 +35,7 @@
     <div class="container-fluid bg-sec">
         <div class="row p-5 justify-content-evenly">
 
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
                     <img src="/media/credit-card.gif">
                 </span>
@@ -45,7 +45,7 @@
                     labore nostrum voluptates debitis suscipit ut!</p>
             </div>
 
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
                     <img src="/media/save.gif">
                 </span>
@@ -55,7 +55,7 @@
                     labore nostrum voluptates debitis suscipit ut!</p>
             </div>
 
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
                 <span class="icon-service d-flex align-items-center justify-content-center">
                     <img src="/media/truck-white.gif">
                 </span>
@@ -80,7 +80,7 @@
     {{-- Cards --}}
 
     <div class="container">
-        <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly m-0">
             @foreach ($announcements as $announcement)
                 <x-card_announcement :announcement="$announcement" />
             @endforeach
@@ -90,24 +90,26 @@
 
     {{-- Testimonial --}}
 
-    <section class="container-fluid bg-sec mt-4 p-5">
+    <section class="container-fluid bg-sec mt-4 p-4 p-md-4 p-lg-5">
         <div class="row justify-content-center">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center mt-4 mt-md-4 mt-lg-0 p-0 ">
                 <h6 class="text-testimonial">{{__('ui.testimoni')}}</h6>
                 <h4 class="text-acc">{{__('ui.clienti soddisfatti')}}</h4>
             </div>
         </div>
         {{-- carousel testimonial --}}
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-12 col-lg-8">
                 <div class="swiper swiper-test2 height"
                     style="--swiper-navigation-color: rgb(209, 194, 134); --swiper-pagination-color: rgb(209, 194, 134);">
-                    <div class="swiper-wrapper mt-3">
+                    <div class="swiper-wrapper mt-4 mt-md-3">
                         @for ($i = 0; $i < 4; $i++)
                         <x-swiper_slide_testimonial/>
                         @endfor
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="p-4 p-md-3 p-lg-0">
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,13 +118,10 @@
     {{-- Sezione counter --}}
 
     <section class="container-fluid bg-counter target_counter">
-        <div class="row align-items-center justify-content-center vh-45">
-            <div class="col-12">
-                
-            </div>
-            <div class="col-12 col-md-2 container_counter">
+        <div class="row align-items-center justify-content-center vh-45 justify-content-md-evenly justify-content-lg-center">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-regular fa-eye fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -130,9 +129,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-solid fa-cart-shopping fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -140,9 +139,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-solid fa-shop fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -150,9 +149,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-2 container_counter">
+            <div class="col-5 col-md-2 container_counter me-md-5 me-lg-0">
                 <div class="box text-center">
-                    <span class="icon-service">
+                    <span class="icon-service icon-service-sma">
                         <i class="fa-regular fa-clock fa-2xl text-white"></i>
                     </span>
                     <span class="fs-2 text-lightDark numbers">0</span>
@@ -166,12 +165,12 @@
 
     <section class="container-fluid bg-acc">
         <div class="row justify-content-center align-items-center p-5">
-            <div class="col-12 col-md-5 text-start">
+            <div class="col-12 col-md-12 col-lg-5 text-start">
                 <h3 class="text-lightDark">{{__('ui.la nostra storia')}}:</h3>
                 <p class="text-testimonial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit praesentium obcaecati tenetur voluptas placeat? Provident, sapiente! Et eius autem soluta, minima quis qui, similique earum, accusantium ullam aspernatur voluptas excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nulla repellendus voluptatibus ipsa numquam distinctio illum at quaerat autem nam consequatur in eveniet doloribus architecto nobis, reiciendis voluptate pariatur! Cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quisquam inventore blanditiis. Inventore nam rem vero dolores voluptas numquam laudantium odit sapiente, dolor et est neque quasi reiciendis saepe laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam doloremque doloribus, facilis deserunt tempore rem amet provident natus asperiores facere eveniet saepe nobis deleniti tenetur ullam quisquam qui obcaecati culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste omnis, eum odio autem error blanditiis hic ea eaque ut saepe ducimus soluta incidunt quasi illum non molestiae quisquam, quibusdam porro?</p>
             </div>
             <div class="col-12 col-md-5 text-center">
-                <h3 class="fs-2 text-lightDark">{{__('ui.lavora con noi')}}!</h3>
+                <h3 class="fs-2 text-lightDark mt-0 mt-md-3 mt-lg-0">{{__('ui.lavora con noi')}}!</h3>
                 <p class="text-testimonial">{{__('ui.candidatura')}}!</p>
                 <a href="{{route('become_revisor')}}" class="btn-candidate">{{__('ui.invia la richiesta')}}</a>
             </div>

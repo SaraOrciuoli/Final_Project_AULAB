@@ -79,6 +79,7 @@ return [
     //  Mail
     'scrivi un messaggio' => 'Write a message',
     'invia' => 'Send',
+    'contattaci' => 'Contact us'
 
    
 

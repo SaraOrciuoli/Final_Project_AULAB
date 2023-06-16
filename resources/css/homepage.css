@@ -37,6 +37,14 @@
     vertical-align: middle;
 }
 
+@media screen and (max-width: 768px) {
+    .icon-service-sma {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto 5px;
+    }
+}
+
 .btn-card-service {
     background-color: transparent;
     color: var(--acc);
@@ -89,8 +97,19 @@
     border-radius: 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .img-testimonial{
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-sma{
+        max-height: 100% !important;
+    }
+}
+
 .card-test:hover {
-    color: black !important;
+    color: var(--darkLight) !important;
 }
 
 /* Sezione counter */
@@ -108,6 +127,14 @@
     background: rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width: 768px) {
+    .box{
+        height: 156px;
+        width: 150px;
+        padding: 10px 0px;
+    }
+}
+
 /* Lavora con noi */
 
 .btn-candidate {
@@ -123,7 +150,7 @@
     position: relative;
     border-radius: 8px;
 }
-.btn-candidate:hover{
+.btn-candidate:hover {
     color: var(--acc);
     border: 3px solid var(--acc);
 }
@@ -151,11 +178,11 @@
 
 /* footer */
 
-.icon-footer{
+.icon-footer {
     color: var(--acc);
 }
 
-.a-footer:hover{
+.a-footer:hover {
     color: var(--acc);
     border-bottom: 1px solid var(--acc);
 }
