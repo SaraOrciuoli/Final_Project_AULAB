@@ -72,5 +72,4 @@ return [
     'invia' => 'Invia',
     'contattaci' => 'Contattaci'
 
-
 ];
