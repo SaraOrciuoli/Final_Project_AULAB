@@ -15,13 +15,6 @@
 
 <body class="animationFadeWhite">
 
-    {{-- @if (Route::currentRouteName() == 'homepage')
-
-    <x-navbar class="custom" />
-    @else
-    <x-navbar />
-
-    @endif --}}
     <x-navbar />
 
 
