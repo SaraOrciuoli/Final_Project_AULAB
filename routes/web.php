@@ -54,7 +54,5 @@ Route::post('/lingua/{lang}',[PublicController::class,'setLanguage'])->name('set
 // Rotta di contattaci
 Route::get('/contact-us', [PublicController::class, 'contact_us'])->name('contact_us');
 
-// Rotta per mandare una mail
-Route::post('/send', [PublicController::class, 'send'])->name('send');
 
 

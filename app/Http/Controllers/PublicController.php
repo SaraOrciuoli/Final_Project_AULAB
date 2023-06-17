@@ -29,30 +29,16 @@ class PublicController extends Controller
 
         return view('announcements.announcements', compact('announcements'));
     }
+
     public function setLanguage($lang)
     {
-
-        // dd($lang);
         session()->put('locale', $lang);
         return redirect()->back();
     }
 
     public function contact_us()
     {
-        return view('mail.contact');
+        return view('mail.contact-us');
     }
 
-    public function send(Request $request)
-    {
-      
-       $user = $request->user; 
-       $email = $request->email;
-       $body = $request->body;
-
-       $finalMail = new ContactMail($user, $email, $body);
-
-            Mail::to($email)->send($finalMail);
-
-           return redirect(route('contact_us'))->with('message', 'Mail inviata correttamente');
-    }
 }

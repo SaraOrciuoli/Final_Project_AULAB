@@ -21,6 +21,7 @@ class ContactMail extends Mailable
     public $user;
     public $email;
     public $body;
+    
     public function __construct($_user, $_email, $_body)
     {
         $this->user = $_user;
@@ -37,6 +38,7 @@ class ContactMail extends Mailable
             from: new Address('info-reply@info', 'No Replay'),
             subject: 'Mail da portale di Masa',
         );
+        
     }
 
     /**

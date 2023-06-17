@@ -95,13 +95,6 @@
 
                         <button type="submit" class="btn btn-danger shadow">Rifiuta Annuncio</button>
                     </form>
-                    <form method="POST" action="{{ route('revisor_undo_announcement', ['announcement' => $announcement_to_check]) }}"
-                        class="mx-4">
-                        @csrf
-                        @method('patch')
-
-                        <button type="submit" class="btn btn-danger shadow">Annulla Operazione</button>
-                    </form>
 
 
                 </div>
