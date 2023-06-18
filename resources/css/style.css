@@ -165,6 +165,15 @@ height: 4rem;
 
 /* navbar */
 
+.navbar-toggler{
+    color: transparent;
+    border-color: var(--acc);
+}
+
+.navbar-toggler-icon {
+    background-image: url(../../public/media/hamburgher.svg);
+}
+
 .nav-link:hover {
 color: var(--acc);
 border-bottom: 2px solid var(--main);
@@ -182,6 +191,10 @@ min-width: 0;
 
 .br-translate{
 border-radius: 50%;
+}
+
+.dropdown-menu-sma{
+    min-width: 65%;
 }
 
 /* Button search */
@@ -257,6 +270,13 @@ transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 .dropdown-divider{
 border-bottom: 1px solid var(--acc);
+}
+
+@media screen and (max-width: 768px){
+    .border-top-sma{
+        margin-top: 8px;
+        border-top: 1px solid var(--acc) !important;
+    }
 }
 
 /* button dettaglio */
