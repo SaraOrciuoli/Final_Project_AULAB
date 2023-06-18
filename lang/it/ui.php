@@ -1,7 +1,7 @@
 <?php
 return [
     'home' => 'Home',
-    'tutti gli annunci' => 'Annunci',
+    'annunci' => 'Annunci',
     'aggiungi annuncio' => 'Crea annuncio',
     'categorie' => 'Categorie',
     'ricerca' => 'Cerca',
@@ -10,6 +10,8 @@ return [
     'accedi' => 'Login',
     'registrati' => 'Registrati',
     'logout' => 'Disconnetti',
+    'annuncio da rivisionare' => 'Annuncio da rivisionare',
+    'non ci sono annunci da revisionare' => 'Non ci sono annunci da revisionare',
 
     // Homepage
     'carta di credito' => 'Carta di credito',

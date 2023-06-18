@@ -56,17 +56,19 @@ class CreateAnnouncement extends Component
 
     ];
 
-    public function updatedTemporaryImages(){
+    public function updatedTemporaryImages()
+    {
         if ($this->validate([
             'temporary_images.*' => 'image|max:1024'
-            ])) {
-            foreach ($this->temporary_images as $image){
+        ])) {
+            foreach ($this->temporary_images as $image) {
                 $this->images[] = $image;
             }
         }
     }
 
-    public function removeImage($key){
+    public function removeImage($key)
+    {
         if (in_array($key, array_keys($this->images))) {
             unset($this->images[$key]);
         }
@@ -79,35 +81,34 @@ class CreateAnnouncement extends Component
         $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
         if (count($this->images)) {
             foreach ($this->images as $image) {
-                // $this->announcement->images()->create(['path'=>$image->store('images','public')]);
                 $new_file_name = "announcements/{$this->announcement->id}";
-                $new_image = $this->announcement->images()->create(['path'=>$image->store($new_file_name ,'public')]);
-            
+                $new_image = $this->announcement->images()->create(['path' => $image->store($new_file_name, 'public')]);
+
                 AddWatermarkToImage::withChain([
                     new RemoveFaces($new_image->id),
-                    new ResizeImage($new_image->path , 400 , 300),
+                    new ResizeImage($new_image->path, 400, 300),
                     new GoogleVisionSafeSearch($new_image->id),
                     new GoogleVisionLabelImage($new_image->id),
 
                 ])->dispatch(($new_image->id));
-
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
-        $this->announcement->user()->associate(Auth::user());
-        
-        session()->flash('create_confirmation','Il tuo articolo è stato caricato con successo');
+        $this->announcement->user_id = Auth::id();
+        $this->announcement->save();
+
+        session()->flash('create_confirmation', 'Il tuo articolo è stato caricato con successo');
         $this->reset();
     }
-    
-    public function updated($propertyName){
-        $this->validateOnly($propertyName);
 
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
     }
-    
-    
-    
+
+
+
 
 
     public function render()

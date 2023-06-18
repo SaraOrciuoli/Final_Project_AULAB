@@ -1,11 +1,13 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-sec shadow">
-        <div class="row">
-            <div class="col-12  text-lightDark p-5">
-                <h1 class="display-2">
-                    {{ $announcement_to_check ? 'Annuncio da rivisionare' : 'Non ci sono annunci da revisionare' }}
+    <div class="container-fluid bg-revisor">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-6 text-center text-white">
+                <h1>{{ $announcement_to_check ? __('ui.annuncio da rivisionare') : __('ui.non ci sono annunci da revisionare') }}
                 </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos?
+                    Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit
+                    iure.</p>
             </div>
         </div>
     </div>
@@ -91,11 +93,13 @@
 
     </div>
     @endif
-    <h2>Articoli Revisionati</h2>
-    @foreach ($announcement_checked as $announcement)
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center my-5">
+                <h2>Articoli Revisionati</h2>
+            </div>
+            @foreach ($announcement_checked as $announcement)
+                <div class="col-12 d-flex align-items-center my-3 shadow rounded bg-acc">
                     <div id="showCarousel" class="carousel slide" data-bs-ride="carousel">
                         @if ($announcement->images)
                             <div class="carousel-inner">
@@ -116,40 +120,42 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                        @else
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                        alt="img">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                        alt="img">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                        alt="img">
-                                </div>
-                            </div>
                         @endif
                     </div>
-                    <h5 class="card-title">{{ $announcement->title }}</h5>
-                    <p class="card-title">{{ $announcement->description }}</p>
-                    <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} -
-                        Autore: {{ $announcement->user->name ?? '' }}</p>
-                    <form method="POST"
-                        action="{{ route('revisor_undo_announcement', ['announcement' => $announcement]) }}"
-                        class="mx-4">
-                        @csrf
-                        @method('patch')
-
-                        <button type="submit" class="btn btn-danger shadow">Annulla Operazione</button>
-                    </form>
-
+                    <div class="row align-items-evenly h-100">
+                        <div class="col-4">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <h5>Nome:</h5>
+                                <h5 class="card-title">{{ $announcement->title }}</h5>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <h5>Descrizione:</h5>
+                                <p class="card-title">{{ $announcement->description }}</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex flex-column justify-content-evenly h-100">
+                                <h5>Data e Autore:</h5>
+                                <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <form method="POST"
+                            action="{{ route('revisor_undo_announcement', ['announcement' => $announcement]) }}"
+                            class="mx-4">
+                            @csrf
+                            @method('patch')
+                            <button type="submit" class="btn btn-danger shadow me-5">Annulla Operazione</button>
+                        </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            @endforeach
+            {{ $announcement_checked->links() }}
         </div>
-    @endforeach
+    </div>
 
 
 

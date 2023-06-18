@@ -3,7 +3,7 @@
     <div class="container-fluid bg-annunci">
         <div class="row justify-content-center align-items-center h-100">
             <div class="col-6 text-center text-white">
-                <h1>{{__('ui.tutti gli annunci')}}</h1>
+                <h1>{{__('ui.annunci')}}</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos? Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit iure.</p>
             </div>
         </div>

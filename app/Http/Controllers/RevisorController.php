@@ -14,7 +14,7 @@ class RevisorController extends Controller
 {
     public function index(){
         $announcement_to_check = Announcement::where('is_accepted', null)->first();
-        $announcement_checked = Announcement::whereIn('is_accepted', [0,1] )->get();
+        $announcement_checked = Announcement::whereIn('is_accepted', [0,1] )->orderBy('created_at', 'desc')->paginate(9);
         // dd($announcement_checked);
 
         return view('revisor.revisor_index', compact('announcement_to_check','announcement_checked'));

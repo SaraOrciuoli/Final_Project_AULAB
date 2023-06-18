@@ -22,6 +22,15 @@ height: 45vh;
 background-attachment: fixed;
 }
 
+.bg-revisor{
+    background-image: url(../../../public/media/salotto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    background-attachment: fixed;
+    }
+
 /* create*/
 
 .input-box-create{

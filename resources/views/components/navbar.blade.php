@@ -22,7 +22,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('announcements') }}">{{ __('ui.tutti gli annunci') }}</a>
+                            href="{{ route('announcements') }}">{{ __('ui.annunci') }}</a>
                     </li>
                     @auth
                         <li class="nav-item">
