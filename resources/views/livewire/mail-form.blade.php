@@ -36,9 +36,8 @@
                                 @enderror
                                 <label for="body" class="form-label">{{ __('ui.scrivi un messaggio') }}</label>
                             </div>
-                            <div>
-                                <button type="submit"
-                                    class="btn btn-card-announcement my-1">{{ __('ui.invia') }}</button>
+                            <div class="my-3">
+                                <button type="submit" class="btn btn-card-announcement">{{ __('ui.invia') }}</button>
                             </div>
                         </form>
                     </div>
