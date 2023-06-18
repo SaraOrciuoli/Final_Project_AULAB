@@ -50,10 +50,11 @@
 
         <div class="mb-3">
             <label for="temporary_images" class="form-label">{{__('ui.immagine')}}</label>
-            <input type="file" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror" wire:model="temporary_images" id="price" name="images" placeholder="Img">
-            @error('temporary_images.*')
+            <input type="file" multiple class="form-control shadow @error('images') is-invalid @enderror " wire:model="images" id="images" name="images" placeholder="Img">
+            @error('images')
                 {{$message}}
             @enderror
+
         </div>
         @if (!empty($images))
             <div class="row">

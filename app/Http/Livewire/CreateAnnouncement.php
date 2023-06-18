@@ -31,8 +31,8 @@ class CreateAnnouncement extends Component
         'description' => 'required|min:8',
         'price' => 'required|numeric',
         'category' => 'required',
-        'temporary_images.*' => 'image|max:1024',
-        'images.*' => 'image|max:1024',
+        'temporary_images.*' => 'required|image|max:1024',
+        'images' => 'required|max:1024',
 
     ];
 
@@ -42,6 +42,8 @@ class CreateAnnouncement extends Component
         'description.required' => 'Il campo \'Descrizione\' è richiesto',
         'price.required' => 'Il campo \'Prezzo\' è richiesto',
         'category.required' => 'Il campo \'Categoria\' è richiesto',
+        'images.required' => 'Il campo \'Immagine\' è richiesto',
+        'temporary_images.*.required' => 'Il campo \'Immagine\' è richiesto',
         // min
         'title.min' => 'Il campo \'Titolo annuncio\' è troppo corto',
         'description.min' => 'Il campo \'Descrizione\' è troppo corto',
@@ -50,7 +52,6 @@ class CreateAnnouncement extends Component
         // image
         'temporary_images.*.image' => 'I file devono essere immagini',
         'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 1mb',
-        'images.image' => 'L\'immagine dev\'essere un\'immmagine',
         'images.max' => 'L\'immagine dev\'essere massimo di 1mb',
 
     ];
