@@ -1,8 +1,8 @@
 <?php
 return [
     'home' => 'Home',
-    'tutti gli annunci' => 'Tutti gli annunci',
-    'aggiungi annuncio' => 'Aggiungi annuncio',
+    'tutti gli annunci' => 'Annunci',
+    'aggiungi annuncio' => 'Crea annuncio',
     'categorie' => 'Categorie',
     'ricerca' => 'Ricerca',
     'profilo' => 'Profilo',

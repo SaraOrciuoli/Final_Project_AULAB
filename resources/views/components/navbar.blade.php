@@ -25,18 +25,86 @@
                             <a class="nav-link text-acc" aria-current="page"
                                 href="{{ route('create_announcement') }}">{{ __('ui.aggiungi annuncio') }}</a>
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link  dropdown-toggle text-acc" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                {{ Auth::user()->name }}
-                            </a>
-                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-acc" href="#">{{ __('ui.profilo') }}</a></li>
+                    @else
+                        <li class="nav-item">
+                            <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
+                        </li>
+                    @endauth
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-acc btn-acc" id="categoriesDropdown" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ __('ui.categorie') }}
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
+                            @foreach ($categories as $category)
+                                <li>
+                                    <a class="dropdown-item text-acc drop-focus"
+                                        href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-acc" aria-current="page"
+                            href="{{ route('contact_us') }}">Contattaci</a>
+                    </li>
+                </ul>
+
+
+
+                <div class="d-block d-md-flex">
+                    {{-- Search button --}}
+                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
+                        <input type="search" name="searched" class="form-control p-0 form-search text-acc"
+                            placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
+                            
+                        <button class="btn d-none d-md-block p-0 me-2"
+                            type="submit"><i class="fa-solid fa-magnifying-glass fa-lg text-acc"></i></button>
+                    </form>
+                </div>
+
+
+
+
+                {{-- Button traduzione --}}
+                
+                <div class="dropdown">
+                    <button class="btn btn-acc dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-earth-europe fa-lg"></i>
+                    </button>
+                    <ul class="dropdown-menu bg-dark drop-translate">
+                        <li><x-_locale lang='it' /></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><x-_locale lang='en' /></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><x-_locale lang='es' /></li>
+                    </ul>
+                </div>
+
+                {{-- dropdown utente --}}
+
+                <ul class="p-0 mb-2 mb-lg-0 align-items-center">
+                    @auth
+                        <li class="nav-item dropdown">
+                            <a class="btn-acc dropdown-toggle text-acc" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user fa-lg"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-acc" href="#">{{ __('ui.profilo') }}</a></li>
                                 @if (Auth::user()->is_revisor)
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item position-relative text-acc p-revisor" aria-current="page"
                                             href="{{ route('revisor_index') }}">
@@ -65,7 +133,6 @@
 
                             </ul>
                         </li>
-                        
                     @else
                         <li class="nav-item">
                             <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
@@ -74,52 +141,10 @@
                             <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                         </li>
                     @endauth
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-acc" id="categoriesDropdown" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ __('ui.categorie') }}
-                        </a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
-                            @foreach ($categories as $category)
-                                <li>
-                                    <a class="dropdown-item text-acc drop-focus"
-                                        href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('contact_us') }}">Contattaci</a>
-                    </li>
+                    
+                    
                 </ul>
-                
 
-
-                <div class="d-block d-md-flex">
-                    {{-- Search button --}}
-                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex me-2">
-                        <input type="search" name="searched" class="form-control me-2"
-                            placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
-                        <button class="btn d-none d-md-block text-acc btn-search my-btn"
-                            type="submit">{{ __('ui.ricerca') }}</button>
-                    </form>
-                </div>
-                {{-- <div class="d-flex justify-item-evenly"> --}}
-                <span class="nav-item">
-                    <x-_locale lang='it' />
-                </span>
-                <span class="nav-item">
-                    <x-_locale lang='en' />
-                </span>
-                <span class="nav-item">
-                    <x-_locale lang='es' />
-                </span>
-
-                {{-- </div> --}}
             </div>
         </div>
     </nav>
