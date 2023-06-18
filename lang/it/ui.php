@@ -4,7 +4,7 @@ return [
     'tutti gli annunci' => 'Annunci',
     'aggiungi annuncio' => 'Crea annuncio',
     'categorie' => 'Categorie',
-    'ricerca' => 'Ricerca',
+    'ricerca' => 'Cerca',
     'profilo' => 'Profilo',
     'zona revisore' => 'Zona revisore',
     'accedi' => 'Login',

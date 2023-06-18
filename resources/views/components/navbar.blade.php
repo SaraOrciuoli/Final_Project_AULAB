@@ -33,23 +33,6 @@
                             <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                         </li>
                     @endauth
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-acc btn-acc" id="categoriesDropdown" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ __('ui.categorie') }}
-                        </a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="categoriesDropdown">
-                            @foreach ($categories as $category)
-                                <li>
-                                    <a class="dropdown-item text-acc drop-focus"
-                                        href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page"
                             href="{{ route('contact_us') }}">Contattaci</a>

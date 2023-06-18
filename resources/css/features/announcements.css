@@ -1,0 +1,103 @@
+.bg-annunci{
+background-image: url(../../../public/media/salotto2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 45vh;
+background-attachment: fixed;
+}
+
+.border-card{
+border-right: 2px solid #fff;
+padding: 0.8rem;
+width: 100%;
+}
+
+.bg-create{
+background-image: url(../../../public/media/salotto5.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 45vh;
+background-attachment: fixed;
+}
+
+/* create*/
+
+.input-box-create{
+width: 600px;
+box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+    .input-box-create{
+        width: auto;
+        padding: 1rem;
+    }
+}
+
+.input-box-create .title-form{
+font-weight: 700;
+text-align: center;
+margin-bottom: 45px;
+}
+
+.input-box-create .box-form label{
+position: absolute;
+top: 30px;
+pointer-events: none;
+transition: .5s;
+}
+
+.input-create{
+height: 45px;
+width: 100%;
+background: transparent;
+border: none;
+border-bottom: 1px solid var(--acc);
+outline: none;
+margin-bottom: 20px;
+color: var(--darkLight);
+transition: 0.7s;
+}
+
+.input-create::file-selector-button{
+background-color: transparent;
+padding: 0.6rem;
+border-right: 1px solid var(--acc);
+}
+
+/* preview */
+
+.border-info {
+    opacity: 1;
+    border-color: var(--acc) !important;
+}
+
+.row-form-create{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: var(--sec);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px){
+    .row-form-create{
+        width: 900px;
+        height: 550px;
+        border-radius: 10px;
+        background: var(--sec);
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+        }
+}
+
+@media screen and (max-width: 1024px){
+    .row-form-create{
+        width: 550px;
+        height: 550px;
+        border-radius: 10px;
+        background: var(--sec);
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+        }
+}

@@ -9,7 +9,7 @@ a{
 text-decoration: none;
 }
 
-ol, ul{list-style-type: none;}
+ol, ul, li{list-style-type: none;}
 
 /* helper system */
 
@@ -402,7 +402,6 @@ height: 550px;
 border-radius: 10px;
 background: var(--sec);
 box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
-
 }
 
 .img-side{
@@ -445,6 +444,7 @@ outline: none;
 margin-bottom: 20px;
 color: var(--darkLight);
 transition: 0.7s;
+border-radius: 0;
 }
 
 .input-box .box-form label{
@@ -531,8 +531,6 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 768px){
-
-
 .img-side-contact{
 background-image: url(/public/media/salotto.jpg);
 background-position: center;

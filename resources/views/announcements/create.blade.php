@@ -1,9 +1,3 @@
 <x-layout>
-    <div class="container p-6">
-        <div class="row">
-            <div class="col-12">
-                <livewire:create-announcement />
-            </div>
-        </div>
-    </div>
+    <livewire:create-announcement />
 </x-layout>
