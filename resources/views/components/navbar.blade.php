@@ -10,7 +10,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                @if(Auth::user())
                 <ul class="navbar-nav mx-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
+                @else
+                <ul class="navbar-nav ms-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
+                @endif
                     <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page"
                             href="{{ route('homepage') }}">{{ __('ui.home') }}</a>
@@ -25,27 +29,27 @@
                             <a class="nav-link text-acc" aria-current="page"
                                 href="{{ route('create_announcement') }}">{{ __('ui.aggiungi annuncio') }}</a>
                         </li>
-                    @else
-                        <li class="nav-item">
-                            <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
-                        </li>
                     @endauth
+                    @if(Auth::user())
                     <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page"
                             href="{{ route('contact_us') }}">Contattaci</a>
                     </li>
+                    @else
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-acc" aria-current="page"
+                            href="{{ route('contact_us') }}">Contattaci</a>
+                    </li>
+                    @endif
                 </ul>
 
                 <div class="my-2">
                     {{-- Search button --}}
                     <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
-                        <input type="search" name="searched" class="form-control p-0 form-search text-acc"
+                        <input type="search" name="searched" class="form-control p-0 form-search text-acc "
                             placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
                             
-                        <button class="btn p-0 me-2"
+                        <button class="btn p-0 me-2 "
                             type="submit"><i class="fa-solid fa-magnifying-glass fa-lg text-acc"></i></button>
                     </form>
                 </div>
@@ -112,10 +116,10 @@
                                 </ul>
                             </li>
                         @else
-                            <li class="nav-item">
+                            <li class="nav-item mx-2">
                                 <a href="{{ route('register') }}" class="nav-link text-acc">{{ __('ui.registrati') }}</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item mx-2">
                                 <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                             </li>
                         @endauth

@@ -218,7 +218,7 @@ border-radius: 50%;
 }
 
 .box-search input{
-    width: 80px;
+    width: 55px;
     outline: none;
     border: 0;
     transition: 0.8s;
@@ -227,6 +227,10 @@ border-radius: 50%;
 }
 
 .fa-magnifying-glass:hover{
+    color: var(--acc);
+}
+
+input[type]::placeholder{
     color: var(--acc);
 }
 
