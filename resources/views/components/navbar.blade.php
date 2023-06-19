@@ -94,11 +94,7 @@
                                     <i class="fa-solid fa-circle-user fa-lg"></i>
                                 </a>
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item text-acc" href="#">{{ __('ui.profilo') }}</a></li>
                                     @if (Auth::user()->is_revisor)
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
                                         <li class="nav-item">
                                             <a class="dropdown-item position-relative text-acc p-revisor"
                                                 aria-current="page" href="{{ route('revisor_index') }}">

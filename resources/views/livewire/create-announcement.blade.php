@@ -28,7 +28,7 @@
                                 @error('title')
                                     {{$message}}
                                 @enderror
-                                <label for="title" class="form-label">{{__('ui.titolo')}}</label>
+                                <label for="title" class="form-label d-block">{{__('ui.titolo')}}</label>
                             </div>
                     
                             <div class="box-form my-5">
@@ -37,7 +37,7 @@
                                 @error('description')
                                     {{$message}}
                                 @enderror
-                                <label for="description" class="form-label">{{__('ui.descrizione')}}</label>
+                                <label for="description" class="form-label d-block">{{__('ui.descrizione')}}</label>
                             </div>
                     
                             <div class="box-form">
@@ -45,7 +45,7 @@
                                 @error('price')
                                     {{$message}}
                                 @enderror
-                                <label for="price" class="form-label">{{__('ui.prezzo')}}</label>
+                                <label for="price" class="form-label d-block">{{__('ui.prezzo')}}</label>
                             </div>
                     
                             <div class="box-form my-5">
@@ -58,7 +58,7 @@
                                 @error('category')
                                     {{$message}}
                                 @enderror
-                                <label for="category">{{__('ui.categoria')}}</label>
+                                <label for="category" class="d-block">{{__('ui.categoria')}}</label>
                             </div>
                     
                             <div class="mb-5">
