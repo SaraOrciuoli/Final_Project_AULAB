@@ -70,7 +70,6 @@ window.addEventListener("scroll", () => {
             element.classList.add('placeholder-custom');
 
         })
-
     }
 });
 
