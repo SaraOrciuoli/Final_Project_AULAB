@@ -60,8 +60,8 @@
 
                 {{-- Button traduzione --}}
                 <div class="d-block d-md-block d-lg-flex">
-                    <div class="dropdown icon-translate">
-                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0 box-search" type="button"
+                    <div class="dropdown">
+                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0 scroll-color" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-earth-europe fa-lg icon-translate"></i>
                         </a>
@@ -89,7 +89,7 @@
                     <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex ms-0 ms-md-0 ms-lg-2">
                         @auth
                             <li class="nav-item dropdown mt-2 mt-md-2 mt-lg-0">
-                                <a class="btn-acc dropdown-toggle text-acc box-search" id="navbarDropdown" role="button"
+                                <a class="dropdown-toggle text-acc box-search scroll-color" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-circle-user fa-lg"></i>
                                 </a>
@@ -137,13 +137,13 @@
                 </div>
                 <div class="my-2 ms-0 ms-md-0 ms-lg-4">
                     {{-- Search button --}}
-                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
+                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search scroll-color">
                         <input type="search" name="searched"
-                            class="form-control p-0 form-search box-search placeholder-custom"
+                            class="form-control p-0 form-search box-search scroll-color placeholder-custom"
                             placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
 
-                        <button class="btn p-0 me-2 box-search text-acc" type="submit"><i
-                                class="fa-solid fa-magnifying-glass fa-lg box-search"></i></button>
+                        <button class="btn p-0 me-2 box-search text-acc scroll-color" type="submit"><i
+                                class="fa-solid fa-magnifying-glass fa-lg box-search scroll-color"></i></button>
                     </form>
                 </div>
 

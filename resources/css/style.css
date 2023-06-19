@@ -210,6 +210,7 @@ border-radius: 50%;
 .form-control:focus {
     border-color: var(--acc) !important;
     box-shadow: none;
+    background-color: transparent;
 }
 
 .box-search:hover input{

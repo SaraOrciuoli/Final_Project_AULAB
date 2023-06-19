@@ -4,10 +4,7 @@
 /* fogli di stile personalizzati */
 @import './style.css';
 @import './features/announcements.css';
-@import './features/auth.css';
 @import './features/categories.css';
-@import './features/livewire_style/create_form.css';
-@import './features/revisor.css';
 @import './homepage.css';
 @import './features/components_style/cards_announcements.css';
 
