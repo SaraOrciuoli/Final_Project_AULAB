@@ -7,7 +7,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span id="hamburger" class="text-acc"><i class="fa-solid fa-bars fa-lg"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 @if (Auth::user())
@@ -61,7 +61,7 @@
                 {{-- Button traduzione --}}
                 <div class="d-block d-md-block d-lg-flex">
                     <div class="dropdown">
-                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0 scroll-color" type="button"
+                        <a class=" text-acc dropdown-toggle p-0 m-lg-3 border-0 scroll-color" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-earth-europe fa-lg icon-translate"></i>
                         </a>
