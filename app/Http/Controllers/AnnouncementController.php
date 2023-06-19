@@ -44,10 +44,6 @@ class AnnouncementController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Announcement $announcement)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
