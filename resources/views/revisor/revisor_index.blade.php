@@ -11,12 +11,11 @@
             </div>
         </div>
     </div>
-
     <div class="container-fluid py-5 d-flex flex-column justify-content-center align-items-center bg-acc">
         <div class="row w-75 justify-content-center bg-sec shadow rounded p-5">
             <div class="col-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    @if ($announcement_to_check->images)
+                    @if (isset($announcement_to_check) && $announcement_to_check->images )
                         <div class="carousel-inner">
                             @foreach ($announcement_to_check->images as $image)
                                 <div class="carousel-item @if ($loop->first) active @endif">
