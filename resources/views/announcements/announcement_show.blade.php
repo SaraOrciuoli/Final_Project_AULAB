@@ -20,7 +20,7 @@
                             @foreach ($announcement->images as $image)
                             <div class="carousel-item @if ($loop->first) active @endif">
                                 <div class="d-flex justify-content-center">
-                                    <img src="{{ $image->getUrl(400, 300) }}" class="p-3 " alt="img">
+                                    <img src="{{ $image->getUrl(400, 300) }}" alt="img">
                                 </div>
                             </div>
                             @endforeach
