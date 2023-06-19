@@ -208,9 +208,9 @@ border-radius: 50%;
 }
 
 .form-control:focus {
-    border-color: var(--acc) !important;
     box-shadow: none;
     background-color: transparent;
+    border-bottom: 1px solid var(--acc);
 }
 
 .box-search:hover input{
