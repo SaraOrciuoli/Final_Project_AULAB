@@ -606,3 +606,15 @@ border-radius: 10px 10px 0 0;
     background-color: var(--main);
     border: var(--bs-pagination-border-width) solid var(--acc);
 }
+
+/* categorie */
+
+.box-container{
+    padding-top: 150px;
+    
+    
+}
+.bg-category{
+    background-color: var(--acc);
+}
+
