@@ -6,6 +6,7 @@ background-size: cover;
 height: 45vh;
 background-attachment: fixed;
 }
+
 .bg-details{
     background-image: url(../../../public/media/salotto3.jpg);
     background-repeat: no-repeat;
@@ -13,7 +14,7 @@ background-attachment: fixed;
     background-size: cover;
     height: 45vh;
     background-attachment: fixed;
-    }
+}
 
 .border-card{
 border-right: 2px solid #fff;
