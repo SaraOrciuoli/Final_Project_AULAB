@@ -61,7 +61,7 @@
                 {{-- Button traduzione --}}
                 <div class="d-block d-md-block d-lg-flex">
                     <div class="dropdown icon-translate">
-                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0" type="button"
+                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0 box-search" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-earth-europe fa-lg icon-translate"></i>
                         </a>
@@ -89,14 +89,14 @@
                     <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex ms-0 ms-md-0 ms-lg-2">
                         @auth
                             <li class="nav-item dropdown mt-2 mt-md-2 mt-lg-0">
-                                <a class="btn-acc dropdown-toggle text-acc" id="navbarDropdown" role="button"
+                                <a class="btn-acc dropdown-toggle text-acc box-search" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-circle-user fa-lg"></i>
                                 </a>
-                                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
                                     @if (Auth::user()->is_revisor)
                                         <li class="nav-item">
-                                            <a class="dropdown-item position-relative text-acc p-revisor"
+                                            <a class="dropdown-item position-relative text-acc p-revisor "
                                                 aria-current="page" href="{{ route('revisor_index') }}">
                                                 {{ __('ui.zona revisore') }} <span
                                                     class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
@@ -111,7 +111,7 @@
                                     {{-- Logout --}}
 
                                     <li>
-                                        <a class="dropdown-item text-acc" href="{{ route('logout') }}"
+                                        <a class="dropdown-item text-acc " href="{{ route('logout') }}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             {{ __('ui.logout') }}
                                         </a>
