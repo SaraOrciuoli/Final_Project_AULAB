@@ -2,7 +2,7 @@
 
     <div class="container-fluid bg-revisor">
         <div class="row justify-content-center align-items-center h-100">
-            <div class="col-6 text-center text-white">
+            <div class="col-12 col-md-8 col-lg-6 text-center text-white">
                 <h1>{{ $announcement_to_check ? __('ui.annuncio da rivisionare') : __('ui.non ci sono annunci da revisionare') }}
                 </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos?
@@ -12,12 +12,12 @@
         </div>
     </div>
     <div class="container-fluid py-5 d-flex flex-column justify-content-center align-items-center bg-acc">
-        <div class="row w-75 justify-content-center bg-sec shadow rounded p-5">
+        <div class="row justify-content-center bg-sec shadow rounded p-0 p-md-2 p-lg-5 width-sma w-75">
             @if (session('message'))
                 <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{ session('message') }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button></div>
             @endif
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     @if (isset($announcement_to_check) && $announcement_to_check->images )
                         <div class="carousel-inner">
@@ -40,7 +40,7 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                 </div>
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-md-flex flex-column align-items-center">
                     <h5 class="card-title">{{ $announcement_to_check->title }}</h5>
                     <p class="card-title my-2">{{ $announcement_to_check->description }}</p>
                     <small class="card-footer mb-2">{{__('ui.pubblicato il')}}
@@ -48,7 +48,7 @@
                         {{__('ui.autore')}} {{ $announcement_to_check->user->name ?? '' }}</small>
                 </div>
             </div>
-            <div class="col-6 p-3">
+            <div class="col-12 col-md-6 p-3">
                 <div>
                     <div class="mb-4">
                         <h5>Tags</h5>
