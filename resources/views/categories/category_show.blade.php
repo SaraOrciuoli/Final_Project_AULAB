@@ -1,19 +1,20 @@
 <x-layout>
-    <div class="container">
+    <div class="container box-container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-md-center">
                 <h1>Esplora la categoria {{$category->name}}</h1>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
+        <div class="row row-category">
+            <div class="col-12 bg-acc rounded mb-5 ">
+                
+                <div class="row vh-100">
                     @forelse ($category->announcements as $announcement)
-                    <div class="col-12 col-md-3 m-2 bg-light">
-                        <div class="card">
+                    <div class="col-12 col-md-3 m-2 bg-light d-flex align-items-center h-75">
+                        <div class="card conteiner-fluid">
                             <img src="https://picsum.photos/100" class="card-img-top" alt="Image Announcement">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $announcement->title }}</h5>
@@ -29,7 +30,7 @@
                         </div>
                     </div>
                     @empty
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <p>Non sono presenti annunci per questa categoria</p>
                         <p>Publicane uno: <a href="{{route('create_announcement')}}" class="btn btn-success">Nuovo annuncio</a></p>
                     </div>
