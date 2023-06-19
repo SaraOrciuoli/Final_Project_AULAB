@@ -58,6 +58,29 @@
     color: var(--main);
 }
 
+.btn-card-detail{
+    background-color: transparent;
+    color: var(--acc);
+    border: 2px solid var(--acc);
+    border-radius: 10px;
+}
+
+.btn-card-detail:hover{
+    background-color: var(--acc);
+    color: var(--main);
+}
+
+.btn-card-category{
+    background-color: var(--acc);
+    color: var(--main);
+}
+
+.btn-card-category:hover{
+    background-color: var(--sec);
+    color: var(--acc);
+    border: 1px solid var(--acc);
+}
+
 /* testimonial */
 
 .text-testimonial {
