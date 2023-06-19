@@ -1,4 +1,4 @@
-<div class=" containerNav mx-auto bg-main fixed-top shadow transition">
+<div class="containerNav mx-auto bg-main fixed-top shadow transition">
     <nav class="navbar navbar-expand-lg p-0 ">
         <div class="container-fluid my-3 my-xxl-1">
 
@@ -11,11 +11,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 @if (Auth::user())
-                    <ul
-                        class="navbar-nav mx-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
+                    <ul class="navbar-nav mx-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-start align-items-lg-center border-top-sma">
                     @else
-                        <ul
-                            class="navbar-nav ms-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
+                        <ul class="navbar-nav ms-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-start align-items-lg-center border-top-sma">
                 @endif
                 <li class="nav-item">
                     <a class="nav-link text-acc" aria-current="page"
@@ -41,13 +39,29 @@
                         <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">Contattaci</a>
                     </li>
                 @endif
-                </ul>
+                <li class="nav-item dropdown d-block d-md-block d-lg-none">
+                    <a class="btn-acc dropdown-toggle text-acc nav-link" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoria
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <hr class="dropdown-divider">
+                        @foreach ($categories as $category)
+                            <li>
+                                <a class="text-acc fs-5 p-2"
+                                    href="{{ route('category_show', compact('category')) }}">{{ $category->name }}</a>
+                                    <hr class="dropdown-divider">
+                            </li>
+                        @endforeach
+                    </ul>
+                </li>
+            </ul>
 
 
                 {{-- Button traduzione --}}
-                <div class="d-block d-md-flex">
+                <div class="d-block d-md-block d-lg-flex">
                     <div class="dropdown icon-translate">
-                        <a class="btn-acc text-acc dropdown-toggle p-0 my-2 m-md-3 border-0  nav-link" type="button"
+                        <a class="btn-acc text-acc dropdown-toggle p-0 m-lg-3 border-0" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-earth-europe fa-lg icon-translate"></i>
                         </a>
@@ -72,10 +86,10 @@
 
                     {{-- dropdown utente --}}
 
-                    <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex ms-2">
+                    <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex ms-0 ms-md-0 ms-lg-2">
                         @auth
-                            <li class="nav-item dropdown">
-                                <a class="btn-acc dropdown-toggle text-acc nav-link" id="navbarDropdown" role="button"
+                            <li class="nav-item dropdown mt-2 mt-md-2 mt-lg-0">
+                                <a class="btn-acc dropdown-toggle text-acc" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-circle-user fa-lg"></i>
                                 </a>
@@ -122,11 +136,10 @@
                                 <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                             </li>
                         @endauth
-
-
                     </ul>
+
                 </div>
-                <div class="my-2 ms-4">
+                <div class="my-2 ms-0 ms-md-0 ms-lg-4">
                     {{-- Search button --}}
                     <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
                         <input type="search" name="searched"

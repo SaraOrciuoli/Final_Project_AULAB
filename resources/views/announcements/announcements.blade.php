@@ -2,14 +2,14 @@
 
     <div class="container-fluid bg-annunci">
         <div class="row justify-content-center align-items-center h-100">
-            <div class="col-6 text-center text-white">
+            <div class="col-11 col-md-8 col-lg-5 text-center text-white">
                 <h1>{{__('ui.annunci')}}</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos? Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit iure.</p>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-acc">
+    <div class="container-fluid bg-acc d-none d-md-none d-lg-block">
         <div class="row">
             <div class="col-12 text-center p-0">
                     <ul class="d-flex justify-content-between p-0 h-100 align-items-center" aria-labelledby="categoriesDropdown">

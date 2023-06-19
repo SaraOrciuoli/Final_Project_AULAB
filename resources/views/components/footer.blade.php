@@ -1,12 +1,12 @@
 <footer class="container-fluid bg-sec p-md-5 h-100">
         <div class="row justify-content-center">
-            <div class="col-11 col-md-5 col-lg-4  p-md-0 mt-3 mt-md-0">
+            <div class="col-11 col-md-5 col-lg-4 p-md-2 mt-3 mt-md-0">
                 <a href="{{route('homepage')}}" class="d-flex justify-content-center justify-content-md-start">
                     <img class="logo" src="/media/logo-b.png" alt="Logo">
                 </a>
                 <p class="text-testimonial text-center text-md-start mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quos debitis reiciendis aperiam quis molestiae, reprehenderit tenetur? Deserunt accusamus dicta blanditiis.</p>
             </div>
-            <div class="col-12 col-md-7 col-lg-4  d-md-flex align-items-center justify-content-evenly mt-4 p-0 p-md-3">
+            <div class="col-12 col-md-7 col-lg-4 d-md-flex align-items-center justify-content-evenly mt-4 p-0 p-md-3">
                 <ul class="text-lightDark">
                     <h6 class="text-lightDark">{{__('ui.servizi')}}:</h6>
                     <div class="d-flex d-md-block">
