@@ -53,6 +53,32 @@
     color: var(--main);
 }
 
+@media screen and (max-width: 768px) {
+    .card-sma {
+        transition: 0.5s;
+        box-sizing: border-box;
+        color: var(--darkLight);
+        max-height: 400px;
+        overflow: hidden;
+        background-color: rgba(209, 194, 134, 0.4);
+        color: var(--main);
+    }
+    .card-sma:hover{
+        transition: 0.5s;
+        box-sizing: border-box;
+        color: var(--darkLight);
+        max-height: 400px;
+        overflow: hidden;
+        background-color: rgba(209, 194, 134, 0.4);
+        color: var(--main);
+
+    }
+    .image-card-back {
+        transform: scale(1);
+    }
+}
+
+
 /* card annunci */
 
 .card-announcement {
