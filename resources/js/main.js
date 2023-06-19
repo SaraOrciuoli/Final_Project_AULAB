@@ -23,7 +23,8 @@ const swiper = new Swiper(".mySwiper", {
 let navLink = document.querySelectorAll(".nav-link");
 let containerNav = document.querySelector(".containerNav");
 let logo = document.querySelector(".logo");
-let myBtn = document.querySelectorAll(".box-search");
+let myBtn = document.querySelectorAll(".scroll-color");
+let hamburger = document.querySelector("#hamburger");
 
 window.addEventListener("scroll", () => {
     let scrolled = window.scrollY;
@@ -32,6 +33,8 @@ window.addEventListener("scroll", () => {
         containerNav.classList.add('bg-acc');
         containerNav.classList.remove('bg-main');
         containerNav.style.width = '100%';
+        hamburger.classList.add('text-white');
+        hamburger.classList.remove('text-acc');
         logo.src = '/media/logo-w.png';
         navLink.forEach(element => {
             element.classList.add('text-main');
@@ -41,7 +44,6 @@ window.addEventListener("scroll", () => {
         })
         myBtn.forEach(element => {
             element.classList.add('box-search-acc');
-            element.classList.remove('box-search');
             element.classList.add('text-main');
             element.classList.remove('text-acc');
             element.classList.add('placeholder-custom-main');
@@ -54,6 +56,8 @@ window.addEventListener("scroll", () => {
         containerNav.classList.add('bg-main');
         containerNav.classList.remove('bg-acc');
         containerNav.style.width = '80%';
+        hamburger.classList.remove('text-white');
+        hamburger.classList.add('text-acc');
         logo.src = '/media/logo-b.png';
         navLink.forEach(element => {
             element.classList.add('text-acc');
@@ -63,7 +67,6 @@ window.addEventListener("scroll", () => {
         })
         myBtn.forEach(element => {
             element.classList.remove('box-search-acc');
-            element.classList.add('box-search');
             element.classList.remove('text-main');
             element.classList.add('text-acc');
             element.classList.remove('placeholder-custom-main');

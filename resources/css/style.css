@@ -171,12 +171,9 @@ li {
 
 .navbar-toggler {
     color: transparent;
-    border-color: var(--acc);
+    border-color: transparent;
 }
 
-.navbar-toggler-icon {
-    background-image: url(../../public/media/hamburgher.svg);
-}
 
 .nav-link:hover {
     color: var(--acc);
@@ -233,7 +230,6 @@ li {
 }
 
 .box-search-acc {
-    height: 30px;
     padding: 10px 0px;
     background: var(--acc);
     align-items: center;
