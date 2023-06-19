@@ -13,6 +13,10 @@
     </div>
     <div class="container-fluid py-5 d-flex flex-column justify-content-center align-items-center bg-acc">
         <div class="row w-75 justify-content-center bg-sec shadow rounded p-5">
+            @if (session('message'))
+                <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{ session('message') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button></div>
+            @endif
             <div class="col-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     @if (isset($announcement_to_check) && $announcement_to_check->images )
