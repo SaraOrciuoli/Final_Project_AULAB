@@ -43,9 +43,9 @@
                 <div class="d-flex flex-column align-items-center">
                     <h5 class="card-title">{{ $announcement_to_check->title }}</h5>
                     <p class="card-title my-2">{{ $announcement_to_check->description }}</p>
-                    <small class="card-footer mb-2">Pubblicato il:
+                    <small class="card-footer mb-2">{{__('ui.pubblicato il')}}
                         {{ $announcement_to_check->created_at->format('d/m/Y') }} -
-                        Autore: {{ $announcement_to_check->user->name ?? '' }}</small>
+                        {{__('ui.autore')}} {{ $announcement_to_check->user->name ?? '' }}</small>
                 </div>
             </div>
             <div class="col-6 p-3">
@@ -61,12 +61,12 @@
                         </div>
                     </div>
                     <div>
-                        <h5>Revisione immagini</h5>
-                        <p>Adulti:<span class="{{ $image->adult }}"></span></p>
-                        <p>Satira:<span class="{{ $image->spoof }}"></span></p>
-                        <p>Medicina:<span class="{{ $image->medical }}"></span></p>
-                        <p>Violenza:<span class="{{ $image->violence }}"></span></p>
-                        <p>Contento Esplicito:<span class="{{ $image->racy }}"></span></p>
+                        <h5>{{__('ui.revisione immagini')}}</h5>
+                        <p>{{__('ui.adulti')}}<span class="{{ $image->adult }}"></span></p>
+                        <p>{{__('ui.satira')}}<span class="{{ $image->spoof }}"></span></p>
+                        <p>{{__('ui.medicina')}}<span class="{{ $image->medical }}"></span></p>
+                        <p>{{__('ui.violenza')}}<span class="{{ $image->violence }}"></span></p>
+                        <p>{{__('ui.contento esplicito')}}<span class="{{ $image->racy }}"></span></p>
                     </div>
                 </div>
                 <div class="d-flex mt-5">
@@ -74,7 +74,7 @@
                         action="{{ route('revisor_accept_announcement', ['announcement' => $announcement_to_check]) }}">
                         @csrf
                         @method('patch')
-                        <button type="submit" class="btn btn-success shadow">Accetta Annuncio</button>
+                        <button type="submit" class="btn btn-success shadow">{{__('ui.accetta annuncio')}}</button>
                     </form>
                     <form method="POST"
                         action="{{ route('revisor_reject_announcement', ['announcement' => $announcement_to_check]) }}"
@@ -82,7 +82,7 @@
                         @csrf
                         @method('patch')
 
-                        <button type="submit" class="btn btn-danger shadow">Rifiuta Annuncio</button>
+                        <button type="submit" class="btn btn-danger shadow">{{__('ui.rifiuta annuncio')}}</button>
                     </form>
                 </div>
             </div>
@@ -94,7 +94,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center my-5">
-                <h2>Articoli Revisionati</h2>
+                <h2>{{__('ui.articoli revisionati')}}</h2>
             </div>
             @foreach ($announcement_checked as $announcement)
                 <div class="row my-3 shadow-custom rounded bg-acc">
@@ -128,21 +128,21 @@
                         <div class="row justify-content-between h-75">
                             <div class="col-3 pt-2">
                                 <div class="d-flex flex-column justify-content-evenly h-100">
-                                    <h5>Nome:</h5>
+                                    <h5>{{__('ui.nome')}}</h5>
                                     <p class="fw-light">{{ $announcement->title }}</p>
                                 </div>
                             </div>
                             <div class="col-3 pt-2">
                                 <div class="d-flex flex-column justify-content-evenly h-100">
-                                    <h5>Descrizione:</h5>
+                                    <h5>{{__('ui.descrizione')}}</h5>
                                     <p class="fw-light">{{ $announcement->description }}</p>
                                 </div>
                             </div>
                             <div class="col-4 pt-3">
                                 <div class="d-flex flex-column justify-content-evenly h-100">
-                                    <h5>Data e Autore:</h5>
-                                    <p class="fw-light">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}
-                                        - Autore: {{ $announcement->user->name ?? '' }}</p>
+                                    <h5>{{__('ui.data e')}} {{__('ui.autore')}}</h5>
+                                    <p class="fw-light">{{__('ui.pubblicato il')}} {{ $announcement->created_at->format('d/m/Y') }}
+                                        - {{__('ui.autore')}} {{ $announcement->user->name ?? '' }}</p>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,7 @@
                                     class="mx-4">
                                     @csrf
                                     @method('patch')
-                                    <button type="submit" class="btn btn-danger shadow me-5">Annulla
-                                        Operazione</button>
+                                    <button type="submit" class="btn btn-danger shadow me-5">{{__('ui.annulla operazione')}}</button>
                                 </form>
                             </div>
                         </div>

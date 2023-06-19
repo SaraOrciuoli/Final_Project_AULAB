@@ -32,11 +32,11 @@
                 @endauth
                 @if (Auth::user())
                     <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">Contattaci</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">{{__('ui.contattaci')}}</a>
                     </li>
                 @else
                     <li class="nav-item me-3">
-                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">Contattaci</a>
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">{{__('ui.contattaci')}}</a>
                     </li>
                 @endif
                 <li class="nav-item dropdown d-block d-md-block d-lg-none">
@@ -100,7 +100,7 @@
                                                 aria-current="page" href="{{ route('revisor_index') }}">
                                                 {{ __('ui.zona revisore') }} <span
                                                     class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
-                                                    <span class="visually-hidden">messaggio non letto</span>
+                                                    <span class="visually-hidden">{{__('ui.messaggio non letto')}}</span>
                                                 </span>
                                             </a>
                                         </li>

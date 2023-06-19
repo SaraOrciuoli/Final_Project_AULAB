@@ -10,6 +10,8 @@ return [
     'accedi' => 'Login',
     'registrati' => 'Registrati',
     'logout' => 'Disconnetti',
+    'annuncio da revisionare' => 'Annuncio da revisionare',
+    'non ci sono annunci da revisionare' => 'Non ci sono annunci da revisionare ',
 
     // Homepage
     'carta di credito' => 'Carta di credito',
@@ -17,7 +19,7 @@ return [
     'consegna veloce' => 'Consegna veloce',
     'articoli recenti' => 'Articoli recenti',
     'dettagli' => 'DETTAGLI',
-    'pubblicato il' => 'Pubblicato il',
+    'pubblicato il' => 'Pubblicato il:',
     'testimoni' => 'Testimoni',
     'clienti soddisfatti' => 'CLIENTI SODDISFATTI',
     'nome utente' => 'Nome utente',
@@ -32,7 +34,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Crea il tuo annuncio!',
     'titolo' => 'Titolo annuncio',
-    'descrizione' => 'Descrizione',
+    'descrizione' => 'Descrizione:',
     'prezzo' => 'Prezzo',
     'categoria' => 'Categoria',
     'scegli categoria' => 'Scegli la categoria',
@@ -41,6 +43,8 @@ return [
     'nessun file selezionato' => 'Nessun file selezionato',
     'crea' => 'Crea',
     'cancella' => 'Cancella',
+    'esplora le categorie' => 'Esplora le categorie',
+    'non sono presenti annunci per questa categoria' => 'Non sono presenti annunci per questa categoria',
 
 
 
@@ -62,11 +66,22 @@ return [
     'assistenza' => 'Assistenza',
 
     // revisore 
-    'annuncio da revisionare' => 'Annuncio da revisionare',
-    'non ci sono annunci da revisionare' => 'Non ci sono annunci da revisionare ',
-    'annuncio' => 'Annuncio',
-    'autore' => 'Autore',
     
+    'annuncio' => 'Annuncio',
+    'autore' => 'Autore:',
+    'revisione immagini' => 'Revisione immagini',
+    'adulti' => 'Adulti:',
+    'satira' => 'Satira:',
+    'medicina' => 'Medicina:',
+    'violenza' => 'Violenza:',
+    'contento esplicito' => 'Contento esplicito:',
+    'accetta annuncio ' => 'Accetta annuncio',
+    'rifiuta annuncio' => 'Rifiuta annuncio',
+    'articoli revisionati' => 'Articoli revisionati',
+    'nome' => 'Nome:',
+    'data e' => 'Data e',
+    'annulla operazione' => 'Annulla operazione',
+
     // Mail
     'scrivi un messaggio' => 'Scrivi un messaggio',
     'invia' => 'Invia',

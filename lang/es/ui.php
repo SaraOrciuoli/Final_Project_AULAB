@@ -16,7 +16,7 @@ return [
     'risparmiare' => 'Ahorrar',
     'consegna veloce' => 'Entrega ràpida',
     'articoli recenti' => 'Artìculos Recientes',
-    'pubblicato il' => 'Publicado en',
+    'pubblicato il' => 'Publicado en:',
     'dettagli' => 'DETALLES',
     'testimoni' => 'Testimonianza',
     'clienti soddisfatti' => 'CLIENTES SATISFECHOS',
@@ -33,7 +33,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Crear un anuncio',
     'titolo' => 'Título',
-    'descrizione' => 'Descripción',
+    'descrizione' => 'Descripción:',
     'prezzo' => 'Precio',
     'categoria' => 'Categoría',
     'scegli categoria' => 'Elige la categoría',
@@ -42,6 +42,8 @@ return [
     'nessun file selezionato' => 'Ningúno archivo seleccionado',
     'crea' => 'Crear',
     'cancella' => 'Cancelar',
+    'esplora le categorie' => 'Explorar las categorías',
+    'non sono presenti annunci per questa categoria' => 'No hay anuncios para esta categoría',
 
    
 
@@ -67,7 +69,22 @@ return [
     'annuncio da revisionare' => 'Anuncios para revición',
     'non ci sono annunci da revisionare'=>'no hay anuncios para revisar ',
     'annuncio' => 'Anuncios',
-    'autore' => 'Autor',
+    'autore' => 'Autor:',
+    'revisione immagini' => 'Revision de imagen',
+    'adulti' => 'Adultos:',
+    'satira' => 'Sátira:',
+    'medicina' => 'Medicamento:',
+    'violenza' => 'Violencia:',
+    'contento esplicito' => 'Contenido explícito:',
+    'accetta annuncio ' => 'Aceptar anuncio',
+    'rifiuta annuncio' => 'Rechazar anuncio',
+    'articoli revisionati' => 'Artículos revisados',
+    'nome' => 'Nombre:',
+    'data e' => 'Fecha y',
+    'annulla operazione' => 'Cancelar operación',
+    
+
+
 
     // Mail
     'scrivi un messaggio' => 'Escribe un mensaje',
