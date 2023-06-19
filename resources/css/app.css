@@ -4,7 +4,6 @@
 /* fogli di stile personalizzati */
 @import './style.css';
 @import './features/announcements.css';
-@import './features/categories.css';
 @import './homepage.css';
 @import './features/components_style/cards_announcements.css';
 

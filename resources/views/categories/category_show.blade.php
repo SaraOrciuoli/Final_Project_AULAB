@@ -1,20 +1,20 @@
 <x-layout>
-    <div class="container box-container">
-        <div class="row">
-            <div class="col-12 text-md-center">
+
+    <div class="container-fluid bg-annunci">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-11 col-md-8 col-lg-5 text-center text-white">
                 <h1>{{__('ui.esplora le categorie')}} {{$category->name}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos? Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit iure.</p>
             </div>
         </div>
     </div>
+    
 
-    <div class="container">
-        <div class="row row-category">
-            <div class="col-12 bg-acc rounded mb-5 ">
-                
-                <div class="row vh-100">
+    <div class="container-fluid d-flex justify-content-center align-items-center p-4 bg-acc">
+        <div class="row row-form-create animation-fade h-100">
                     @forelse ($category->announcements as $announcement)
-                    <div class="col-12 col-md-3 m-2 bg-light d-flex align-items-center h-75">
-                        <div class="card conteiner-fluid">
+                    <div class="col-12 col-md-3 m-2 d-flex align-items-center">
+                        <div class="card">
                             <img src="https://picsum.photos/100" class="card-img-top" alt="Image Announcement">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $announcement->title }}</h5>
