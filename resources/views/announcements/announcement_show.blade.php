@@ -38,14 +38,20 @@
                     </div>
                 </div>
                 
-                    <div class="col-5 d-flex flex-column justify-content-around h-100">
-                        <h5 class="card-title">Nome: {{ $announcement->title }}</h5>
-                        <p class="card-title">Descrizione: {{ $announcement->description }}</p>
-                        <p class="card-subtitle">Prezzo: {{ $announcement->price }}€</p>
-                        <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
-                            class="btn btn-card-announcement my-3 w-50">{{ __('ui.categoria') }}:{{ $announcement->category->name }}</a>
-                        <a class="btn btn-card-announcement my-3 w-50"
-                            href="{{ route('announcement_edit', compact('announcement')) }}">Modifica Articolo</a>
+                    <div class="col-5">
+                        <div class="pb-5">
+                            <h5 class="card-title mb-3">Nome: {{ $announcement->title }}</h5>
+                            <p class="card-title">Descrizione: {{ $announcement->description }}</p>
+                            <p class="card-subtitle my-3">Prezzo: {{ $announcement->price }}€</p>
+                            <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
+                                class="btn btn-card-category">{{ __('ui.categoria') }}: {{ $announcement->category->name }}</a>
+                        </div>
+                        <div class="pt-5">
+                            <a class="btn btn-card-detail"
+                                href="{{ route('announcement_edit', compact('announcement')) }}">Modifica Articolo</a>
+                            <a class="btn btn-danger ms-3"
+                                href="{{ route('announcement_edit', compact('announcement')) }}">Elimina Articolo</a>
+                        </div>
                     </div>
             </div>
         </div>
