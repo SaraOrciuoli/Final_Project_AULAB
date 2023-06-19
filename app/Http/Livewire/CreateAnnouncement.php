@@ -74,6 +74,7 @@ class CreateAnnouncement extends Component
         }
     }
 
+
     public function store()
     {
         $this->validate();
@@ -107,17 +108,6 @@ class CreateAnnouncement extends Component
         $this->validateOnly($propertyName);
     }
 
-    public function mount(){
-        $this->title = $this->announcement->title;
-        $this->description = $this->announcement->description;
-        $this->price = $this->announcement->price;
-        $this->temporary_images = $this->announcement->temporary_images;
-        $this->images = $this->announcement->images;
-        $this->category = $this->announcement->category;
-        return redirect(route('announcements'));
-
-    }
-
     public function update()
     {
         $this->article->update([
@@ -130,11 +120,6 @@ class CreateAnnouncement extends Component
         ]);
         return redirect(route('announcements'));
     }
-
-
-
-
-
 
     public function render()
     {
