@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row justify-content-evenly">
             @forelse ($announcements as $announcement)
-                <x-card_announcement :announcement="$announcement"/>
+                <x-card_all_announcement :announcement="$announcement"/>
             @empty
                 <div class="col-12">
                     <div class="alert alert-warning py-3 shadow">

@@ -574,3 +574,34 @@ position: relative;
 border-radius: 10px 10px 0 0;
 }
 }
+
+/* paginate */
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: var(--acc);
+    --bs-pagination-bg: var(--bs-body-bg);
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: var(--bs-border-color);
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: var(--sec);
+    --bs-pagination-hover-bg: var(--acc);
+    --bs-pagination-hover-border-color: var(--acc);
+    --bs-pagination-focus-color: var(--sec);
+    --bs-pagination-focus-bg: var(--acc);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.2rem var(--acc);
+    --bs-pagination-active-color: var(--sec);
+    --bs-pagination-active-bg: var(--acc);
+    --bs-pagination-active-border-color: var(--acc);
+    --bs-pagination-disabled-color: var(--bs-secondary-color);
+    --bs-pagination-disabled-bg: var(--bs-secondary-bg);
+    --bs-pagination-disabled-border-color: var(--bs-border-color);
+}
+
+.page-link {
+    color: var(--bs-pagination-color);
+    background-color: var(--main);
+    border: var(--bs-pagination-border-width) solid var(--acc);
+}

@@ -2,7 +2,7 @@
 return [
     // Navbar
     'home' => 'Home',
-    'tutti gli annunci' => 'All announcements',
+    'annunci' => 'Announcements',
     'aggiungi annuncio' => 'Add announcements',
     'categorie' => 'Categories',
     'ricerca' => 'Search',

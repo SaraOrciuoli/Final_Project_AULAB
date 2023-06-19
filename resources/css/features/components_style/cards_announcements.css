@@ -52,3 +52,26 @@
 .card:hover .button-text{
     color: var(--main);
 }
+
+/* card annunci */
+
+.card-announcement {
+    transition: 0.5s;
+    box-sizing: border-box;
+    color: var(--darkLight);
+    max-height: 400px;
+    overflow: hidden;
+    background-color: rgba(209, 194, 134, 0.4);
+    color: var(--main);
+}
+
+.image-card-announcement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}

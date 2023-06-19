@@ -2,7 +2,7 @@
 return [
     //Navbar
     'home' => 'Hogar',
-    'tutti gli annunci' => 'Todos los anuncios',
+    'annunci' => 'Todos los anuncios',
     'aggiungi annuncio' => 'Crear anuncios',
     'registrati' => 'Registrate',
     'accedi' => 'Iniciar sesiòn',
