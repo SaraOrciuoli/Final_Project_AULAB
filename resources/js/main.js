@@ -19,10 +19,11 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
+// navbar
 let navLink = document.querySelectorAll(".nav-link");
 let containerNav = document.querySelector(".containerNav");
 let logo = document.querySelector(".logo");
-let myBtn = document.querySelectorAll(".my-btn");
+let myBtn = document.querySelectorAll(".box-search");
 
 window.addEventListener("scroll", () => {
     let scrolled = window.scrollY;
@@ -39,10 +40,13 @@ window.addEventListener("scroll", () => {
             element.classList.remove('nav-fixed');
         })
         myBtn.forEach(element => {
-            element.classList.add('btn-search-white');
-            element.classList.remove('btn-search');
-            element.classList.add('btn-logout-white');
-            element.classList.remove('btn-logout');
+            element.classList.add('box-search-acc');
+            element.classList.remove('box-search');
+            element.classList.add('text-main');
+            element.classList.remove('text-acc');
+            element.classList.add('placeholder-custom-main');
+            element.classList.remove('placeholder-custom');
+
         })
 
     }
@@ -58,10 +62,13 @@ window.addEventListener("scroll", () => {
             element.classList.remove('nav-scroll');
         })
         myBtn.forEach(element => {
-            element.classList.add('btn-search');
-            element.classList.remove('btn-search-white');
-            element.classList.add('btn-logout');
-            element.classList.remove('btn-logout-white');
+            element.classList.remove('box-search-acc');
+            element.classList.add('box-search');
+            element.classList.remove('text-main');
+            element.classList.add('text-acc');
+            element.classList.remove('placeholder-custom-main');
+            element.classList.add('placeholder-custom');
+
         })
 
     }

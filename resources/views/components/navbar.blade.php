@@ -10,75 +10,73 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                @if(Auth::user())
-                <ul class="navbar-nav mx-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
-                @else
-                <ul class="navbar-nav ms-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
-                @endif
-                    <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('homepage') }}">{{ __('ui.home') }}</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('announcements') }}">{{ __('ui.annunci') }}</a>
-                    </li>
-                    @auth
-                        <li class="nav-item">
-                            <a class="nav-link text-acc" aria-current="page"
-                                href="{{ route('create_announcement') }}">{{ __('ui.aggiungi annuncio') }}</a>
-                        </li>
-                    @endauth
-                    @if(Auth::user())
-                    <li class="nav-item">
-                        <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('contact_us') }}">Contattaci</a>
-                    </li>
+                @if (Auth::user())
+                    <ul
+                        class="navbar-nav mx-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
                     @else
-                    <li class="nav-item me-3">
+                        <ul
+                            class="navbar-nav ms-auto justify-content-start d-flex mb-2 mb-lg-0 align-items-md-center border-top-sma">
+                @endif
+                <li class="nav-item">
+                    <a class="nav-link text-acc" aria-current="page"
+                        href="{{ route('homepage') }}">{{ __('ui.home') }}</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-acc" aria-current="page"
+                        href="{{ route('announcements') }}">{{ __('ui.annunci') }}</a>
+                </li>
+                @auth
+                    <li class="nav-item">
                         <a class="nav-link text-acc" aria-current="page"
-                            href="{{ route('contact_us') }}">Contattaci</a>
+                            href="{{ route('create_announcement') }}">{{ __('ui.aggiungi annuncio') }}</a>
                     </li>
-                    @endif
+                @endauth
+                @if (Auth::user())
+                    <li class="nav-item">
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">Contattaci</a>
+                    </li>
+                @else
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-acc" aria-current="page" href="{{ route('contact_us') }}">Contattaci</a>
+                    </li>
+                @endif
                 </ul>
 
-                <div class="my-2">
-                    {{-- Search button --}}
-                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
-                        <input type="search" name="searched" class="form-control p-0 form-search text-acc "
-                            placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
-                            
-                        <button class="btn p-0 me-2 "
-                            type="submit"><i class="fa-solid fa-magnifying-glass fa-lg text-acc"></i></button>
-                    </form>
-                </div>
 
                 {{-- Button traduzione --}}
                 <div class="d-block d-md-flex">
                     <div class="dropdown icon-translate">
-                        <a class="btn-acc text-acc dropdown-toggle p-0 my-2 m-md-3 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn-acc text-acc dropdown-toggle p-0 my-2 m-md-3 border-0  nav-link" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-earth-europe fa-lg icon-translate"></i>
                         </a>
                         <ul class="dropdown-menu bg-dark w-50 dropdown-menu-sma">
-                            <li><x-_locale lang='it' /></li>
+                            <li>
+                                <x-_locale lang='it' />
+                            </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><x-_locale lang='en' /></li>
+                            <li>
+                                <x-_locale lang='en' />
+                            </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><x-_locale lang='es' /></li>
+                            <li>
+                                <x-_locale lang='es' />
+                            </li>
                         </ul>
                     </div>
-    
+
                     {{-- dropdown utente --}}
-    
-                    <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex">
+
+                    <ul class="p-0 mb-2 mb-lg-0 align-items-center d-flex ms-2">
                         @auth
                             <li class="nav-item dropdown">
-                                <a class="btn-acc dropdown-toggle text-acc" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn-acc dropdown-toggle text-acc nav-link" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-circle-user fa-lg"></i>
                                 </a>
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
@@ -88,8 +86,8 @@
                                             <hr class="dropdown-divider">
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dropdown-item position-relative text-acc p-revisor" aria-current="page"
-                                                href="{{ route('revisor_index') }}">
+                                            <a class="dropdown-item position-relative text-acc p-revisor"
+                                                aria-current="page" href="{{ route('revisor_index') }}">
                                                 {{ __('ui.zona revisore') }} <span
                                                     class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announcement::toBeRevisionedCount() }}
                                                     <span class="visually-hidden">messaggio non letto</span>
@@ -101,18 +99,19 @@
                                         <hr class="dropdown-divider">
                                     </li>
                                     {{-- Logout --}}
-    
+
                                     <li>
                                         <a class="dropdown-item text-acc" href="{{ route('logout') }}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             {{ __('ui.logout') }}
                                         </a>
-    
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
                                             @csrf
                                         </form>
                                     </li>
-    
+
                                 </ul>
                             </li>
                         @else
@@ -123,11 +122,22 @@
                                 <a href="{{ route('login') }}" class="nav-link text-acc">{{ __('ui.accedi') }}</a>
                             </li>
                         @endauth
-                        
-                        
+
+
                     </ul>
                 </div>
-                
+                <div class="my-2 ms-4">
+                    {{-- Search button --}}
+                    <form method="GET" action="{{ route('search_announcements') }}" class="d-flex box-search">
+                        <input type="search" name="searched"
+                            class="form-control p-0 form-search box-search placeholder-custom"
+                            placeholder="{{ __('ui.ricerca') }}" aria-label="Search">
+
+                        <button class="btn p-0 me-2 box-search text-acc" type="submit"><i
+                                class="fa-solid fa-magnifying-glass fa-lg box-search"></i></button>
+                    </form>
+                </div>
+
 
             </div>
         </div>

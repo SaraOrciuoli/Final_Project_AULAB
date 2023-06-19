@@ -204,6 +204,7 @@ border-radius: 50%;
     padding: 10px 0px;
     background: #fff;
     align-items: center;
+    transition: 0.8s;
 }
 
 .form-control:focus {
@@ -226,13 +227,43 @@ border-radius: 50%;
     border-radius: 0;
 }
 
+.box-search-acc{
+    height: 30px;
+    padding: 10px 0px;
+    background: var(--acc);
+    align-items: center;
+    transition: 0.8s;
+}
+
+.box-search-acc:hover input{
+    width: 150px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.box-search-acc input{
+    width: 55px;
+    outline: none;
+    border: 0;
+    transition: 0.8s;
+    background: transparent;
+    border-radius: 0;
+}
+
 .fa-magnifying-glass:hover{
     color: var(--acc);
 }
 
-input[type]::placeholder{
+.placeholder-custom[type]::placeholder{
     color: var(--acc);
+    transition: 0.8s;
 }
+
+.placeholder-custom-main[type]::placeholder{
+    color: var(--main);
+    transition: 0.8s;
+}
+
 
 /* Button logout */
 .btn-logout:hover {
@@ -269,7 +300,6 @@ padding: 0;
 z-index: 2;
 transition: 0.8s;
 width: 80%;
-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .dropdown-divider{
