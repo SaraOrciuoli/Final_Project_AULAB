@@ -1,7 +1,16 @@
 <x-layout>
 
+    <div class="container-fluid bg-annunci">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-11 col-md-8 col-lg-5 text-center text-white">
+                <h1>Accedi</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos? Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit iure.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="bg-acc">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100 p-9">
+        <div class="container d-flex justify-content-center align-items-center p-5">
             <div class="row row-form animation-fade h-form-login">
 
                 <div class="col-12 col-md-6 img-side"></div>

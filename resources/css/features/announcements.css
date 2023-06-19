@@ -1,7 +1,7 @@
 .bg-annunci{
 background-image: url(../../../public/media/salotto2.jpg);
 background-repeat: no-repeat;
-background-position: center;
+background-position: bottom;
 background-size: cover;
 height: 45vh;
 background-attachment: fixed;
