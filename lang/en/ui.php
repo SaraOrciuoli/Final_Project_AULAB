@@ -18,7 +18,7 @@ return [
     'consegna veloce' => 'Fast delivery',
     'articoli recenti' => 'New articles',
     'dettagli' => 'DETAILS',
-    'pubblicato il' => 'Posted on',
+    'pubblicato il' => 'Posted on:',
     'testimoni' => 'Feedback',
     'clienti soddisfatti' => 'HAPPY CUSTOMERS',
     'nome utente' => 'User name',
@@ -33,7 +33,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Make an announcement',
     'titolo' => 'Title',
-    'descrizione' => 'Description',
+    'descrizione' => 'Description:',
     'prezzo' => 'Price',
     'categoria' => 'Category',
     'scegli categoria' => 'Choose the category',
@@ -42,12 +42,13 @@ return [
     'nessun file selezionato' => 'No file',
     'crea' => 'Create',
     'cancella' => 'Delete',
-
+    'esplora le categorie' => 'Explore the category',
+    'non sono presenti annunci per questa categoria' => 'There are no ads for this category',
     //  Zona revisore
     'annuncio da revisionare' => 'Announcement to review',
     'accetta annuncio' => 'Accept announcement',
     'annulla ultima operazione' => 'Undo last operations',
-    'autore' => 'Author',
+  
 
     
 
@@ -74,7 +75,20 @@ return [
      'annuncio da revisionare' => 'Announcement to review',
      'non ci sono annunci da revisionare' => 'There are no announcement to review  ',
      'annuncio' => 'Announcement',
-     'autore' => 'Author',
+     'autore' => 'Author:',
+     'revisione immagini' => 'Image review',
+     'adulti' => 'Adults:',
+    'satira' => 'Satire:',
+    'medicina' => 'Medicine:',
+    'violenza' => 'Violence:',
+    'contento esplicito' => 'Explicit content:',
+    'accetta annuncio ' => 'Accept announcement',
+    'rifiuta annuncio' => 'Reject announcement',
+    'articoli revisionati' => 'Revisioned articles',
+    'nome' => 'Name:',
+    'data e' => 'Date and',
+    'annulla operazione' => 'Cancel operation',
+
 
     //  Mail
     'scrivi un messaggio' => 'Write a message',

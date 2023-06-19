@@ -7,13 +7,15 @@
             </div>
         </div>
     </div>
-    
+        
         <div class="container-fluid d-flex justify-content-center align-items-center p-4 bg-acc">
             <div class="row row-form-create animation-fade h-100">
-    
+                @if (session('message'))
+                    <div class="alert alert-success"><i class="fa-solid fa-circle-check fa-lg"></i> {{ session('message') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></button></div>
+                @endif
                 <div class="col-12 d-flex align-items-center justify-content-center p-md-5 bg-sec rounded-circle">
                     <div class="input-box-create">
-                        
                         <form wire:submit.prevent='store'>
                             @csrf
 
