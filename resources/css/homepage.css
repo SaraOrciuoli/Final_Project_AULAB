@@ -37,7 +37,7 @@
     vertical-align: middle;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .icon-service-sma {
         width: 55px !important;
         height: 55px !important;
@@ -150,7 +150,7 @@
     background: rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .box{
         height: 156px;
         width: 150px;
