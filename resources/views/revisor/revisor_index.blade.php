@@ -138,17 +138,18 @@
                         <div class="col-4">
                             <div class="d-flex flex-column justify-content-evenly h-100">
                                 <h5>Data e Autore:</h5>
-                                <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }} - Autore: {{ $announcement->user->name ?? '' }}</p>
+                                <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}
+                                    - Autore: {{ $announcement->user->name ?? '' }}</p>
                             </div>
                         </div>
                         <div class="col-12 d-flex justify-content-center align-items-center">
                             <form method="POST"
-                            action="{{ route('revisor_undo_announcement', ['announcement' => $announcement]) }}"
-                            class="mx-4">
-                            @csrf
-                            @method('patch')
-                            <button type="submit" class="btn btn-danger shadow me-5">Annulla Operazione</button>
-                        </form>
+                                action="{{ route('revisor_undo_announcement', ['announcement' => $announcement]) }}"
+                                class="mx-4">
+                                @csrf
+                                @method('patch')
+                                <button type="submit" class="btn btn-danger shadow me-5">Annulla Operazione</button>
+                            </form>
                         </div>
                     </div>
                 </div>

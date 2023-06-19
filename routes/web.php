@@ -24,8 +24,11 @@ Route::get('/create/announcement', [AnnouncementController::class, 'create'])->m
 
 // rotta dettaglio annunci
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_show');
+// rotta tutti gli annunci
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements');
 
+// rotta modifica annunci
+Route::get('/edit/announcement/{announcement}', [AnnouncementController::class, 'edit'])->name('announcement_edit');
 
 // home revisor
 Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor_index');

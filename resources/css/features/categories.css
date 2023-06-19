@@ -1,0 +1,17 @@
+.img-side-detail {
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-side-detail {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.row-form-detail {
+    width: 60%;
+    border-radius: 10px;
+    background: var(--sec);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}

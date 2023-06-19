@@ -1,64 +1,52 @@
 <x-layout>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>{{__('ui.annuncio')}}  {{ $announcement->title }}</h1>
+    <div class="container-fluid bg-details">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-6 text-center text-white">
+                <h1>{{ __('ui.annuncio') . ' ' . $announcement->title }}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos eaque earum aliquam quos?
+                    Facilis officia est ad itaque dolore, quos, aut dolores pariatur non ducimus doloremque! Ullam, sit
+                    iure.</p>
             </div>
         </div>
     </div>
-
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-12">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    @if ($announcement->images)
+    <div class="bg-acc">
+        <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row row-form-detail bg-main animation-fade h-100">
+                <div class="col-12 col-md-6 img-side-detail">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             @foreach ($announcement->images as $image)
                                 <div class="carousel-item @if ($loop->first) active @endif">
-                                    <img src="{{ Storage::url($image->path) }}" class="img-fluid p-3 rounded"
-                                        alt="img">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="{{ $image->getUrl(400, 300) }}" class="p-3 " alt="img">
+                                    </div>
                                 </div>
                             @endforeach
                         </div>
-                    @else
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                    alt="img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                    alt="img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://picsum.photos/id/27/1200/200" class="img-fluid p-3 rounded"
-                                    alt="img">
-                            </div>
-                        </div>
-                    @endif
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h5 class="card-title">{{ $announcement->title }}</h5>
-                <p class="card-title">{{ $announcement->description }}</p>
-                <p class="card-subtitle">{{ $announcement->price }}€</p>
-                <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
-                    class="btn btn-card-announcement my-3">{{__('ui.categoria')}}:
-                    {{ $announcement->category->name }}</a>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left fa-2xl text-lightDark" aria-hidden="true"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right fa-2xl text-lightDark" aria-hidden="true"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-around">
+                        <h5 class="card-title">Nome: {{ $announcement->title }}</h5>
+                        <p class="card-title">Descrizione: {{ $announcement->description }}</p>
+                        <p class="card-subtitle">Prezzo: {{ $announcement->price }}€</p>
+                        <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
+                            class="btn btn-card-announcement my-3 w-50">{{ __('ui.categoria') }}:{{ $announcement->category->name }}</a>
+                        <a class="btn btn-card-announcement my-3 w-50"
+                            href="{{ route('announcement_edit', compact('announcement')) }}">Modifica Articolo</a>
 
-                <p class="card-footer">{{__('ui.pubblicato il')}}: {{ $announcement->created_at->format('d/m/Y') }} -
-                    {{__('ui.autore')}}: {{ $announcement->user->name ?? '' }}</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
 </x-layout>

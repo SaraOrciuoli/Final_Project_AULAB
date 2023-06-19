@@ -38,7 +38,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        //
+        return view('announcements.announcement_edit', compact('announcement'));
     }
 
     /**
