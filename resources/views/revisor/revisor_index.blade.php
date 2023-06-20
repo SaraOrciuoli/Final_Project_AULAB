@@ -88,7 +88,6 @@
         </div>
     </div>
 
-    </div>
     @endif
     <div class="container">
         <div class="row">
