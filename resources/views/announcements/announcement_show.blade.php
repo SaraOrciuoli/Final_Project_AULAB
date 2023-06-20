@@ -46,12 +46,6 @@
                             <a href="{{ route('category_show', ['category' => $announcement->category]) }}"
                                 class="btn btn-card-category">{{ __('ui.categoria') }}: {{ $announcement->category->name }}</a>
                         </div>
-                        <div class="pt-5">
-                            <a class="btn btn-card-detail mb-0 mb-md-3 mb-lg-0"
-                                href="{{ route('announcement_edit', compact('announcement')) }}">Modifica Articolo</a>
-                            <a class="btn btn-danger"
-                                href="{{ route('announcement_edit', compact('announcement')) }}">Elimina Articolo</a>
-                        </div>
                     </div>
             </div>
         </div>
