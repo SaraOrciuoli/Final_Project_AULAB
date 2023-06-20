@@ -61,6 +61,7 @@ return [
     'accedi' => 'Log in' ,
     'resta connesso' => 'Stay connected',
     'non hai un account?' => 'Don t have an account yet? Register!',
+    'crea account' => 'Create an account',
     
 
 

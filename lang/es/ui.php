@@ -56,6 +56,7 @@ return [
     'accedi' => 'Iniciar secion' ,
     'resta connesso' => 'Mantente conectado',
     'non hai un account?' => '¿Aùn no tienes un prefil? Registrate!',
+    'crea account' => 'Crear un perfil',
     
 
 
