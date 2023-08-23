@@ -80,18 +80,20 @@ window.addEventListener("scroll", () => {
 let cards = document.querySelectorAll(".card-id");
 let targetCard = document.querySelector(".targetCard");
 
-let observerCard = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            cards.forEach((card, i) => {
-                card.classList.remove('opacity-0');
-                card.classList.add('animationUp');
-                card.style.animationDelay = `${i * 0.3}s`
-            })
-        }
+if(targetCard != null){
+    let observerCard = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                cards.forEach((card, i) => {
+                    card.classList.remove('opacity-0');
+                    card.classList.add('animationUp');
+                    card.style.animationDelay = `${i * 0.3}s`
+                })
+            }
+        });
     });
-});
-observerCard.observe(targetCard);
+    observerCard.observe(targetCard);
+}
 
 // testimonial carousel
 
@@ -134,14 +136,15 @@ function FirstCounter() {
     }, 10);
 }
 
-let observer_counter = new IntersectionObserver((element) => {
-    element.forEach((entries) => {
-        if (entries.isIntersecting) {
-            FirstCounter();
-        }
+if(target_counter != null){
+    let observer_counter = new IntersectionObserver((element) => {
+        element.forEach((entries) => {
+            if (entries.isIntersecting) {
+                FirstCounter();
+            }
+        });
     });
-});
-
-observer_counter.observe(target_counter);
+    observer_counter.observe(target_counter);
+}
 
 
