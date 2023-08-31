@@ -15,13 +15,13 @@
 <body>
 
     
-    <h1 class="text-acc">Un utente ha richiesto di lavorare con noi</h1>
-    <h2>Ecco i suoi dati:</h2>
-    <p><span class="text-acc">Nome:</span> {{ $user->name }}</p>
+    <h1 class="text-acc">{{__('ui.un utente ha richiesto di lavorare con noi')}}</h1>
+    <h2>{{__('ui.ecco i suoi dati')}}:</h2>
+    <p><span class="text-acc">{{__('ui.nome')}}:</span> {{ $user->name }}</p>
     <p><span class="text-acc">Email:</span> {{ $user->email }}</p>
     <div class="d-flex">
-        <p>Clicca qui per renderlo revisore </p>
-        <a class=" text-acc ms-2" href="{{ route('make_revisor', compact('user')) }}">Rendi revisore!</a>
+        <p>{{__('ui.clicca qui per renderlo revisore')}}</p>
+        <a class=" text-acc ms-2" href="{{ route('make_revisor', compact('user')) }}">{{__('ui.rendi revisore')}}!</a>
     </div>
 
 

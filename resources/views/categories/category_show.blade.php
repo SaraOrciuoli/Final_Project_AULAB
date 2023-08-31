@@ -40,9 +40,10 @@
                     </div>
                 @empty
                     <div class="col-8 bg-sec shadow rounded my-5">
-                        <p>Non sono presenti annunci per questa categoria</p>
-                        <p>Publicane uno: <a href="{{ route('create_announcement') }}" class="btn btn-success">Nuovo
-                                annuncio</a></p>
+                        <p>{{__('ui.non sono presenti annunci per questa categoria')}}</p>
+                        <p>{{__('ui.pubblicane uno')}}: <a href="{{ route('create_announcement') }}"
+                                class="btn btn-card-announcement">{{__('ui.nuovo annuncio')}}</a>
+
                     </div>
                 @endforelse
             </div>

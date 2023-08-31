@@ -16,7 +16,7 @@ return [
     'risparmiare' => 'Ahorrar',
     'consegna veloce' => 'Entrega ràpida',
     'articoli recenti' => 'Artìculos Recientes',
-    'pubblicato il' => 'Publicado en:',
+    'pubblicato il' => 'Publicado en',
     'dettagli' => 'DETALLES',
     'testimoni' => 'Testimonianza',
     'clienti soddisfatti' => 'CLIENTES SATISFECHOS',
@@ -33,7 +33,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Crear un anuncio',
     'titolo' => 'Título',
-    'descrizione' => 'Descripción:',
+    'descrizione' => 'Descripción',
     'prezzo' => 'Precio',
     'categoria' => 'Categoría',
     'scegli categoria' => 'Elige la categoría',
@@ -44,6 +44,8 @@ return [
     'cancella' => 'Cancelar',
     'esplora le categorie' => 'Explorar las categorías',
     'non sono presenti annunci per questa categoria' => 'No hay anuncios para esta categoría',
+    'pubblicane uno' => 'Publicar uno',
+    'nuovo annuncio' => 'Nuevo anuncio',
 
    
 
@@ -69,7 +71,7 @@ return [
     // revisore 
     'annuncio da revisionare' => 'Anuncios para revición',
     'non ci sono annunci da revisionare'=>'no hay anuncios para revisar ',
-    'annuncio' => 'Anuncios',
+    'annuncio' => 'Anuncios:',
     'autore' => 'Autor:',
     'revisione immagini' => 'Revision de imagen',
     'adulti' => 'Adultos:',
@@ -80,16 +82,20 @@ return [
     'accetta annuncio ' => 'Aceptar anuncio',
     'rifiuta annuncio' => 'Rechazar anuncio',
     'articoli revisionati' => 'Artículos revisados',
-    'nome' => 'Nombre:',
+    'nome' => 'Nombre',
     'data e' => 'Fecha y',
     'annulla operazione' => 'Cancelar operación',
+    'ecco i suoi dati' => 'Aqui estan tus datos',
+    'clicca qui per renderlo revisore' => 'Haga clic aquí para hacerlo revisor',
+    'un utente ha richiesto di lavorare con noi' => 'Un usario ha solicitado trabajar con nosotros',
+    'rendi revisor' => 'Hacer revisor',
     
-
-
 
     // Mail
     'scrivi un messaggio' => 'Escribe un mensaje',
     'invia' => 'Enviar',
     'contattaci' => 'Contáctenos',
+
+    'torna indietro' => 'Regresa'
 
 ];

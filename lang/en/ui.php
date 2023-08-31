@@ -18,7 +18,7 @@ return [
     'consegna veloce' => 'Fast delivery',
     'articoli recenti' => 'New articles',
     'dettagli' => 'DETAILS',
-    'pubblicato il' => 'Posted on:',
+    'pubblicato il' => 'Posted on',
     'testimoni' => 'Feedback',
     'clienti soddisfatti' => 'HAPPY CUSTOMERS',
     'nome utente' => 'User name',
@@ -33,7 +33,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Make an announcement',
     'titolo' => 'Title',
-    'descrizione' => 'Description:',
+    'descrizione' => 'Description',
     'prezzo' => 'Price',
     'categoria' => 'Category',
     'scegli categoria' => 'Choose the category',
@@ -43,24 +43,24 @@ return [
     'crea' => 'Create',
     'cancella' => 'Delete',
     'esplora le categorie' => 'Explore the category',
-    'non sono presenti annunci per questa categoria' => 'There are no ads for this category',
+    'non sono presenti annunci per questa categoria' => 'There are not ads for this category',
+    'pubblicane uno' => 'Post it',
+    'nuovo annuncio' => 'New announcement',
+    
     //  Zona revisore
     'annuncio da revisionare' => 'Announcement to review',
     'accetta annuncio' => 'Accept announcement',
     'annulla ultima operazione' => 'Undo last operations',
   
 
-    
-
     //form registrazione/login
-    
     'email' => 'Email',
     'password' => 'Password',
     'conferma password' => 'Confirm Password',
     'Hai già un account? Accedi!' => 'Do you already have an account?Login!',
     'accedi' => 'Log in' ,
     'resta connesso' => 'Stay connected',
-    'non hai un account?' => 'Don t have an account yet? Register!',
+    'non hai un account?' => "Don't have an account yet? Register!",
     'crea account' => 'Create an account',
     
 
@@ -74,7 +74,7 @@ return [
 
      // revisore 
      'annuncio da revisionare' => 'Announcement to review',
-     'non ci sono annunci da revisionare' => 'There are no announcement to review  ',
+     'non ci sono annunci da revisionare' => 'There are not announcement to review  ',
      'annuncio' => 'Announcement',
      'autore' => 'Author:',
      'revisione immagini' => 'Image review',
@@ -86,15 +86,22 @@ return [
     'accetta annuncio ' => 'Accept announcement',
     'rifiuta annuncio' => 'Reject announcement',
     'articoli revisionati' => 'Revisioned articles',
-    'nome' => 'Name:',
+    'nome' => 'Name',
     'data e' => 'Date and',
     'annulla operazione' => 'Cancel operation',
+    'annuncio' => 'Announcement:',
+    'ecco i suoi dati' => 'Your details',
+    'clicca qui per renderlo revisore' => 'Click here to make it revisor',
+    'un utente ha richiesto di lavorare con noi' => 'A user has requested to work with us',
+    'rendi revisore' => 'Make revisor',
 
 
     //  Mail
     'scrivi un messaggio' => 'Write a message',
     'invia' => 'Send',
-    'contattaci' => 'Contact us'
+    'contattaci' => 'Contact us',
+
+    'torna indietro' => 'Go back'
 
    
 

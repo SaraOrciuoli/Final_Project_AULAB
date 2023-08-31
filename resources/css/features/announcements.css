@@ -119,3 +119,11 @@ border-right: 1px solid var(--acc);
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
         }
 }
+
+.goBack{
+    border-bottom:2px solid var(--acc);
+}
+
+.goBack:hover{
+    background-color: var(--acc);
+}

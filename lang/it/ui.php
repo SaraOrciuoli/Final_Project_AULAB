@@ -19,7 +19,7 @@ return [
     'consegna veloce' => 'Consegna veloce',
     'articoli recenti' => 'Articoli recenti',
     'dettagli' => 'DETTAGLI',
-    'pubblicato il' => 'Pubblicato il:',
+    'pubblicato il' => 'Pubblicato il',
     'testimoni' => 'Testimoni',
     'clienti soddisfatti' => 'CLIENTI SODDISFATTI',
     'nome utente' => 'Nome utente',
@@ -34,7 +34,7 @@ return [
     //Form crea annuncio
     'crea annuncio' => 'Crea il tuo annuncio!',
     'titolo' => 'Titolo annuncio',
-    'descrizione' => 'Descrizione:',
+    'descrizione' => 'Descrizione',
     'prezzo' => 'Prezzo',
     'categoria' => 'Categoria',
     'scegli categoria' => 'Scegli la categoria',
@@ -45,7 +45,8 @@ return [
     'cancella' => 'Cancella',
     'esplora le categorie' => 'Esplora le categorie',
     'non sono presenti annunci per questa categoria' => 'Non sono presenti annunci per questa categoria',
-
+    'pubblicane uno' => 'Pubblicane uno',
+    'nuovo annuncio' => 'Nuovo annuncio',
 
 
     //form registrazione/login
@@ -67,7 +68,7 @@ return [
 
     // revisore 
     
-    'annuncio' => 'Annuncio',
+    'annuncio' => 'Annuncio:',
     'autore' => 'Autore:',
     'revisione immagini' => 'Revisione immagini',
     'adulti' => 'Adulti:',
@@ -78,13 +79,18 @@ return [
     'accetta annuncio ' => 'Accetta annuncio',
     'rifiuta annuncio' => 'Rifiuta annuncio',
     'articoli revisionati' => 'Articoli revisionati',
-    'nome' => 'Nome:',
+    'nome' => 'Nome',
     'data e' => 'Data e',
     'annulla operazione' => 'Annulla operazione',
+    'ecco i suoi dati' => 'Ecco i suoi dati',
+    'clicca qui per renderlo revisore' => 'Clicca qui per renderlo revisore',
+    'un utente ha richiesto di lavorare con noi' => 'Un utente ha richiesto di lavorare con noi',
+    'rendi revisor' => 'Rendi revisore',
 
     // Mail
     'scrivi un messaggio' => 'Scrivi un messaggio',
     'invia' => 'Invia',
-    'contattaci' => 'Contattaci'
+    'contattaci' => 'Contattaci',
 
+    'torna indietro' => 'Torna indietro'
 ];
